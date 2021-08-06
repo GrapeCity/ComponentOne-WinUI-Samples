@@ -1,0 +1,79 @@
+﻿<Window
+    x:Class="CustomRows.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CustomRows"
+    xmlns:c1="using:C1.WinUI.Grid"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid x:Name="root">
+        <Grid.Resources>
+            <Style x:Key="BaseCellStyle" TargetType="c1:GridCellView">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                            <GradientStop Color="#FF292929" Offset="0"/>
+                            <GradientStop Color="#FF5D5D5D" Offset="0.567"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Foreground" Value="White"/>
+            </Style>
+            <Style x:Key="LeftCellStyle" TargetType="c1:GridCellView" BasedOn="{StaticResource BaseCellStyle}">
+                <Setter Property="BorderThickness" Value="1,1,0,1"/>
+                <Setter Property="CornerRadius" Value="10,0,0,10"/>
+                <Setter Property="Margin" Value="8,4,0,4"/>
+            </Style>
+            <Style x:Key="CenterCellStyle" TargetType="c1:GridCellView" BasedOn="{StaticResource BaseCellStyle}">
+                <Setter Property="BorderThickness" Value="0,1,0,1"/>
+                <Setter Property="CornerRadius" Value="0,0,0,0"/>
+                <Setter Property="Margin" Value="0,4,0,4"/>
+            </Style>
+            <Style x:Key="RightCellStyle" TargetType="c1:GridCellView" BasedOn="{StaticResource BaseCellStyle}">
+                <Setter Property="BorderThickness" Value="0,1,1,1"/>
+                <Setter Property="CornerRadius" Value="0,10,10,0"/>
+                <Setter Property="Margin" Value="0,4,8,4"/>
+            </Style>
+        </Grid.Resources>
+        <c1:FlexGrid x:Name="grid"
+                     AutoGenerateColumns="False" 
+                     DefaultColumnWidth="*" 
+                     HeadersVisibility="Column" 
+                     DefaultRowHeight="Auto" 
+                     Background="Black" 
+                     RowForeground="White" 
+                     ColumnHeaderForeground="White" 
+                     ColumnHeaderBackground="Black" 
+                     ColumnHeaderGridLinesVisibility="None" 
+                     ColumnHeaderFontWeight="Bold" SelectionForeground="White">
+            <c1:FlexGrid.MouseOverBrush>
+                <SolidColorBrush Color="#FFFFFFFF" Opacity="0.15"/>
+            </c1:FlexGrid.MouseOverBrush>
+            <c1:FlexGrid.GridLinesBrush>
+                <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                    <GradientStop Color="#FFA8A8A8" Offset="0"/>
+                    <GradientStop Color="#FF252525" Offset="0.567"/>
+                </LinearGradientBrush>
+            </c1:FlexGrid.GridLinesBrush>
+            <c1:FlexGrid.SelectionBackground>
+                <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                    <GradientStop Color="#FF271200" Offset="0"/>
+                    <GradientStop Color="#FF7A3700" Offset="0.567"/>
+                </LinearGradientBrush>
+            </c1:FlexGrid.SelectionBackground>
+            <c1:FlexGrid.CursorBackground>
+                <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                    <GradientStop Color="#FF271200" Offset="0"/>
+                    <GradientStop Color="#FF7A3700" Offset="0.567"/>
+                </LinearGradientBrush>
+            </c1:FlexGrid.CursorBackground>
+            <c1:FlexGrid.Columns>
+                <c1:GridColumn Binding="FirstName"/>
+                <c1:GridColumn Binding="LastName"/>
+                <c1:GridColumn Binding="City"/>
+                <c1:GridColumn Binding="Country"/>
+            </c1:FlexGrid.Columns>
+        </c1:FlexGrid>
+    </Grid>
+</Window>
