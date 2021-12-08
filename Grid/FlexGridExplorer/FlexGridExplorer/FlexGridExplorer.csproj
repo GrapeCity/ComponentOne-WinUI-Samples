@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>FlexGridExplorer</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -9,8 +9,11 @@
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <UseWinUI>true</UseWinUI>
     <ApplicationIcon>C1-ball.ico</ApplicationIcon>
+    <PublishReadyToRun>false</PublishReadyToRun>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove=".gclicx" />
+    <None Remove="C1-ball.ico" />
     <None Remove="Images\Album.png" />
     <None Remove="Images\Artist.png" />
     <None Remove="Images\Collapsed.png" />
@@ -51,30 +54,34 @@
     <None Remove="View\Unbound.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="Resources\data.zip" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>0.8.20212.93-beta</Version>
+      <Version>1.0.20213.156</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>0.8.20212.93-beta</Version>
+      <Version>1.0.20213.156</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DataPager">
-      <Version>0.8.20212.93-beta</Version>
+      <Version>1.0.20213.156</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid">
-      <Version>0.8.20212.93-beta</Version>
+      <Version>1.0.20213.156</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>0.8.20212.93-beta</Version>
+      <Version>1.0.20213.156</Version>
     </PackageReference>
-    <PackageReference Include="Microsoft.ProjectReunion" Version="0.8.0" />
-    <PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.8.0" />
-    <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.8.0" />
+    <PackageReference Include="PInvoke.User32" Version="0.7.104" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22000.196" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0-preview3" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="C1-ball.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\Album.png" />
     <Content Include="Images\Artist.png" />
     <Content Include="Images\Collapsed.png" />
@@ -237,5 +244,8 @@
     <Page Update="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>AccordionExplorer</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -10,21 +10,30 @@
     <UseWinUI>true</UseWinUI>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove=".gclicx" />
+    <None Remove="C1-ball.ico" />
     <None Remove="GettingStarted.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="C1-ball.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>0.8.20212.93-beta</Version>
+      <Version>1.0.20213.156</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Calendar">
-      <Version>0.8.20212.93-beta</Version>
+      <Version>1.0.20213.156</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>0.8.20212.93-beta</Version>
+      <Version>1.0.20213.156</Version>
     </PackageReference>
-    <PackageReference Include="Microsoft.ProjectReunion" Version="0.8.0" />
-    <PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.8.0" />
-    <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.8.0" />
+    <PackageReference Include="PInvoke.User32" Version="0.7.104" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0-preview3" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
   <ItemGroup>

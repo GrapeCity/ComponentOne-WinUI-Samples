@@ -496,10 +496,14 @@
     <value>保存</value>
     <comment>Save</comment>
   </data>
-    <data name="MouseHoverDescription" xml:space="preserve">
+  <data name="MouseHoverDescription" xml:space="preserve">
     <value>Shows the effects of different settings of MouseOverMode</value>
   </data>
-    <data name="MouseHoverTitle" xml:space="preserve">
+  <data name="MouseHoverTitle" xml:space="preserve">
     <value>Mouse Hover</value>
+  </data>
+  <data name="ShowSort" xml:space="preserve">
+    <value>並べ替えアイコンの表示</value>
+    <comment>Show sort icons</comment>
   </data>
 </root>

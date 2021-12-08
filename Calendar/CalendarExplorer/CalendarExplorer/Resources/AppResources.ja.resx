@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,4 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CustomAppearanceDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CustomAppearanceTitle" xml:space="preserve">
+    <value>Custom Appearance</value>
+  </data>
+  <data name="CustomDayTitle" xml:space="preserve">
+    <value>Custom Day</value>
+  </data>
+  <data name="GettingStartedTitle" xml:space="preserve">
+    <value>Getting Started</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="VerticalOrientationTitle" xml:space="preserve">
+    <value>Vertical Orientation</value>
+  </data>
 </root>

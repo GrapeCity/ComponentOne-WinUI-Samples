@@ -3,10 +3,33 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:c1="using:C1.WinUI.Grid"
+    xmlns:core="using:C1.WinUI.Core"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:res="using:FlexGridExplorer.Resources"
     mc:Ignorable="d">
 
+    <UserControl.Resources>
+        <DataTemplate x:Key="SortAscendingIcon">
+            <core:C1PathIcon Data="M3.5 13.5a.5.5 0 0 1-1 0V4.707L1.354 5.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 4.707V13.5zm4-9.5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1h-1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1h-5zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5z"/>
+        </DataTemplate>
+        <DataTemplate x:Key="Sort2Icon">
+            <core:C1PathIcon ViewBox="0, 0, 1400, 1500"  Opacity="0.3" Data="m 1408,1088 c 0,17.3333 -6.3333,32.3333 -19,45 l -448,448 c -12.66667,12.6667 -27.66667,19 -45,19 -17.33333,0 -32.33333,-6.3333 -45,-19 L 403,1133 c -12.66667,-12.6667 -19,-27.6667 -19,-45 0,-17.3333 6.33333,-32.3333 19,-45 12.66667,-12.6667 27.66667,-19 45,-19 h 896 c 17.3333,0 32.3333,6.3333 45,19 12.6667,12.6667 19,27.6667 19,45 z m 0,-383.99997 c 0,17.33333 -6.3333,32.33333 -19,45 -12.6667,12.66667 -27.6667,19 -45,19 H 447.99997 c -17.33333,0 -32.33333,-6.33333 -45,-19 -12.66667,-12.66667 -19,-27.66667 -19,-45 0,-17.33333 6.33333,-32.33333 19,-45 l 448,-448 c 12.66667,-12.66667 27.66667,-19 45,-19 17.33333,0 32.33334,6.33333 45.00003,19 l 448,448 c 12.6667,12.66667 19,27.66667 19,45 z"/>
+        </DataTemplate>
+        <DataTemplate x:Key="Sort2AscendingIcon">
+            <core:C1CompositeIcon>
+                <core:C1PathIcon ViewBox="0, 0, 1400, 1500" Data="m 1408,704.00003 c 0,17.33333 -6.3333,32.33333 -19,45 -12.6667,12.66667 -27.6667,19 -45,19 H 447.99997 c -17.33333,0 -32.33333,-6.33333 -45,-19 -12.66667,-12.66667 -19,-27.66667 -19,-45 0,-17.33333 6.33333,-32.33333 19,-45 l 448,-448 c 12.66667,-12.66667 27.66667,-19 45,-19 17.33333,0 32.33334,6.33333 45.00003,19 l 448,448 c 12.6667,12.66667 19,27.66667 19,45 z"/>
+                <core:C1PathIcon ViewBox="0, 0, 1400, 1500" Opacity="0.3"  Data="m 1408,1088 c 0,17.3333 -6.3333,32.3333 -19,45 l -448,448 c -12.66667,12.6667 -27.66667,19 -45,19 -17.33333,0 -32.33333,-6.3333 -45,-19 L 403,1133 c -12.66667,-12.6667 -19,-27.6667 -19,-45 0,-17.3333 6.33333,-32.3333 19,-45 12.66667,-12.6667 27.66667,-19 45,-19 h 896 c 17.3333,0 32.3333,6.3333 45,19 12.6667,12.6667 19,27.6667 19,45 z"/>
+            </core:C1CompositeIcon>
+        </DataTemplate>
+        <DataTemplate x:Key="Sort2DescendingIcon">
+            <core:C1CompositeIcon>
+                <core:C1PathIcon ViewBox="0, 0, 1400, 1500" Data="m 1408,704.00003 c 0,17.33333 -6.3333,32.33333 -19,45 -12.6667,12.66667 -27.6667,19 -45,19 H 447.99997 c -17.33333,0 -32.33333,-6.33333 -45,-19 -12.66667,-12.66667 -19,-27.66667 -19,-45 0,-17.33333 6.33333,-32.33333 19,-45 l 448,-448 c 12.66667,-12.66667 27.66667,-19 45,-19 17.33333,0 32.33334,6.33333 45.00003,19 l 448,448 c 12.6667,12.66667 19,27.66667 19,45 z"
+                                 Opacity="0.3"/>
+                <core:C1PathIcon ViewBox="0, 0, 1400, 1500" Data="m 1408,1088 c 0,17.3333 -6.3333,32.3333 -19,45 l -448,448 c -12.66667,12.6667 -27.66667,19 -45,19 -17.33333,0 -32.33333,-6.3333 -45,-19 L 403,1133 c -12.66667,-12.6667 -19,-27.6667 -19,-45 0,-17.3333 6.33333,-32.3333 19,-45 12.66667,-12.6667 27.66667,-19 45,-19 h 896 c 17.3333,0 32.3333,6.3333 45,19 12.6667,12.6667 19,27.6667 19,45 z"/>
+            </core:C1CompositeIcon>
+        </DataTemplate>
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -14,11 +37,13 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Margin="2">
-            <TextBlock x:Name="lblIconPos" Text="Sort Icon Position" VerticalAlignment="Center" Margin="10 0"/>
+            <TextBlock x:Name="lblIconPos" Text="{x:Bind res:AppResources.SortIconPosition}" VerticalAlignment="Center" Margin="10 0"/>
             <ComboBox x:Name="sortIconPosition" SelectionChanged="SortIconPositionChanged"/>
 
-            <TextBlock x:Name="lblIconTemplate" Text="Sort Icon Template" VerticalAlignment="Center" Margin="10 0"/>
+            <TextBlock x:Name="lblIconTemplate" Text="{x:Bind res:AppResources.SortIconTemplate}" VerticalAlignment="Center" Margin="10 0"/>
             <ComboBox x:Name="sortIconTemplate" SelectionChanged="SortIconTemplateChanged"/>
+            <TextBlock x:Name="showSortText" Text="{x:Bind res:AppResources.ShowSort}" VerticalAlignment="Center" Margin="10 0"/>
+            <CheckBox IsChecked="{Binding ShowSort, ElementName=grid, Mode=TwoWay}" Width="10"/>
         </StackPanel>
         <c1:FlexGrid x:Name="grid" SortIconPosition="Left" Grid.Row="2"/>
     </Grid>

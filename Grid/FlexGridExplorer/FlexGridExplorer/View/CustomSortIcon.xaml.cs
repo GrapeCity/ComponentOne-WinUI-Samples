@@ -4,6 +4,7 @@ using C1.WinUI.Grid;
 using FlexGridExplorer.Resources;
 using Microsoft.UI.Xaml.Controls;
 using System;
+using Microsoft.UI.Xaml;
 
 namespace FlexGridExplorer
 {
@@ -19,11 +20,11 @@ namespace FlexGridExplorer
                 sortIconPosition.Items.Add(value.ToString());
             }
             sortIconPosition.SelectedIndex = 1;
-            foreach (var value in new string[] { nameof(C1IconTemplate.TriangleUp), nameof(C1IconTemplate.TriangleNorth), nameof(C1IconTemplate.ChevronUp), nameof(C1IconTemplate.ArrowUp) })
+            foreach (var value in new string[] { "Custom 1", "Custom 2", nameof(C1IconTemplate.TriangleUp), nameof(C1IconTemplate.TriangleNorth), nameof(C1IconTemplate.ChevronUp), nameof(C1IconTemplate.ArrowUp) })
             {
                 sortIconTemplate.Items.Add(value);
             }
-            sortIconTemplate.SelectedIndex = 2;
+            sortIconTemplate.SelectedIndex = 1;
             lblIconPos.Text = AppResources.SortIconPosition;
             lblIconTemplate.Text = AppResources.SortIconTemplate;
 
@@ -47,16 +48,34 @@ namespace FlexGridExplorer
             switch (sortIconTemplate.SelectedIndex)
             {
                 case 0:
-                    grid.SortAscendingIconTemplate = C1IconTemplate.TriangleUp;
+                    grid.SortAscendingIconTemplate = Resources["SortAscendingIcon"] as DataTemplate;
+                    grid.SortDescendingIconTemplate = null;
+                    grid.SortIndeterminateIconTemplate = null;
                     break;
                 case 1:
-                    grid.SortAscendingIconTemplate = C1IconTemplate.TriangleNorth;
+                    grid.SortAscendingIconTemplate = Resources["Sort2AscendingIcon"] as DataTemplate;
+                    grid.SortDescendingIconTemplate = Resources["Sort2DescendingIcon"] as DataTemplate;
+                    grid.SortIndeterminateIconTemplate = Resources["Sort2Icon"] as DataTemplate;
                     break;
                 case 2:
-                    grid.SortAscendingIconTemplate = C1IconTemplate.ChevronUp;
+                    grid.SortAscendingIconTemplate = C1IconTemplate.TriangleUp;
+                    grid.SortDescendingIconTemplate = null;
+                    grid.SortIndeterminateIconTemplate = null;
                     break;
                 case 3:
+                    grid.SortAscendingIconTemplate = C1IconTemplate.TriangleNorth;
+                    grid.SortDescendingIconTemplate = null;
+                    grid.SortIndeterminateIconTemplate = null;
+                    break;
+                case 4:
+                    grid.SortAscendingIconTemplate = C1IconTemplate.ChevronUp;
+                    grid.SortDescendingIconTemplate = null;
+                    grid.SortIndeterminateIconTemplate = null;
+                    break;
+                case 5:
                     grid.SortAscendingIconTemplate = C1IconTemplate.ArrowUp;
+                    grid.SortDescendingIconTemplate = null;
+                    grid.SortIndeterminateIconTemplate = null;
                     break;
             }
         }

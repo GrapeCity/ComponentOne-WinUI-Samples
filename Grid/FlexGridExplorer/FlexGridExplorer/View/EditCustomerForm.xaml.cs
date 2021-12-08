@@ -20,7 +20,10 @@ namespace FlexGridExplorer
 
         private void OnActivated(object sender, WindowActivatedEventArgs args)
         {
-            (Content as FrameworkElement).DataContext = Customer;
+            if (args.WindowActivationState != WindowActivationState.Deactivated)
+            {
+                (Content as FrameworkElement).DataContext = Customer;
+            }
         }
 
         private void BtnCancel_Click(object sender, RoutedEventArgs e)

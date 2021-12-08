@@ -397,4 +397,7 @@
   <data name="Theme" xml:space="preserve">
     <value>Theme</value>
   </data>
+  <data name="ShowSort" xml:space="preserve">
+    <value>Show sort icons</value>
+  </data>
 </root>
