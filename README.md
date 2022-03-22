@@ -1,30 +1,27 @@
-# ComponentOne WPF Samples 
+# ComponentOne WinUI Edition Samples 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/dotnet/winforms/blob/master/LICENSE.TXT)
+Add enterprise features to your new desktop applications based on the latest WinUI 3.0 framework.
 
-This repo contains all the sample code that is part of ComponentOne WinUI products. There are several different projects that are organized in sub-folders. These sub-folders are organized similarly to the organization of the docs for .NET.  
+This repository contains the samples for [ComponentOne WinUI Edition](https://www.grapecity.com/componentone/winui-controls). These samples provide complete implementation details for the UI control features. They are also included with the full download and install from grapecity.com/componentone. 
 
-Issues are turned off on this repository. File issues using SupportOne .  
+The samples reference, but do not include, the control packages. The control packages can be downloaded from nuget.org.
 
-The code in this repository represents programs that demonstrate application or library scenarios. Each sample has a readme.md file that explains the sample. 
+## Building a Sample 
 
-
-## Building a sample 
-
-.NET Framework samples require VS2012 and above. 
-.NET Core samples will require VS2017 and above. You can also build any .NET Core sample using the .NET Core CLI, which is installed with the [.NET Core SDK](https://www.microsoft.com/net/download). 
-
-Then run these commands from the CLI in the directory of any sample: 
+WinUI samples require Windows 10, version 1809 (build 17763) and Visual Studio 2019 and above. They also require the Universal Windows Platform development workload and the Windows App SDK (Project Reunion) extension. Then run these commands from the CLI in the directory of any sample: 
 
 ```
 dotnet build 
 dotnet run 
 ```
 
-These will install any needed dependencies, build the project, and run the project respectively. 
- 
+This will install any needed dependencies, build the project, and run the project respectively.
 
+## Resources
 
-## Product Documentation 
-To know more about the product, refer [documentation](https://www.grapecity.com/componentone/docs/) 
+* Product Details: https://www.grapecity.com/componentone/winui-controls
+* Documentation: https://www.grapecity.com/componentone/docs/winui/online-winui/overview.html
+* Support Forum: https://www.grapecity.com/forums/winui-edition
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/dotnet/winforms/blob/master/LICENSE.TXT)
  
