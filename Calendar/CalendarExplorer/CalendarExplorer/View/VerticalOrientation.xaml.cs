@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml.Controls;
+﻿using CalendarExplorer.Resources;
+using Microsoft.UI.Xaml.Controls;
 
 namespace CalendarExplorer
 {
@@ -7,6 +8,7 @@ namespace CalendarExplorer
         public VerticalOrientation()
         {
             this.InitializeComponent();
+            this.Tag = AppResources.VerticalOrientationDescription;
         }
     }
 }

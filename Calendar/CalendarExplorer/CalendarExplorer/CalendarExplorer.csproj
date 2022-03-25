@@ -9,32 +9,53 @@
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <UseWinUI>true</UseWinUI>
     <ApplicationIcon>C1-ball.ico</ApplicationIcon>
+    <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
   </PropertyGroup>
   <ItemGroup>
     <None Remove=".gclicx" />
     <None Remove="C1-ball.ico" />
+    <None Remove="Images\LockScreenLogo.scale-200.png" />
+    <None Remove="Images\SplashScreen.scale-200.png" />
+    <None Remove="Images\Square150x150Logo.scale-200.png" />
+    <None Remove="Images\Square44x44Logo.scale-200.png" />
+    <None Remove="Images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <None Remove="Images\StoreLogo.png" />
+    <None Remove="Images\Wide310x150Logo.scale-200.png" />
+    <None Remove="Package.appxmanifest" />
     <None Remove="View\CustomAppearance.xaml" />
     <None Remove="View\CustomDay.xaml" />
     <None Remove="View\GettingStarted.xaml" />
     <None Remove="View\VerticalOrientation.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="C1-ball.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\LockScreenLogo.scale-200.png" />
+    <Content Include="Images\SplashScreen.scale-200.png" />
+    <Content Include="Images\Square150x150Logo.scale-200.png" />
+    <Content Include="Images\Square44x44Logo.scale-200.png" />
+    <Content Include="Images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Images\StoreLogo.png" />
+    <Content Include="Images\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include=".gclicx" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Calendar">
-      <Version>1.0.20213.156</Version>
+      <Version>1.0.20221.198</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.0.20213.156</Version>
+      <Version>1.0.20221.198</Version>
     </PackageReference>
     <PackageReference Include="PInvoke.User32" Version="0.7.104" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0-preview3" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
   <ItemGroup>

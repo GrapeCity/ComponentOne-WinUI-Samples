@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml.Controls;
+﻿using CalendarExplorer.Resources;
+using Microsoft.UI.Xaml.Controls;
 
 namespace CalendarExplorer
 {
@@ -7,6 +8,7 @@ namespace CalendarExplorer
         public CustomDay()
         {
             InitializeComponent();
+            this.Tag = AppResources.CustomDayDescription;
         }
     }
 }

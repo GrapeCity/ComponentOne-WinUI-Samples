@@ -117,22 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CustomAppearanceDescription" xml:space="preserve">
-    <value />
-  </data>
   <data name="CustomAppearanceTitle" xml:space="preserve">
-    <value>Custom Appearance</value>
+    <value>カスタム外観</value>
+    <comment>Custom Appearance</comment>
+  </data>
+	<data name="CustomAppearanceDescription" xml:space="preserve">
+    <value>You can change the calendar border, width, height, color, or more...</value>
   </data>
   <data name="CustomDayTitle" xml:space="preserve">
-    <value>Custom Day</value>
+    <value>カスタム日付</value>
+    <comment>Custom Day</comment>
+  </data>
+	<data name="CustomDayDescription" xml:space="preserve">
+    <value>Customize the various styles to make the days look more attractive.</value>
   </data>
   <data name="GettingStartedTitle" xml:space="preserve">
-    <value>Getting Started</value>
+    <value>導入</value>
+    <comment>Getting Started</comment>
+  </data>
+	<data name="GettingStartedDescription" xml:space="preserve">
+    <value>The C1Calendar control displays a one-month calendar and allows users to select a date.</value>
   </data>
   <data name="Theme" xml:space="preserve">
-    <value>Theme</value>
+    <value>テーマ</value>
+    <comment>Theme</comment>
   </data>
   <data name="VerticalOrientationTitle" xml:space="preserve">
-    <value>Vertical Orientation</value>
+    <value>垂直方向</value>
+    <comment>Vertical Orientation</comment>
+  </data>
+	<data name="VerticalOrientationDescription" xml:space="preserve">
+    <value>Shows how to use C1Calendar with vertical orientation.</value>
   </data>
 </root>

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
@@ -9,7 +9,21 @@
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <UseWinUI>true</UseWinUI>
     <ApplicationIcon>C1-ball.ico</ApplicationIcon>
-    <PublishReadyToRun>false</PublishReadyToRun>
+    <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
+    <AppxPackageSigningEnabled>False</AppxPackageSigningEnabled>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppxPackageSigningTimestampServerUrl>http://timestamp.digicert.com</AppxPackageSigningTimestampServerUrl>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <GenerateTestArtifacts>False</GenerateTestArtifacts>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
+    <AppInstallerUri>https://www.grapecity.com/demos</AppInstallerUri>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
+    <AppxBundle>Never</AppxBundle>
+    <AppxPackageDir>AppPackages\</AppxPackageDir>
+    <PackageCertificateKeyFile>FlexGridExplorer %28Package%29_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <GenerateAppxPackageOnBuild>True</GenerateAppxPackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <None Remove=".gclicx" />
@@ -19,9 +33,17 @@
     <None Remove="Images\Collapsed.png" />
     <None Remove="Images\default.png" />
     <None Remove="Images\Expanded.png" />
+    <None Remove="Images\LockScreenLogo.scale-200.png" />
     <None Remove="Images\retro_TV_filled-50_light.png" />
     <None Remove="Images\Song.png" />
+    <None Remove="Images\SplashScreen.scale-200.png" />
+    <None Remove="Images\Square150x150Logo.scale-200.png" />
+    <None Remove="Images\Square44x44Logo.scale-200.png" />
+    <None Remove="Images\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <None Remove="Images\star.png" />
+    <None Remove="Images\StoreLogo.png" />
+    <None Remove="Images\Wide310x150Logo.scale-200.png" />
+    <None Remove="Package.appxmanifest" />
     <None Remove="Resources\data.zip" />
     <None Remove="Resources\Roboto-Regular.ttf" />
     <None Remove="Themes\Generic.xaml" />
@@ -54,28 +76,33 @@
     <None Remove="View\Unbound.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="Resources\data.zip" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>1.0.20213.156</Version>
+      <Version>1.0.20221.198</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.0.20213.156</Version>
+      <Version>1.0.20221.198</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DataPager">
-      <Version>1.0.20213.156</Version>
+      <Version>1.0.20221.198</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid">
-      <Version>1.0.20213.156</Version>
+      <Version>1.0.20221.198</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.0.20213.156</Version>
+      <Version>1.0.20221.198</Version>
     </PackageReference>
     <PackageReference Include="PInvoke.User32" Version="0.7.104" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22000.196" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0-preview3" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
   <ItemGroup>
@@ -87,9 +114,16 @@
     <Content Include="Images\Collapsed.png" />
     <Content Include="Images\default.png" />
     <Content Include="Images\Expanded.png" />
+    <Content Include="Images\LockScreenLogo.scale-200.png" />
     <Content Include="Images\retro_TV_filled-50_light.png" />
     <Content Include="Images\Song.png" />
+    <Content Include="Images\SplashScreen.scale-200.png" />
+    <Content Include="Images\Square150x150Logo.scale-200.png" />
+    <Content Include="Images\Square44x44Logo.scale-200.png" />
+    <Content Include="Images\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Images\star.png" />
+    <Content Include="Images\StoreLogo.png" />
+    <Content Include="Images\Wide310x150Logo.scale-200.png" />
     <Content Include="Resources\Roboto-Regular.ttf" />
     <Resource Include="Images\Artist.png" />
     <Resource Include="Images\Collapsed.png" />
@@ -244,8 +278,5 @@
     <Page Update="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\" />
   </ItemGroup>
 </Project>

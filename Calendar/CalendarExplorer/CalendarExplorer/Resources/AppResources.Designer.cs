@@ -19,7 +19,7 @@ namespace CalendarExplorer.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class AppResources {
@@ -61,7 +61,7 @@ namespace CalendarExplorer.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to You can change the calendar border, width, height, color, or more....
         /// </summary>
         public static string CustomAppearanceDescription {
             get {
@@ -79,11 +79,29 @@ namespace CalendarExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Customize the various styles to make the days look more attractive..
+        /// </summary>
+        public static string CustomDayDescription {
+            get {
+                return ResourceManager.GetString("CustomDayDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Custom Day.
         /// </summary>
         public static string CustomDayTitle {
             get {
                 return ResourceManager.GetString("CustomDayTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The C1Calendar control displays a one-month calendar and allows users to select a date..
+        /// </summary>
+        public static string GettingStartedDescription {
+            get {
+                return ResourceManager.GetString("GettingStartedDescription", resourceCulture);
             }
         }
         
@@ -102,6 +120,15 @@ namespace CalendarExplorer.Resources {
         public static string Theme {
             get {
                 return ResourceManager.GetString("Theme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shows how to use C1Calendar with vertical orientation..
+        /// </summary>
+        public static string VerticalOrientationDescription {
+            get {
+                return ResourceManager.GetString("VerticalOrientationDescription", resourceCulture);
             }
         }
         

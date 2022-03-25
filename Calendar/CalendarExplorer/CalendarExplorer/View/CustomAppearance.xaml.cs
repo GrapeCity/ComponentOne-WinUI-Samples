@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml.Controls;
+﻿using CalendarExplorer.Resources;
+using Microsoft.UI.Xaml.Controls;
 
 namespace CalendarExplorer
 {
@@ -7,7 +8,7 @@ namespace CalendarExplorer
         public CustomAppearance()
         {
             InitializeComponent();
-
+            this.Tag = AppResources.CustomAppearanceDescription;
             calendar.ViewModeAnimation.ScaleFactor = 4;
             calendar.ViewModeAnimation.AnimationMode = C1.WinUI.Calendar.CalendarViewModeAnimationMode.ZoomOutIn;
         }
