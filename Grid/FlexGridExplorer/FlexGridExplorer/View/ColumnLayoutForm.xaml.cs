@@ -1,6 +1,7 @@
 ﻿using C1.WinUI.Grid;
 using FlexGridExplorer.Resources;
 using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -8,7 +9,7 @@ using System.Windows.Input;
 
 namespace FlexGridExplorer
 {
-    public partial class ColumnLayoutForm : Window
+    public partial class ColumnLayoutForm : ContentDialog
     {
         public FlexGrid Grid { get; set; }
 
@@ -19,17 +20,17 @@ namespace FlexGridExplorer
             btnOK.Content = AppResources.OK;
             btnCancel.Content = AppResources.Cancel;
 
-            Activated += OnActivated;
+            Loaded += ColumnLayoutForm_Loaded;
         }
 
-        private void OnActivated(object sender, WindowActivatedEventArgs args)
+        private void ColumnLayoutForm_Loaded(object sender, RoutedEventArgs e)
         {
             _columns.Clear();
             foreach (var column in Grid.Columns)
             {
                 _columns.Add(new ColumnLayoutItemViewModel(_columns, column));
             }
-            (Content as FrameworkElement).DataContext = _columns;
+            DataContext = _columns;
             UpdateColumns();
         }
 
@@ -58,12 +59,12 @@ namespace FlexGridExplorer
         {
             grid.FinishEditing();
             UpdateColumns();
-            Close();
+            Hide();
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            Hide();
         }
     }
 

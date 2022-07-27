@@ -24,7 +24,10 @@ namespace FlexGridExplorer
 
         private void OnEditColumnLayout(object sender, RoutedEventArgs e)
         {
-            new ColumnLayoutForm() { Grid = grid }.Activate();
+            var form = new ColumnLayoutForm();
+            form.Grid = grid;
+            form.XamlRoot = this.XamlRoot;
+            form.ShowAsync();
         }
 
         private void OnSerializeColumnLayout(object sender, RoutedEventArgs e)

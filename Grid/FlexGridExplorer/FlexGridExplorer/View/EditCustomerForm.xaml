@@ -1,4 +1,4 @@
-﻿<Window
+﻿<ContentDialog
     x:Class="FlexGridExplorer.EditCustomerForm"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -52,4 +52,4 @@
             <core:C1Button Content="{x:Bind res:AppResources.Cancel}" MinWidth="100" Margin="4" Click="BtnCancel_Click"/>
         </StackPanel>
     </Grid>
-</Window>
+</ContentDialog>

@@ -400,4 +400,10 @@
   <data name="ShowSort" xml:space="preserve">
     <value>Show sort icons</value>
   </data>
+  <data name="VirtualModeDescription" xml:space="preserve">
+    <value>Shows how to use data-virtualization to display a 1 million rows grid</value>
+  </data>
+  <data name="VirtualModeTitle" xml:space="preserve">
+    <value>Virtual Mode</value>
+  </data>
 </root>

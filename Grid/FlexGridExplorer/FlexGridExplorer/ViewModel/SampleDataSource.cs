@@ -91,6 +91,9 @@ namespace FlexGridExplorer
             _allItems.Add(new SampleItem(AppResources.MouseHoverTitle,
                 AppResources.MouseHoverTitle,
                 new System.Lazy<UserControl>(() => new MouseHover())));
+            _allItems.Add(new SampleItem(AppResources.VirtualModeTitle,
+                AppResources.VirtualModeTitle,
+                new System.Lazy<UserControl>(() => new VirtualMode())));
         }
 
         public ObservableCollection<SampleItem> AllItems

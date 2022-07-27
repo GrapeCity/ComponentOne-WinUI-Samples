@@ -33,7 +33,8 @@ namespace FlexGridExplorer
                 {
                     var form = new EditCustomerForm();
                     form.Customer = c;
-                    form.Activate();
+                    form.XamlRoot = this.XamlRoot;
+                    form.ShowAsync();
                 }
             }
         }

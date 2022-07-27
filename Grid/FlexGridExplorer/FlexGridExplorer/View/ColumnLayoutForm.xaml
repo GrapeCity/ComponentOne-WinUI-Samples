@@ -1,4 +1,4 @@
-﻿<Window x:Class="FlexGridExplorer.ColumnLayoutForm"
+﻿<ContentDialog x:Class="FlexGridExplorer.ColumnLayoutForm"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:c1="using:C1.WinUI.Grid"
@@ -36,4 +36,4 @@
             <core:C1Button x:Name="btnCancel" Content="Cancel" Click="btnCancel_Click" Margin="4" MinWidth="100"/>
         </StackPanel>
     </Grid>
-</Window>
+</ContentDialog>

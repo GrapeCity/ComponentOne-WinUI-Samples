@@ -121,22 +121,25 @@
     <value>カスタム外観</value>
     <comment>Custom Appearance</comment>
   </data>
-	<data name="CustomAppearanceDescription" xml:space="preserve">
-    <value>You can change the calendar border, width, height, color, or more...</value>
+  <data name="CustomAppearanceDescription" xml:space="preserve">
+    <value>カレンダーの境界線、幅、高さ、色などを変更できます</value>
+    <comment>You can change the calendar border, width, height, color, or more...</comment>
   </data>
   <data name="CustomDayTitle" xml:space="preserve">
     <value>カスタム日付</value>
     <comment>Custom Day</comment>
   </data>
-	<data name="CustomDayDescription" xml:space="preserve">
-    <value>Customize the various styles to make the days look more attractive.</value>
+  <data name="CustomDayDescription" xml:space="preserve">
+    <value>さまざまなスタイルをカスタマイズして、日々をより魅力的に見せます。</value>
+    <comment>Customize the various styles to make the days look more attractive.</comment>
   </data>
   <data name="GettingStartedTitle" xml:space="preserve">
     <value>導入</value>
     <comment>Getting Started</comment>
   </data>
-	<data name="GettingStartedDescription" xml:space="preserve">
-    <value>The C1Calendar control displays a one-month calendar and allows users to select a date.</value>
+  <data name="GettingStartedDescription" xml:space="preserve">
+    <value>C1Calendar コントロールは、1か月のカレンダーを表示し、ユーザーが日付を選択できるようにします。</value>
+    <comment>The C1Calendar control displays a one-month calendar and allows users to select a date.</comment>
   </data>
   <data name="Theme" xml:space="preserve">
     <value>テーマ</value>
@@ -146,7 +149,8 @@
     <value>垂直方向</value>
     <comment>Vertical Orientation</comment>
   </data>
-	<data name="VerticalOrientationDescription" xml:space="preserve">
-    <value>Shows how to use C1Calendar with vertical orientation.</value>
+  <data name="VerticalOrientationDescription" xml:space="preserve">
+    <value>垂直方向で C1Calendar を使用する方法を示します。</value>
+    <comment>Shows how to use C1Calendar with vertical orientation.</comment>
   </data>
 </root>

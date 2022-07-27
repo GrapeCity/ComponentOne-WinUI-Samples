@@ -7,28 +7,26 @@ using System.Globalization;
 
 namespace FlexGridExplorer
 {
-    public sealed partial class EditCustomerForm : Window
+    public sealed partial class EditCustomerForm : ContentDialog
     {
         public EditCustomerForm()
         {
             this.InitializeComponent();
+            DataContext = Customer;
+            Loaded += EditCustomerForm_Loaded;
+        }
 
-            Activated += OnActivated;
+        private void EditCustomerForm_Loaded(object sender, RoutedEventArgs e)
+        {
+            DataContext = Customer;
         }
 
         public Customer Customer { get; internal set; }
 
-        private void OnActivated(object sender, WindowActivatedEventArgs args)
-        {
-            if (args.WindowActivationState != WindowActivationState.Deactivated)
-            {
-                (Content as FrameworkElement).DataContext = Customer;
-            }
-        }
-
+ 
         private void BtnCancel_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            Hide();
         }
 
         private void BtnApply_Click(object sender, RoutedEventArgs e)
@@ -37,7 +35,7 @@ namespace FlexGridExplorer
             entryLastName.GetBindingExpression(C1TextBox.TextProperty).UpdateSource();
             datePickerLastOrder.GetBindingExpression(DatePicker.DateProperty).UpdateSource();
             entryOrderTotal.GetBindingExpression(C1TextBox.TextProperty).UpdateSource();
-            Close();
+            Hide();
         }
     }
 
