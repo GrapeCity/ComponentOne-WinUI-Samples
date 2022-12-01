@@ -10,7 +10,8 @@
     <Grid Background="White">
         <!-- show songs in a FlexGrid -->
         <c1:FlexGrid x:Name="_flexiTunes" Grid.Row="2"
-                     IsReadOnly="true"
+                     IsReadOnly="True"
+                     ShowOutlineBar="True"
                      HeadersVisibility="Column"
                      GridLinesVisibility="None"
                      ColumnHeaderGridLinesVisibility="None"

@@ -508,4 +508,12 @@
     <value>並べ替えアイコンの表示</value>
     <comment>Show sort icons</comment>
   </data>
+  <data name="VirtualModeDescription" xml:space="preserve">
+    <value>データ仮想化を使用して 100 万行のグリッドを表示する方法を示します。</value>
+    <comment>Shows how to use data-virtualization to display a 1 million rows grid</comment>
+  </data>
+  <data name="VirtualModeTitle" xml:space="preserve">
+    <value>仮想モード</value>
+    <comment>Virtual Mode</comment>
+  </data>
 </root>

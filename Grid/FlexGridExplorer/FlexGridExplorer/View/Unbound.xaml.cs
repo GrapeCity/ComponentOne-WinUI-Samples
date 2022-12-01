@@ -2,6 +2,7 @@
 using FlexGridExplorer.Resources;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using System;
 
 namespace FlexGridExplorer
 {
@@ -50,7 +51,7 @@ namespace FlexGridExplorer
             ch.Rows.Add(new GridRow());
             for (int c = 0; c < ch.Columns.Count; c++)
             {
-                ch[0, c] = 2017 + c / 4; // year
+                ch[0, c] = DateTime.Now.Year - ((ch.Columns.Count - c - 1) / 4) - 1; // year
                 ch[1, c] = string.Format("Q {0}", c % 4 + 1); // quarter
             }
 

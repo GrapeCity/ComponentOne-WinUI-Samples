@@ -1,4 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
@@ -45,16 +46,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>1.0.20222.256</Version>
+      <Version>1.1.20223.370</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Calendar">
-      <Version>1.0.20222.256</Version>
+      <Version>1.1.20223.370</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.0.20222.256</Version>
+      <Version>1.1.20223.370</Version>
     </PackageReference>
     <PackageReference Include="PInvoke.User32" Version="0.7.104" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.1.5" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
   <ItemGroup>

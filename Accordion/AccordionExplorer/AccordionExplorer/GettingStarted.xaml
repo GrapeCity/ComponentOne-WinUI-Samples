@@ -11,19 +11,6 @@
 
     <Grid>
         <Grid.Resources>
-            <Style x:Key="AccordionStyle1" TargetType="c1:C1Accordion">
-                <Setter Property="HeaderStyle">
-                    <Setter.Value>
-                        <Style TargetType="c1:ExpanderButton">
-                            <Setter Property="Background" Value="#FF3D834B"/>
-                            <Setter Property="Foreground" Value="White"/>
-                            <Setter Property="BorderThickness" Value="1"/>
-                            <Setter Property="BorderBrush" Value="Gray"/>
-                            <Setter Property="Margin" Value="4"/>
-                        </Style>
-                    </Setter.Value>
-                </Setter>
-            </Style>
             <Style x:Key="ExpanderStyle" TargetType="c1:C1Expander">
                 <Setter Property="Background" Value="#20272f"/>
                 <Setter Property="Foreground" Value="White"/>
@@ -41,7 +28,7 @@
                     </Setter.Value>
                 </Setter>
             </Style>
-            <Style x:Key="AccordionStyle2" TargetType="c1:C1Accordion">
+            <Style TargetType="c1:C1Accordion">
                 <Setter Property="ItemContainerStyle" Value="{StaticResource ExpanderStyle}"/>
             </Style>
         </Grid.Resources>
@@ -49,11 +36,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition MinWidth="200" MaxWidth="300" Width=".7*"/>
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
             <core:C1CheckBox Content="Fill" IsChecked="{Binding ElementName=accordion,Path=Fill, Mode=TwoWay}" Margin="8"/>
             <TextBlock Text="ExpandMode" Margin="8" VerticalAlignment="Center"/>
             <ComboBox x:Name="expandModesCombo" SelectionChanged="OnExpandModesChanged" Margin="0 8"/>
@@ -61,7 +44,7 @@
             <ComboBox x:Name="expandDirectionCombo" SelectionChanged="OnExpandDirectionChanged" Margin="0 8"/>
         </StackPanel>
         <c1:C1Accordion x:Name="accordion" ExpandMode="One" Fill="True" Grid.Row="1">
-            <c1:C1Expander Header="Mail" Style="{StaticResource ExpanderStyle}">
+            <c1:C1Expander Header="Mail" >
                 <c1:C1Expander.HeaderTemplate>
                     <DataTemplate>
                         <Grid>
@@ -82,7 +65,7 @@
                     <ListViewItem Content="Mail 5"/>
                 </ListView>
             </c1:C1Expander>
-            <c1:C1Expander Header="Calendar" Style="{StaticResource ExpanderStyle}">
+            <c1:C1Expander Header="Calendar" >
                 <c1:C1Expander.HeaderTemplate>
                     <DataTemplate>
                         <Grid>
@@ -97,7 +80,7 @@
                 </c1:C1Expander.HeaderTemplate>
                 <calendar:C1Calendar Background="Transparent" VerticalAlignment="Top" DayOfWeekFormat="d" Margin="4"/>
             </c1:C1Expander>
-            <c1:C1Expander Header="Contacts" Style="{StaticResource ExpanderStyle}">
+            <c1:C1Expander Header="Contacts" >
                 <c1:C1Expander.HeaderTemplate>
                     <DataTemplate>
                         <Grid>
@@ -118,7 +101,7 @@
                     <ListViewItem Content="Contact 5"/>
                 </ListView>
             </c1:C1Expander>
-            <c1:C1Expander Header="Tasks" Style="{StaticResource ExpanderStyle}">
+            <c1:C1Expander Header="Tasks" >
                 <c1:C1Expander.HeaderTemplate>
                     <DataTemplate>
                         <Grid>
@@ -139,7 +122,7 @@
                     <ListViewItem Content="Task 5"/>
                 </ListView>
             </c1:C1Expander>
-            <c1:C1Expander Header="Notes" Style="{StaticResource ExpanderStyle}">
+            <c1:C1Expander Header="Notes">
                 <c1:C1Expander.HeaderTemplate>
                     <DataTemplate>
                         <Grid>

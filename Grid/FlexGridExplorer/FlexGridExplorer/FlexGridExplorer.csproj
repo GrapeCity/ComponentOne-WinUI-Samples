@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -33,6 +34,7 @@
     <None Remove="Images\Collapsed.png" />
     <None Remove="Images\default.png" />
     <None Remove="Images\Expanded.png" />
+    <None Remove="Images\filter.svg" />
     <None Remove="Images\LockScreenLogo.scale-200.png" />
     <None Remove="Images\retro_TV_filled-50_light.png" />
     <None Remove="Images\Song.png" />
@@ -87,23 +89,23 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>1.0.20222.256</Version>
+      <Version>1.1.20223.370</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.0.20222.256</Version>
+      <Version>1.1.20223.370</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DataPager">
-      <Version>1.0.20222.256</Version>
+      <Version>1.1.20223.370</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid">
-      <Version>1.0.20222.256</Version>
+      <Version>1.1.20223.370</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.0.20222.256</Version>
+      <Version>1.1.20223.370</Version>
     </PackageReference>
-    <PackageReference Include="PInvoke.User32" Version="0.7.104" />
-    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22000.196" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0" />
+    <PackageReference Include="PInvoke.User32" Version="0.7.124" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.1" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.1.5" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +117,7 @@
     <Content Include="Images\Collapsed.png" />
     <Content Include="Images\default.png" />
     <Content Include="Images\Expanded.png" />
+    <Content Include="Images\filter.svg" />
     <Content Include="Images\LockScreenLogo.scale-200.png" />
     <Content Include="Images\retro_TV_filled-50_light.png" />
     <Content Include="Images\Song.png" />
