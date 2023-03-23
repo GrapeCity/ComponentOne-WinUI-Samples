@@ -8,13 +8,15 @@
     mc:Ignorable="d">
 
     <Grid>
-        <calendar:C1Calendar x:Name="calendar" Background="#FFEBEBEB"
-                       Foreground="Black"
-                       FontFamily="Courier New" 
-                       FontSize="16" 
-                       BorderBrush="#FF343434"
-                       BorderThickness="4"
-                       DayOfWeekFormat="d">
+        <calendar:C1Calendar x:Name="calendar" 
+                             Background="#FFEBEBEB"
+                             Foreground="Black"
+                             HeaderForeground="White"
+                             FontFamily="Courier New"
+                             FontSize="16"
+                             BorderBrush="#FF343434"
+                             BorderThickness="4"
+                             DayOfWeekFormat="d">
             <calendar:C1Calendar.AdjacentDayStyle>
                 <Style TargetType="calendar:CalendarSlotPresenter">
                     <Setter Property="Foreground" Value="#FFA5A5A3"/>
@@ -51,6 +53,7 @@
             <calendar:C1Calendar.TodayStyle>
                 <Style TargetType="calendar:CalendarSlotPresenter">
                     <Setter Property="FontStyle" Value="Italic"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
                 </Style>
             </calendar:C1Calendar.TodayStyle>
         </calendar:C1Calendar>

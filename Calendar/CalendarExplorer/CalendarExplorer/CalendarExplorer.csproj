@@ -50,13 +50,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Calendar">
-      <Version>1.1.20223.370</Version>
+      <Version>1.2.20231.518</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.1.20223.370</Version>
+      <Version>1.2.20231.518</Version>
     </PackageReference>
     <PackageReference Include="PInvoke.User32" Version="0.7.104" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.1.5" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.221116.1" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
   <ItemGroup>

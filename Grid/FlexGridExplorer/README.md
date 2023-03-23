@@ -31,3 +31,4 @@ Shows the following samples:
 * LiveUpdates
 * CustomSortIcon
 * MouseHover
+* VirtualMode

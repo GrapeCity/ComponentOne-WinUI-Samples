@@ -1,5 +1,6 @@
 ﻿using CalendarExplorer.Resources;
 using Microsoft.UI.Xaml.Controls;
+using System;
 
 namespace CalendarExplorer
 {
@@ -9,6 +10,7 @@ namespace CalendarExplorer
         {
             this.InitializeComponent();
             this.Tag = AppResources.GettingStartedDescription;
+            calendar.BoldedDates = new DateTime[] { DateTime.Today.AddDays(3) };
         }
     }
 }

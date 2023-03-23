@@ -28,4 +28,5 @@ Shows the following samples:
 	- Financial
 	- LiveUpdates
 	- CustomSortIcon
-    - MouseHover
+    	- MouseHover
+	- VirtualMode
