@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>InputExplorer</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x86;x64;arm64</Platforms>
+    <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
+    <UseWinUI>true</UseWinUI>
+    <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="View\C1CheckList.xaml.cs" />
+    <Compile Remove="View\C1MultiSelect.xaml.cs" />
+    <Compile Remove="View\CustomRadialContextMenu.xaml.cs" />
+    <Compile Remove="View\DemoMaskedTextBox.xaml.cs" />
+    <Compile Remove="View\DemoRadialMenu.xaml.cs" />
+    <Compile Remove="View\DemoTagEditor.xaml.cs" />
+    <Compile Remove="View\DropDownMenu.xaml.cs" />
+    <Compile Remove="View\ValidationForm.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove=".gclicx" />
+    <None Remove="C1-ball.ico" />
+    <None Remove="GettingStarted.xaml" />
+    <None Remove="Images\LockScreenLogo.scale-200.png" />
+    <None Remove="Images\SplashScreen.scale-200.png" />
+    <None Remove="Images\Square150x150Logo.scale-200.png" />
+    <None Remove="Images\Square44x44Logo.scale-200.png" />
+    <None Remove="Images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <None Remove="Images\StoreLogo.png" />
+    <None Remove="Images\Wide310x150Logo.scale-200.png" />
+    <None Remove="Package.appxmanifest" />
+    <None Remove="View\C1CheckList.xaml" />
+    <None Remove="View\C1MultiSelect.xaml" />
+    <None Remove="View\CustomRadialContextMenu.xaml" />
+    <None Remove="View\DemoMaskedTextBox.xaml" />
+    <None Remove="View\DemoRadialMenu.xaml" />
+    <None Remove="View\DemoTagEditor.xaml" />
+    <None Remove="View\DropDownMenu.xaml" />
+    <None Remove="View\RangeSlider.xaml" />
+    <None Remove="View\ValidationForm.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Remove="View\C1CheckList.xaml" />
+    <Page Remove="View\C1MultiSelect.xaml" />
+    <Page Remove="View\CustomRadialContextMenu.xaml" />
+    <Page Remove="View\DemoMaskedTextBox.xaml" />
+    <Page Remove="View\DemoRadialMenu.xaml" />
+    <Page Remove="View\DemoTagEditor.xaml" />
+    <Page Remove="View\DropDownMenu.xaml" />
+    <Page Remove="View\ValidationForm.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="C1-ball.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\LockScreenLogo.scale-200.png" />
+    <Content Include="Images\SplashScreen.scale-200.png" />
+    <Content Include="Images\Square150x150Logo.scale-200.png" />
+    <Content Include="Images\Square44x44Logo.scale-200.png" />
+    <Content Include="Images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Images\StoreLogo.png" />
+    <Content Include="Images\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.WinUI.Core">
+      <Version>1.2.20232.593</Version>
+    </PackageReference>
+    <PackageReference Include="C1.WinUI.DateTimeEditors">
+      <Version>1.2.20232.593</Version>
+    </PackageReference>
+    <PackageReference Include="C1.WinUI.Input">
+      <Version>1.2.20232.593</Version>
+    </PackageReference>
+    <PackageReference Include="PInvoke.User32" Version="0.7.104" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.221209.1" />
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\RangeSlider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="GettingStarted.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>

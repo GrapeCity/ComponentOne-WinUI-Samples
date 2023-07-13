@@ -406,4 +406,19 @@
   <data name="VirtualModeTitle" xml:space="preserve">
     <value>Virtual Mode</value>
   </data>
+  <data name="SelectedItemsDescription" xml:space="preserve">
+    <value>Shows how to bind the SelectedItems of one grid to another control</value>
+  </data>
+  <data name="SelectedItemsTitle" xml:space="preserve">
+    <value>Selected Items</value>
+  </data>
+  <data name="AllCustomersLabel" xml:space="preserve">
+    <value>All Customers</value>
+  </data>
+  <data name="SelectCustomersMessage" xml:space="preserve">
+    <value>Please select customers on the grid at the left.</value>
+  </data>
+  <data name="SelectedCustomersLabel" xml:space="preserve">
+    <value>Selected customers</value>
+  </data>
 </root>

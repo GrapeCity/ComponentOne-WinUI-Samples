@@ -61,6 +61,15 @@ namespace FlexGridExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All Customers.
+        /// </summary>
+        public static string AllCustomersLabel {
+            get {
+                return ResourceManager.GetString("AllCustomersLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Apply.
         /// </summary>
         public static string Apply {
@@ -714,6 +723,42 @@ namespace FlexGridExplorer.Resources {
         public static string SearchPlaceholderText {
             get {
                 return ResourceManager.GetString("SearchPlaceholderText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select customers on the grid at the left..
+        /// </summary>
+        public static string SelectCustomersMessage {
+            get {
+                return ResourceManager.GetString("SelectCustomersMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selected customers.
+        /// </summary>
+        public static string SelectedCustomersLabel {
+            get {
+                return ResourceManager.GetString("SelectedCustomersLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shows how to bind the SelectedItems of one grid to another control.
+        /// </summary>
+        public static string SelectedItemsDescription {
+            get {
+                return ResourceManager.GetString("SelectedItemsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selected Items.
+        /// </summary>
+        public static string SelectedItemsTitle {
+            get {
+                return ResourceManager.GetString("SelectedItemsTitle", resourceCulture);
             }
         }
         

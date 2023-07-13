@@ -73,6 +73,7 @@
     <None Remove="View\OnDemand.xaml" />
     <None Remove="View\Paging.xaml" />
     <None Remove="View\RowDetails.xaml" />
+    <None Remove="View\SelectedItems.xaml" />
     <None Remove="View\SelectionModes.xaml" />
     <None Remove="View\StarSizing.xaml" />
     <None Remove="View\Unbound.xaml" />
@@ -89,23 +90,24 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>1.2.20231.518</Version>
+      <Version>1.2.20232.593</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.2.20231.518</Version>
+      <Version>1.2.20232.593</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DataPager">
-      <Version>1.2.20231.518</Version>
+      <Version>1.2.20232.593</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid">
-      <Version>1.2.20231.518</Version>
+      <Version>1.2.20232.593</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.2.20231.518</Version>
+      <Version>1.2.20232.593</Version>
     </PackageReference>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
     <PackageReference Include="PInvoke.User32" Version="0.7.124" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.1" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.221116.1" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.221209.1" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +153,9 @@
   <ItemGroup>
     <Page Update="View\EditCustomerForm.xaml">
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="View\SelectedItems.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>
     <Page Update="View\VirtualMode.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>

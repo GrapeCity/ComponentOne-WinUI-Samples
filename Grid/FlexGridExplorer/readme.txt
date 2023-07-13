@@ -30,3 +30,4 @@ Shows the following samples:
 	- CustomSortIcon
     	- MouseHover
 	- VirtualMode
+	- SelectedItems

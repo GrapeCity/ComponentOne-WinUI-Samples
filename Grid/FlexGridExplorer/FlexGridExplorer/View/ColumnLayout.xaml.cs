@@ -2,17 +2,17 @@
 using FlexGridExplorer.Resources;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
+using Windows.Storage;
 
 namespace FlexGridExplorer
 {
     public sealed partial class ColumnLayout : UserControl
     {
-        private string FILENAME = "ColumnLayout.json";
+        private string FILENAME = Path.Combine(ApplicationData.Current.TemporaryFolder.Path, "ColumnLayout.json");
 
         public ColumnLayout()
         {
