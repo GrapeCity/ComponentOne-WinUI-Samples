@@ -1,5 +1,5 @@
 ## DataFilterExplorer
-#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinUI-Samples/tree/master/DataFilter/DataFilterExplorer)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinUI-Samples/tree/master/NET_6/DataFilter/DataFilterExplorer)
 ____
 #### Shows samples of DataFilter control
 ____

@@ -1,5 +1,5 @@
 ## AccordionExplorer Samples
-#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinUI-Samples/tree/master/Accordion/AccordionExplorer)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinUI-Samples/tree/master/NET_6/Accordion/AccordionExplorer)
 ____
 #### Shows the controls belonging to the C1.WinUI.Accordion library.
 ____

@@ -1,5 +1,5 @@
 ## InputExplorer Samples
-#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinUI-Samples/tree/master/Input/InputExplorer)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinUI-Samples/tree/master/NET_6/Input/InputExplorer)
 ____
 #### Shows the controls belonging to the C1.WinUI.Input library.
 ____

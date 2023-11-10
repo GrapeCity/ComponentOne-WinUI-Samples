@@ -1,5 +1,5 @@
 ## FlexGridExplorer for WinUI
-#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinUI-Samples/tree/master/Grid/FlexGridExplorer)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinUI-Samples/tree/master/NET_6/Grid/FlexGridExplorer)
 ____
 #### Shows samples of the FlexGrid control.
 ____
