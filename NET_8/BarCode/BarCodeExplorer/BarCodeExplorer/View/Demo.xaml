@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="BarCodeExplorer.Demo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:c1="http://schemas.componentone.com/winfx/2006/xaml"
+             xmlns:c1BarCode="using:C1.BarCode"
+             xmlns:BarCode="using:C1.WinUI.BarCode"
+             xmlns:local="using:BarCodeExplorer"
+             x:Name="root">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <local:EncodingFormat x:Name="category"/>
+        <local:Editor x:Name="editor" CurrentCategory="{Binding CurrentCategory, ElementName=category}" Grid.Column="1"/>
+        <Grid Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TextBlock Text="BarCode Image:" HorizontalAlignment="Center" FontSize="20" Margin="4,10"/>
+            <ScrollViewer Grid.Row="1" HorizontalAlignment="Center" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <Grid>
+                    <BarCode:C1BarCode x:Name="barCode" Margin="18" CaptionPosition="Below" 
+						HorizontalAlignment="Center"
+						CodeType="{Binding CurrentCodeType, ElementName=category}"
+						Text="{Binding DataContext.EncodingText, ElementName=editor}">
+                        <BarCode:C1BarCode.QRCodeOptions>
+                            <c1BarCode:QRCodeOptions ErrorLevel="High"></c1BarCode:QRCodeOptions>
+                        </BarCode:C1BarCode.QRCodeOptions>
+                    </BarCode:C1BarCode>
+                    <Image x:Name="logo" 
+						Width="50" 
+						Height="50" 
+						Source="Resources/c1logo.png"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Visibility="{Binding ShowStatus, ElementName=category}"/>
+                </Grid>
+            </ScrollViewer>
+
+        </Grid>
+    </Grid>
+</UserControl>

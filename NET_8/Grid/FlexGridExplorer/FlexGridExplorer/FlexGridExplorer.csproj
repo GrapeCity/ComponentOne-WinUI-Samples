@@ -1,0 +1,297 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>FlexGridExplorer</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x86;x64;arm64</Platforms>
+    <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+    <UseWinUI>true</UseWinUI>
+    <ApplicationIcon>C1-ball.ico</ApplicationIcon>
+    <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
+    <AppxPackageSigningEnabled>False</AppxPackageSigningEnabled>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppxPackageSigningTimestampServerUrl>http://timestamp.digicert.com</AppxPackageSigningTimestampServerUrl>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <GenerateTestArtifacts>False</GenerateTestArtifacts>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
+    <AppInstallerUri>https://developer.mescius.com/demos</AppInstallerUri>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+    <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
+    <AppxBundle>Never</AppxBundle>
+    <AppxPackageDir>AppPackages\</AppxPackageDir>
+    <PackageCertificateKeyFile>FlexGridExplorer %28Package%29_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <GenerateAppxPackageOnBuild>True</GenerateAppxPackageOnBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove=".gclicx" />
+    <None Remove="C1-ball.ico" />
+    <None Remove="Images\Album.png" />
+    <None Remove="Images\Artist.png" />
+    <None Remove="Images\Collapsed.png" />
+    <None Remove="Images\default.png" />
+    <None Remove="Images\Expanded.png" />
+    <None Remove="Images\filter.svg" />
+    <None Remove="Images\LockScreenLogo.scale-200.png" />
+    <None Remove="Images\retro_TV_filled-50_light.png" />
+    <None Remove="Images\Song.png" />
+    <None Remove="Images\SplashScreen.scale-200.png" />
+    <None Remove="Images\Square150x150Logo.scale-200.png" />
+    <None Remove="Images\Square44x44Logo.scale-200.png" />
+    <None Remove="Images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <None Remove="Images\star.png" />
+    <None Remove="Images\StoreLogo.png" />
+    <None Remove="Images\Wide310x150Logo.scale-200.png" />
+    <None Remove="Package.appxmanifest" />
+    <None Remove="Resources\data.zip" />
+    <None Remove="Resources\Roboto-Regular.ttf" />
+    <None Remove="Themes\Generic.xaml" />
+    <None Remove="View\CellFreezing.xaml" />
+    <None Remove="View\CheckList.xaml" />
+    <None Remove="View\ColumnDefinitions.xaml" />
+    <None Remove="View\ColumnLayout.xaml" />
+    <None Remove="View\ColumnLayoutForm.xaml" />
+    <None Remove="View\ConditionalFormatting.xaml" />
+    <None Remove="View\CustomAppearance.xaml" />
+    <None Remove="View\CustomCells.xaml" />
+    <None Remove="View\CustomMerging.xaml" />
+    <None Remove="View\CustomSortIcon.xaml" />
+    <None Remove="View\EditConfirmation.xaml" />
+    <None Remove="View\EditCustomerForm.xaml" />
+    <None Remove="View\EditingForm.xaml" />
+    <None Remove="View\FilterRow.xaml" />
+    <None Remove="View\Financial.xaml" />
+    <None Remove="View\FullTextFilter.xaml" />
+    <None Remove="View\GettingStarted.xaml" />
+    <None Remove="View\Grouping.xaml" />
+    <None Remove="View\LiveUpdates.xaml" />
+    <None Remove="View\MouseHover.xaml" />
+    <None Remove="View\NewRow.xaml" />
+    <None Remove="View\OnDemand.xaml" />
+    <None Remove="View\Paging.xaml" />
+    <None Remove="View\RowDetails.xaml" />
+    <None Remove="View\SelectedItems.xaml" />
+    <None Remove="View\SelectionModes.xaml" />
+    <None Remove="View\StarSizing.xaml" />
+    <None Remove="View\TransposedGrid.xaml" />
+    <None Remove="View\Unbound.xaml" />
+    <None Remove="View\VirtualMode.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Include="Resources\data.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.WinUI.Accordion">
+      <Version>1.4.20233.668</Version>
+    </PackageReference>
+    <PackageReference Include="C1.WinUI.Core">
+      <Version>1.4.20233.668</Version>
+    </PackageReference>
+    <PackageReference Include="C1.WinUI.DataPager">
+      <Version>1.4.20233.668</Version>
+    </PackageReference>
+    <PackageReference Include="C1.WinUI.Grid">
+      <Version>1.4.20233.668</Version>
+    </PackageReference>
+    <PackageReference Include="C1.WinUI.Input">
+      <Version>1.4.20233.668</Version>
+    </PackageReference>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+    <PackageReference Include="PInvoke.User32" Version="0.7.124" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.1" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231008000" />
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="C1-ball.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Album.png" />
+    <Content Include="Images\Artist.png" />
+    <Content Include="Images\Collapsed.png" />
+    <Content Include="Images\default.png" />
+    <Content Include="Images\Expanded.png" />
+    <Content Include="Images\filter.svg" />
+    <Content Include="Images\LockScreenLogo.scale-200.png" />
+    <Content Include="Images\retro_TV_filled-50_light.png" />
+    <Content Include="Images\Song.png" />
+    <Content Include="Images\SplashScreen.scale-200.png" />
+    <Content Include="Images\Square150x150Logo.scale-200.png" />
+    <Content Include="Images\Square44x44Logo.scale-200.png" />
+    <Content Include="Images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Images\star.png" />
+    <Content Include="Images\StoreLogo.png" />
+    <Content Include="Images\Wide310x150Logo.scale-200.png" />
+    <Content Include="Resources\Roboto-Regular.ttf" />
+    <Resource Include="Images\Artist.png" />
+    <Resource Include="Images\Collapsed.png" />
+    <Resource Include="Images\Expanded.png" />
+    <Resource Include="Images\Song.png" />
+    <Resource Include="Images\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources\AppResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\EditCustomerForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="View\SelectedItems.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="View\TransposedGrid.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="View\VirtualMode.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\MouseHover.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\CustomSortIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\LiveUpdates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\Financial.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\Paging.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\CheckList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\NewRow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\CustomAppearance.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\OnDemand.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\Unbound.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\CustomMerging.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\CellFreezing.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\StarSizing.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\ColumnLayout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\FilterRow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\FullTextFilter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\RowDetails.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\Grouping.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\CustomCells.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\ConditionalFormatting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\EditingForm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\EditConfirmation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\SelectionModes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\ColumnDefinitions.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\GettingStarted.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>
