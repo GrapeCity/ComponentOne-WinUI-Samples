@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+    <TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>MenuExplorer</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -138,13 +137,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.2.20232.593</Version>
+      <Version>1.2.20233.657</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.2.20232.593</Version>
+      <Version>1.2.20233.657</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Menu">
-      <Version>1.2.20232.593</Version>
+      <Version>1.2.20233.657</Version>
     </PackageReference>
     <PackageReference Include="PInvoke.User32" Version="0.7.104" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.2.221209.1" />
@@ -364,16 +363,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
+    <Compile Update="Resources\AppResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
+      <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
+    <EmbeddedResource Update="Resources\AppResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

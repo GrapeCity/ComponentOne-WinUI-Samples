@@ -11,8 +11,7 @@
         </Style>
     </UserControl.Resources>
     <Grid>
-        <c1:C1Menu x:Name="VisualStudioMenu" BorderThickness="0 1 0 0" CornerRadius="0" Padding="8 0" AutoClose="True" DetectBoundaries="True"
-                   Orientation="Horizontal">
+        <c1:C1Menu x:Name="VisualStudioMenu" BorderThickness="0 1 0 0" CornerRadius="0" Padding="8 0" AutoClose="True" Orientation="Horizontal" VerticalAlignment="Top">
             <c1:C1MenuItem Header="File" >
                 <c1:C1MenuItem Header="New" >
                     <c1:C1MenuItem Header="Project...">

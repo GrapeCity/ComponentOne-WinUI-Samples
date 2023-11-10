@@ -504,6 +504,10 @@
     <value>マウスホバー</value>
     <comment>Mouse Hover</comment>
   </data>
+  <data name="Theme" xml:space="preserve">
+    <value>テーマ</value>
+    <comment>Theme</comment>
+  </data>	
   <data name="ShowSort" xml:space="preserve">
     <value>並べ替えアイコンの表示</value>
     <comment>Show sort icons</comment>
@@ -515,5 +519,25 @@
   <data name="VirtualModeTitle" xml:space="preserve">
     <value>仮想モード</value>
     <comment>Virtual Mode</comment>
+  </data>
+  <data name="SelectedItemsDescription" xml:space="preserve">
+    <value>あるグリッドの SelectedItem を別のコントロールにバインドする方法を示します。</value>
+    <comment>Shows how to bind the SelectedItems of one grid to another control</comment>
+  </data>
+  <data name="SelectedItemsTitle" xml:space="preserve">
+    <value>選択された項目</value>
+    <comment>Selected Items</comment>
+  </data>
+  <data name="AllCustomersLabel" xml:space="preserve">
+    <value>すべての顧客</value>
+    <comment>All Customers</comment>
+  </data>
+  <data name="SelectCustomersMessage" xml:space="preserve">
+    <value>左側のグリッドで顧客を選択してください。</value>
+    <comment>Please select customers on the grid at the left.</comment>
+  </data>
+  <data name="SelectedCustomersLabel" xml:space="preserve">
+	<value>選択された顧客</value>
+    <comment>Selected customers</comment>
   </data>
 </root>

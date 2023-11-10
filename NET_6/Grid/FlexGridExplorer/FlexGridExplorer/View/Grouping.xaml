@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid>
-        <c1:FlexGrid x:Name="grid" AutoGenerateColumns="False" ShowOutlineBar="True" ColumnHeaderGridLinesVisibility="Horizontal" GridLinesVisibility="Vertical" IsReadOnly="True">
+        <c1:FlexGrid x:Name="grid" AutoGenerateColumns="False" ShowOutlineBar="True" ColumnHeaderGridLinesVisibility="Horizontal" GridLinesVisibility="Vertical" IsReadOnly="True" GroupSummariesPosition="Bottom">
             <c1:FlexGrid.Columns>
                 <c1:GridColumn Binding="Active" Width="Auto"/>
                 <c1:GridColumn Binding="Name" Width="*"/>

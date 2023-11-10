@@ -1,10 +1,11 @@
 ﻿using Microsoft.UI.Xaml.Controls;
+using System;
 
 namespace MenuExplorer
 {
     public class SampleItem
     {
-        public SampleItem(string name, string title, Control sample)
+        public SampleItem(string name, string title, Lazy<UserControl> sample)
         {
             Name = name;
             Title = title;
@@ -12,7 +13,8 @@ namespace MenuExplorer
         }
         public string Name { get; set; }
         public string Title { get; set; }
-        public string Description => Sample.Tag?.ToString();
-        public Control Sample { get; set; }
+        public string Description => Sample.Value.Tag?.ToString();
+        public Lazy<UserControl> Sample { get; set; }
     }
+
 }

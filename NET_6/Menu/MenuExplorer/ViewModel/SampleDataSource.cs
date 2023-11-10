@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MenuExplorer.Resources;
+using Microsoft.UI.Xaml.Controls;
+using System;
 using System.Collections.ObjectModel;
 
 namespace MenuExplorer
@@ -9,12 +11,12 @@ namespace MenuExplorer
         {
             AllItems = new ObservableCollection<SampleItem>
             {
-                new SampleItem(Properties.Resources.DemoMenuTitle,
-                                Properties.Resources.DemoMenuTitle,
-                                new DemoMenu()),
-                new SampleItem(Properties.Resources.CustomMenuAppearanceTitle,
-                                Properties.Resources.CustomMenuAppearanceTitle,
-                                new CustomMenuAppearance()),                
+                new SampleItem(AppResources.DemoMenuTitle,
+                                AppResources.DemoMenuTitle,
+                                new System.Lazy<UserControl>(() => new DemoMenu())),
+                new SampleItem(AppResources.CustomMenuAppearanceTitle,
+                                AppResources.CustomMenuAppearanceTitle,
+                                new System.Lazy<UserControl>(() => new CustomMenuAppearance())),
                 //new SampleItem(Properties.Resources.DropDownMenuTitle,
                 //                Properties.Resources.DropDownMenuTitle,
                 //                new DropDownMenu()),

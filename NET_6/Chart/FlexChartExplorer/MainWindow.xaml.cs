@@ -1,53 +1,55 @@
-// Copyright (c) Microsoft Corporation and Contributors.
-// Licensed under the MIT License.
-
-using FlexChartExplorer.Data;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
-using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 
 namespace FlexChartExplorer
 {
 #pragma warning disable 1591
-    /// <summary>
-    /// An empty window that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainWindow : Window
     {
         public MainWindow()
         {
             this.InitializeComponent();
+            
             Title = "WinUI FlexChart Explorer";
+
+            root.DataContext = new SampleDataSource();
+            themes.Items.Add("Default");
+            themes.Items.Add("Light");
+            themes.Items.Add("Dark");
         }
 
-        private void samples_Loaded(object sender, RoutedEventArgs e)
+        private void OnRootLoaded(object sender, RoutedEventArgs e)
         {
-            var list = SamplesList.GetSamples();
-            samples.ItemsSource = list;
-            samples.ItemInvoked += Samples_ItemInvoked;
+            themes.SelectedIndex = (int)(root.XamlRoot.Content as FrameworkElement).RequestedTheme;
 
-            sampleGrid.DataContext = samples.SelectedItem = list[0];
+            treeViewSamples.SelectedNode = treeViewSamples.RootNodes[0];
+            grid.DataContext = treeViewSamples.RootNodes[0].Content as ISampleItem;
         }
 
-        private void Samples_ItemInvoked(TreeView sender, TreeViewItemInvokedEventArgs args)
+        private void lbSamples_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            sampleGrid.DataContext = args.InvokedItem;
+            if (e.AddedItems.Count < 1) 
+                return;
+            grid.DataContext = e.AddedItems[0] as ISampleItem;
         }
 
-        private void sampleGrid_DataContextChanged(FrameworkElement sender, DataContextChangedEventArgs args)
+        private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            (root.XamlRoot.Content as FrameworkElement).RequestedTheme = (ElementTheme)themes.SelectedIndex;
+        }
 
+        private void ItemInvoked(object sender, TreeViewItemInvokedEventArgs e)
+        {
+            var sample = e.InvokedItem as ISampleItem;
+
+            if (sample?.Sample != null)
+                grid.DataContext = sample;
+            else
+            {
+                treeViewSamples.Expand(treeViewSamples.SelectedNode);
+                //treeViewSamples.SelectedNode = treeViewSamples.SelectedNode.Children[0];
+            }
         }
     }
 }

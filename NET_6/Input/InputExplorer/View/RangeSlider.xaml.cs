@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml.Controls;
+﻿using InputExplorer.Resources;
+using Microsoft.UI.Xaml.Controls;
 
 namespace InputExplorer
 {
@@ -10,7 +11,7 @@ namespace InputExplorer
         public RangeSlider()
         {
             InitializeComponent();
-            Tag = Properties.Resources.RangeSlider;
+            Tag = AppResources.RangeSlider;
         }
     }
 }

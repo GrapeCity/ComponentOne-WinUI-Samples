@@ -103,8 +103,7 @@
     </UserControl.Resources>
     <Grid>
         <!-- Visual Studio menu sample -->
-        <c1:C1Menu x:Name="VisualStudioMenu" Margin="8" AutoClose="True" DetectBoundaries="True" Orientation="Horizontal"
-                   Style="{StaticResource ClassicStyle}">
+        <c1:C1Menu x:Name="VisualStudioMenu" Margin="8" AutoClose="True" Orientation="Horizontal" Style="{StaticResource ClassicStyle}" VerticalAlignment="Top">
             <c1:C1MenuItem Header="File" >
                 <c1:C1MenuItem Header="New">
                     <c1:C1MenuItem Header="Project...">

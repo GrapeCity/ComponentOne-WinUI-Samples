@@ -421,4 +421,10 @@
   <data name="SelectedCustomersLabel" xml:space="preserve">
     <value>Selected customers</value>
   </data>
+  <data name="TransposedGridDescription" xml:space="preserve">
+    <value>Show how to transpose columns and rows so the data items are shown as columns.</value>
+  </data>
+  <data name="TransposedGridTitle" xml:space="preserve">
+    <value>Transposed Grid</value>
+  </data>
 </root>

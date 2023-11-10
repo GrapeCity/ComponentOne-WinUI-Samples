@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml.Controls;
+﻿using InputExplorer.Resources;
+using Microsoft.UI.Xaml.Controls;
 
 namespace InputExplorer
 {
@@ -10,7 +11,7 @@ namespace InputExplorer
         public InputView()
         {
             InitializeComponent();
-            Tag = Properties.Resources.Input;
+            Tag = AppResources.Input;
         }
 
         private void C1Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)

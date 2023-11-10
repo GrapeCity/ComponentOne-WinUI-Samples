@@ -33,3 +33,4 @@ Shows the following samples:
 * MouseHover
 * VirtualMode
 * SelectedItems
+* TransposedGrid

@@ -195,4 +195,7 @@ That allows to filter FlexGrid content based on multiple conditions selected in 
     <value>Save filter</value>
     <comment>Button's text.</comment>
   </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Theme</value>
+  </data>
 </root>

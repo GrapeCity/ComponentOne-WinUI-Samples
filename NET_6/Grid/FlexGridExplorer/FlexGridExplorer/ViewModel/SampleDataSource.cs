@@ -13,8 +13,6 @@ namespace FlexGridExplorer
             _allItems.Add(new SampleItem(AppResources.GettingStartedTitle,
                 AppResources.GettingStartedTitle,
                 new System.Lazy<UserControl>(() => new GettingStarted())));
-            _ = _allItems[0].Sample.Value; //Force first page is loaded immediately
-
             _allItems.Add(new SampleItem(AppResources.ColumnDefinitionTitle,
                 AppResources.ColumnDefinitionTitle,
                 new System.Lazy<UserControl>(() => new ColumnDefinitions())));
@@ -39,10 +37,6 @@ namespace FlexGridExplorer
             _allItems.Add(new SampleItem(AppResources.RowDetailsTitle,
                 AppResources.RowDetailsTitle,
                 new System.Lazy<UserControl>(() => new RowDetails())));
-            //_allItems.Add(new SampleItem(AppResources.FilterTitle,
-            //    AppResources.FilterTitle,
-            //    AppResources.FilterDescription,
-            //    new Filter()));
             _allItems.Add(new SampleItem(AppResources.FullTextFilterTitle,
                 AppResources.FullTextFilterTitle,
                 new System.Lazy<UserControl>(() => new FullTextFilter())));
@@ -97,6 +91,10 @@ namespace FlexGridExplorer
             _allItems.Add(new SampleItem(AppResources.SelectedItemsTitle,
                 AppResources.SelectedItemsTitle,
                 new System.Lazy<UserControl>(() => new SelectedItems())));
+            _allItems.Add(new SampleItem(AppResources.TransposedGridTitle,
+                AppResources.TransposedGridTitle,
+                new System.Lazy<UserControl>(() => new TransposedGrid())));
+            _ = _allItems[0].Sample.Value; //Force first page is loaded immediately
         }
 
         public ObservableCollection<SampleItem> AllItems

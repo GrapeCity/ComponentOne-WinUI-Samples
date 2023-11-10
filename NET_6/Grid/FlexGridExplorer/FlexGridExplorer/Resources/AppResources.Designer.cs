@@ -889,6 +889,24 @@ namespace FlexGridExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Show how to transpose columns and rows so the data items are shown as columns..
+        /// </summary>
+        public static string TransposedGridDescription {
+            get {
+                return ResourceManager.GetString("TransposedGridDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Transposed Grid.
+        /// </summary>
+        public static string TransposedGridTitle {
+            get {
+                return ResourceManager.GetString("TransposedGridTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tuesday.
         /// </summary>
         public static string Tuesday {

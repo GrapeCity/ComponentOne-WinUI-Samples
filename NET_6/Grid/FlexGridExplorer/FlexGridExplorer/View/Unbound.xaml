@@ -7,5 +7,5 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <c1:FlexGrid x:Name="grid" HeadersVisibility="All" SelectionMode="CellRange" GridLinesVisibility="None" RowHeaderGridLinesVisibility="Vertical" ColumnHeaderGridLinesVisibility="Horizontal" TopLeftHeaderGridLinesVisibility="Horizontal" ColumnHeaderSelectedBackground="{ThemeResource AppBarItemPointerOverBackgroundThemeBrush}" RowHeaderSelectedBackground="{ThemeResource AppBarItemPointerOverBackgroundThemeBrush}"/>
+    <c1:FlexGrid x:Name="grid" HeadersVisibility="All" SelectionMode="CellRange" GridLinesVisibility="None" RowHeaderGridLinesVisibility="Vertical" ColumnHeaderGridLinesVisibility="Horizontal" TopLeftHeaderGridLinesVisibility="Horizontal" ColumnHeaderSelectedBackground="{ThemeResource ListViewItemBackgroundSelected}" RowHeaderSelectedBackground="{ThemeResource ListViewItemBackgroundSelected}"/>
 </UserControl>

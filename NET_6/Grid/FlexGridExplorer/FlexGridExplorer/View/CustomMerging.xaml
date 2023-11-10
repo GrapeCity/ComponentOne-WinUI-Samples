@@ -13,7 +13,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition />
         </Grid.RowDefinitions>
-        <c1:FlexGrid x:Name="grid" IsReadOnly="True" AllowMerging="All" HeadersVisibility="All" GridLinesVisibility="All" RowHeaderGridLinesVisibility="All" ColumnHeaderGridLinesVisibility="Horizontal" TopLeftHeaderGridLinesVisibility="Horizontal" SelectionMode="CellRange" />
+        <c1:FlexGrid x:Name="grid" IsReadOnly="True" AllowMerging="All" HeadersVisibility="All" GridLinesVisibility="All" RowHeaderGridLinesVisibility="All" ColumnHeaderGridLinesVisibility="Horizontal" TopLeftHeaderGridLinesVisibility="Horizontal" SelectionMode="CellRange" BorderThickness="1" CornerRadius="8" Margin="4"/>
         <Grid Grid.Row="1" Margin="5">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />

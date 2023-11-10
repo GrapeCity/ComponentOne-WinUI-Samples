@@ -8,17 +8,6 @@
              xmlns:grid="using:C1.WinUI.Grid"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <!--<UserControl.Resources>
-        <c1:C1IconTemplate x:Key="FilterIcon">
-            <c1:C1BitmapIcon Source="..\Resources\filter.png" ShowAsMonochrome="False"/>
-        </c1:C1IconTemplate>
-        <c1:C1IconTemplate x:Key="SaveIcon">
-            <c1:C1BitmapIcon Source="..\Resources\save.png" ShowAsMonochrome="False" />
-        </c1:C1IconTemplate>
-        <c1:C1IconTemplate x:Key="ResetIcon">
-            <c1:C1BitmapIcon Source="..\Resources\refresh.png" ShowAsMonochrome="False" />
-        </c1:C1IconTemplate>
-    </UserControl.Resources>-->
     <Grid Name="LayoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>

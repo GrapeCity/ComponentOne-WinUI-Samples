@@ -57,7 +57,7 @@
                     <ComboBox x:Name="themes" VerticalAlignment="Center" SelectionChanged="OnSelectionChanged" Margin="4" Visibility="Visible"/>
                 </StackPanel>
             </Grid>
-            <Border Grid.Row="1" BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}" BorderThickness="0 1 0 0">
+            <Border Grid.Row="1" BorderBrush="{ThemeResource ControlElevationBorderBrush}" BorderThickness="0 1 0 0">
                 <TextBlock Text="{Binding Description}" Style="{StaticResource descriptionStyle}" />
             </Border>
             <Border Grid.Row="2">

@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+    <TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>FlexGridExplorer</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -18,7 +17,7 @@
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
     <GenerateTestArtifacts>False</GenerateTestArtifacts>
     <AppxBundlePlatforms>x64</AppxBundlePlatforms>
-    <AppInstallerUri>https://www.grapecity.com/demos</AppInstallerUri>
+    <AppInstallerUri>https://developer.mescius.com/demos</AppInstallerUri>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
     <AppxBundle>Never</AppxBundle>
@@ -76,6 +75,7 @@
     <None Remove="View\SelectedItems.xaml" />
     <None Remove="View\SelectionModes.xaml" />
     <None Remove="View\StarSizing.xaml" />
+    <None Remove="View\TransposedGrid.xaml" />
     <None Remove="View\Unbound.xaml" />
     <None Remove="View\VirtualMode.xaml" />
   </ItemGroup>
@@ -90,19 +90,19 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>1.2.20232.593</Version>
+      <Version>1.2.20233.657</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.2.20232.593</Version>
+      <Version>1.2.20233.657</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DataPager">
-      <Version>1.2.20232.593</Version>
+      <Version>1.2.20233.657</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid">
-      <Version>1.2.20232.593</Version>
+      <Version>1.2.20233.657</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.2.20232.593</Version>
+      <Version>1.2.20233.657</Version>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
     <PackageReference Include="PInvoke.User32" Version="0.7.124" />
@@ -155,6 +155,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Update="View\SelectedItems.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="View\TransposedGrid.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>
     <Page Update="View\VirtualMode.xaml">

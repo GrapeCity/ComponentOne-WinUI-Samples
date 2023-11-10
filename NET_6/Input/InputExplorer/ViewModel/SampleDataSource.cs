@@ -1,4 +1,6 @@
-﻿using System.Collections.ObjectModel;
+﻿using InputExplorer.Resources;
+using Microsoft.UI.Xaml.Controls;
+using System.Collections.ObjectModel;
 
 namespace InputExplorer
 {
@@ -8,29 +10,29 @@ namespace InputExplorer
         {
             AllItems = new ObservableCollection<SampleItem>
             {
-                new SampleItem(Properties.Resources.InputTitle,
-                                Properties.Resources.InputTitle,
-                                new InputView()),
-                new SampleItem(Properties.Resources.RangeSliderTitle,
-                                Properties.Resources.RangeSliderTitle,
-                                new RangeSlider()),
-                //new SampleItem(Properties.Resources.MaskedDemoTitle,
-                //                Properties.Resources.MaskedDemoTitle,
+                new SampleItem(AppResources.InputTitle,
+                                AppResources.InputTitle,
+                                new System.Lazy<UserControl>(() => new InputView())),
+                new SampleItem(AppResources.RangeSliderTitle,
+                                AppResources.RangeSliderTitle,
+                                new System.Lazy<UserControl>(() => new RangeSlider())),
+                //new SampleItem(AppResources.MaskedDemoTitle,
+                //                AppResources.MaskedDemoTitle,
                 //                new DemoMaskedTextBox()),
-                //new SampleItem(Properties.Resources.TagEditorDemoTitle,
-                //                Properties.Resources.TagEditorDemoTitle,
+                //new SampleItem(AppResources.TagEditorDemoTitle,
+                //                AppResources.TagEditorDemoTitle,
                 //                new DemoTagEditor()),
 
-                //new SampleItem(Properties.Resources.CheckListTitle,
-                //                Properties.Resources.CheckListTitle,
+                //new SampleItem(AppResources.CheckListTitle,
+                //                AppResources.CheckListTitle,
                 //                new C1CheckList()),
                 
-                //new SampleItem(Properties.Resources.MultiSelect,
-                //                Properties.Resources.MultiSelect,
+                //new SampleItem(AppResources.MultiSelect,
+                //                AppResources.MultiSelect,
                 //                new C1MultiSelect()),
 
-                //new SampleItem(Properties.Resources.ValidationFormTitle,
-                //                Properties.Resources.ValidationFormTitle,
+                //new SampleItem(AppResources.ValidationFormTitle,
+                //                AppResources.ValidationFormTitle,
                 //                new ValidationForm()),
             };
         }
