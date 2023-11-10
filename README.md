@@ -2,7 +2,7 @@
 
 Add enterprise features to your new desktop applications based on the latest WinUI 3.0 framework.
 
-This repository contains the samples for [ComponentOne WinUI Edition](https://www.grapecity.com/componentone/winui-controls). These samples provide complete implementation details for the UI control features. They are also included with the full download and install from grapecity.com/componentone. 
+This repository contains the samples for [ComponentOne WinUI Edition](https://developer.mescius.com/componentone/winui-controls). These samples provide complete implementation details for the UI control features. They are also included with the full download and install from developer.mescius.com/componentone. 
 
 The samples reference, but do not include, the control packages. The control packages can be downloaded from nuget.org.
 
@@ -19,9 +19,9 @@ This will install any needed dependencies, build the project, and run the projec
 
 ## Resources
 
-* Product Details: https://www.grapecity.com/componentone/winui-controls
-* Documentation: https://www.grapecity.com/componentone/docs/winui/online-winui/overview.html
-* Support Forum: https://www.grapecity.com/forums/winui-edition
+* Product Details: https://developer.mescius.com/componentone/winui-controls
+* Documentation: https://developer.mescius.com/componentone/docs/winui/online-winui/overview.html
+* Support Forum: https://developer.mescius.com/forums/winui-edition
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/dotnet/winforms/blob/master/LICENSE.TXT)
  
