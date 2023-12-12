@@ -90,19 +90,19 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>1.4.20233.668</Version>
+      <Version>1.4.20233.673</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.4.20233.668</Version>
+      <Version>1.4.20233.673</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DataPager">
-      <Version>1.4.20233.668</Version>
+      <Version>1.4.20233.673</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid">
-      <Version>1.4.20233.668</Version>
+      <Version>1.4.20233.673</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.4.20233.668</Version>
+      <Version>1.4.20233.673</Version>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
     <PackageReference Include="PInvoke.User32" Version="0.7.124" />

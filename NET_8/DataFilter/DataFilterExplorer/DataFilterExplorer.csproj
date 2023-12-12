@@ -61,32 +61,32 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection" Version="7.0.20233.174" />
-    <PackageReference Include="C1.DataCollection.BindingList" Version="7.0.20233.174" />
-    <PackageReference Include="C1.DataCollection.EntityFrameworkCore" Version="7.0.20233.174" />
+    <PackageReference Include="C1.DataCollection" Version="7.0.20233.175" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="7.0.20233.175" />
+    <PackageReference Include="C1.DataCollection.EntityFrameworkCore" Version="7.0.20233.175" />
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>1.4.20233.668</Version>
+      <Version>1.4.20233.673</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.4.20233.668</Version>
+      <Version>1.4.20233.673</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DataFilter">
-      <Version>1.4.20233.668</Version>
+      <Version>1.4.20233.673</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DateTimeEditors">
-      <Version>1.4.20233.668</Version>
+      <Version>1.4.20233.673</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid">
-      <Version>1.4.20233.668</Version>
+      <Version>1.4.20233.673</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.GridControl">
-      <Version>1.4.20233.668</Version>
+      <Version>1.4.20233.673</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.4.20233.668</Version>
+      <Version>1.4.20233.673</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Menu">
-      <Version>1.4.20233.668</Version>
+      <Version>1.4.20233.673</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.5" />
