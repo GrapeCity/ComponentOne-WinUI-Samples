@@ -16,15 +16,17 @@ namespace DataFilterExplorer
     {
         private string _fileName = "Expressions.xml";
         private DataTable _carsTable;
+        private C1DataCollection<Car> _source;
+
         public CarsListControl()
         {
             InitializeComponent();
             Tag = AppResources.CarListDescription;
             //Get Cars list
             _carsTable = DataProvider.GetCarTable();
-            var data = new C1DataCollection<Car>(DataProvider.GetCarDataCollection(_carsTable).ToList());
-            c1DataFilter.ItemsSource = data;
-            flexGrid.ItemsSource = data;
+            _source = new C1DataCollection<Car>(DataProvider.GetCarDataCollection(_carsTable).ToList());
+            c1DataFilter.ItemsSource = _source;
+            flexGrid.ItemsSource = _source;
 
             _fileName = Windows.Storage.UserDataPaths.GetDefault().LocalAppData + "/Temp/Expressions.xml";
             if (System.IO.File.Exists(_fileName))
@@ -67,6 +69,11 @@ namespace DataFilterExplorer
                     taFilter.DisplayMemberPath = "DisplayValue";
                     taFilter.ValueMemberPath = "Value";
                     taFilter.ShowSelectAll = false;
+                    break;
+                case nameof(Car.DateProductionLine):
+                    var dateProductionLine = (DateTimeRangeFilter)e.Filter;
+                    dateProductionLine.Maximum = _source.Max(x => ((Car)x).DateProductionLine);
+                    dateProductionLine.Minimum = _source.Min(x => ((Car)x).DateProductionLine);
                     break;
                 case "Price":
                     var priceFilter = (RangeFilter)e.Filter;

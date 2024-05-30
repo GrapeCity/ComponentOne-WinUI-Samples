@@ -27,19 +27,9 @@ namespace MenuExplorer
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
             m_window = new MainWindow();
-            this.LoadIcon("C1-ball.ico");
+            m_window.AppWindow.SetIcon("C1-ball.ico");
             m_window.Title = "MenuExplorer";
             m_window.Activate();
-        }
-
-        private void LoadIcon(string iconName)
-        {
-            //Get the Window's HWND
-            var hwnd = WinRT.Interop.WindowNative.GetWindowHandle(m_window);
-            var hIcon = PInvoke.User32.LoadImage(System.IntPtr.Zero, iconName,
-                      PInvoke.User32.ImageType.IMAGE_ICON, 16, 16, PInvoke.User32.LoadImageFlags.LR_LOADFROMFILE);
-
-            PInvoke.User32.SendMessage(hwnd, PInvoke.User32.WindowMessage.WM_SETICON, (System.IntPtr)0, hIcon);
         }
 
         private Window m_window;

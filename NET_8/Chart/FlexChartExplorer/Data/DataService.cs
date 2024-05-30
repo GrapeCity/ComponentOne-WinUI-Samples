@@ -15,6 +15,9 @@ namespace FlexChartExplorer.Data
         [DataMember(Name = "country")]
         public string Country { get; set; }
 
+        [DataMember(Name = "continent")]
+        public string Continent { get; set; }
+
         [DataMember(Name = "pop")]
         public int Population { get; set; }
 

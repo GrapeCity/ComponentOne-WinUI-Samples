@@ -31,6 +31,9 @@ namespace FlexGridExplorer
             _allItems.Add(new SampleItem(AppResources.CustomCellsTitle,
                 AppResources.CustomCellsTitle,
                 new System.Lazy<UserControl>(() => new CustomCells())));
+            _allItems.Add(new SampleItem(AppResources.HierarchicalRowsTitle,
+                AppResources.HierarchicalRowsTitle,
+                new System.Lazy<UserControl>(() => new HierarchicalRows())));
             _allItems.Add(new SampleItem(AppResources.GroupingTitle,
                 AppResources.GroupingTitle,
                 new System.Lazy<UserControl>(() => new Grouping())));

@@ -42,8 +42,10 @@ namespace FlexChartExplorer
                     new SampleItem<BreakEven>(),
                     new SampleItem<ErrorBars>(),
                     new SampleItem<Funnel>(),
+                    new SampleItem<HistogramChart>(),
                     new SampleItem<Radar>(),    
-                    new SampleItem<SunburstChart>()
+                    new SampleItem<SunburstChart>(),
+                    new SampleItem<WaterfallChart>()
                 }
             });
 
@@ -53,6 +55,7 @@ namespace FlexChartExplorer
                     Children = new List<ISampleItem>()
                     {
                         new SampleItem<AxisLabels>(),
+                        new SampleItem<AxisGroups>(),
                         new SampleItem<LogAxes>(),
                         new SampleItem<TwoYAxes>(),
                         new SampleItem<AxisScrollbar>()
@@ -67,6 +70,7 @@ namespace FlexChartExplorer
                     {
                         new SampleItem<Selection>(),
                         new SampleItem<PieSelection>(),
+                        new SampleItem<HitTest>(),
                         new SampleItem<Zoom>(),
                         new SampleItem<LineMarker>(),
                         new SampleItem<RangeSelector>(),
@@ -85,7 +89,9 @@ namespace FlexChartExplorer
                         new SampleItem<ExtendedPalettes>(),
                         new SampleItem<DataLabels>(),
                         new SampleItem<CustomDataLabels>(),
+                        new SampleItem<Legend>(),
                         new SampleItem<Pareto>(),
+                        new SampleItem<TrendLineDemo>()
                     }
             });
         }

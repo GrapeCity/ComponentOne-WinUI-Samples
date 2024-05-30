@@ -90,6 +90,33 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The sample below demonstrates grouping of axis labels in FlexChart. You can set the Axis.GroupNames to the name of the property by which the axis labels should be grouped. To display more than one group level on the axis specify a comma-separated string to the GroupNames property..
+        /// </summary>
+        public static string AxisGroupsDescription {
+            get {
+                return ResourceManager.GetString("AxisGroupsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Axis Groups (Hierarchical Axes).
+        /// </summary>
+        public static string AxisGroupsHeader {
+            get {
+                return ResourceManager.GetString("AxisGroupsHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Axis Groups.
+        /// </summary>
+        public static string AxisGroupsTitle {
+            get {
+                return ResourceManager.GetString("AxisGroupsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample shows various Axis options to avoid label overlapping..
         /// </summary>
         public static string AxisLabelsDescription {
@@ -312,6 +339,43 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A Histogram chart is used to study the distribution of non-categorical data by dividing it into bins of specified width. It plots the frequency of data items that fall in each of these bins..
+        /// </summary>
+        public static string HistogramChartDescription {
+            get {
+                return ResourceManager.GetString("HistogramChartDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Histogram.
+        /// </summary>
+        public static string HistogramChartTitle {
+            get {
+                return ResourceManager.GetString("HistogramChartTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The sample below demonstrates the use of FlexChart&apos;s HitTest method.
+        ///The HitTest method takes a point and returns the nearest chart element. It can be used to provide interactive features such as clickable regions, drill-downs, etc. Move pointer over chart to see information about the chart element that is closest to the mouse..
+        /// </summary>
+        public static string HitTestDescription {
+            get {
+                return ResourceManager.GetString("HitTestDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hit Test.
+        /// </summary>
+        public static string HitTestTitle {
+            get {
+                return ResourceManager.GetString("HitTestTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample below shows using FlexChart&apos;s SaveImage method, saving the chart to a Stream which is further used to export the chart as an image.
         ///
         ///FlexChart supports saving charts into multiple formats like JPG, PNG and SVG..
@@ -355,6 +419,15 @@ namespace FlexChartExplorer.Resources {
         public static string IntroTitle {
             get {
                 return ResourceManager.GetString("IntroTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The sample shows how you can use the main legend properties..
+        /// </summary>
+        public static string LegendDescription {
+            get {
+                return ResourceManager.GetString("LegendDescription", resourceCulture);
             }
         }
         
@@ -599,6 +672,24 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The sample below shows using TrendLines in FlexChart. You can use different trend line types by setting the FitType property of TrendLine..
+        /// </summary>
+        public static string TrendLineDemoDescription {
+            get {
+                return ResourceManager.GetString("TrendLineDemoDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trend Line.
+        /// </summary>
+        public static string TrendLineDemoTitle {
+            get {
+                return ResourceManager.GetString("TrendLineDemoTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample shows the FlexChart with two y-axes..
         /// </summary>
         public static string TwoYAxesDescription {
@@ -613,6 +704,24 @@ namespace FlexChartExplorer.Resources {
         public static string TwoYAxesTitle {
             get {
                 return ResourceManager.GetString("TwoYAxesTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The sample shows Waterfall Series in FlexChart. The Waterfall series is normally used to demonstrate how the starting position either increases or decreases through a series of changes..
+        /// </summary>
+        public static string WaterfallChartDescription {
+            get {
+                return ResourceManager.GetString("WaterfallChartDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Waterfall.
+        /// </summary>
+        public static string WaterfallChartTitle {
+            get {
+                return ResourceManager.GetString("WaterfallChartTitle", resourceCulture);
             }
         }
         

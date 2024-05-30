@@ -11,6 +11,7 @@
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
     <UseRidGraph>true</UseRidGraph>
+    <ApplicationIcon>C1-ball.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -20,6 +21,7 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="C1-ball.ico" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FlexChartExplorer.gclicx" />
@@ -28,18 +30,18 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Chart">
-      <Version>1.4.20233.673</Version>
+      <Version>1.5.20241.803</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.4.20233.673</Version>
+      <Version>1.5.20241.803</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.4.20233.673</Version>
+      <Version>1.5.20241.803</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Rendering">
-      <Version>1.4.20233.673</Version>
+      <Version>1.5.20241.803</Version>
     </PackageReference>
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231008000" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240404000" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
   <!-- 
@@ -72,6 +74,22 @@
     <Page Update="Samples\Intro.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Update="View\AxisGroups.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\HistorgramChart.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="View\WaterfallChart.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="View\Legend.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="View\TrendLineDemo.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
     <Page Update="View\BoxWhisker.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
@@ -84,6 +102,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\BreakEven.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="View\HitTest.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>
     <Page Update="View\SunburstChart.xaml">

@@ -128,6 +128,15 @@ For example,the chart below has three zones created in the chart's Rendering eve
   <data name="AnimationDescription" xml:space="preserve">
     <value>The sample shows animation when loading or updating data in FlexChart control.</value>
   </data>
+  <data name="AxisGroupsDescription" xml:space="preserve">
+    <value>The sample below demonstrates grouping of axis labels in FlexChart. You can set the Axis.GroupNames to the name of the property by which the axis labels should be grouped. To display more than one group level on the axis specify a comma-separated string to the GroupNames property.</value>
+  </data>
+  <data name="AxisGroupsHeader" xml:space="preserve">
+    <value>Axis Groups (Hierarchical Axes)</value>
+  </data>
+  <data name="AxisGroupsTitle" xml:space="preserve">
+    <value>Axis Groups</value>
+  </data>
   <data name="AxisLabelsDescription" xml:space="preserve">
     <value>The sample shows various Axis options to avoid label overlapping.</value>
   </data>
@@ -206,6 +215,19 @@ To create bubble charts with the FlexChart control, you must set the binding pro
   <data name="FunnelTitle" xml:space="preserve">
     <value>Funnel Chart</value>
   </data>
+  <data name="HistogramChartDescription" xml:space="preserve">
+    <value>A Histogram chart is used to study the distribution of non-categorical data by dividing it into bins of specified width. It plots the frequency of data items that fall in each of these bins.</value>
+  </data>
+  <data name="HistogramChartTitle" xml:space="preserve">
+    <value>Histogram</value>
+  </data>
+  <data name="HitTestDescription" xml:space="preserve">
+    <value>The sample below demonstrates the use of FlexChart's HitTest method.
+The HitTest method takes a point and returns the nearest chart element. It can be used to provide interactive features such as clickable regions, drill-downs, etc. Move pointer over chart to see information about the chart element that is closest to the mouse.</value>
+  </data>
+  <data name="HitTestTitle" xml:space="preserve">
+    <value>Hit Test</value>
+  </data>
   <data name="ImageExportDescription" xml:space="preserve">
     <value>The sample below shows using FlexChart's SaveImage method, saving the chart to a Stream which is further used to export the chart as an image.
 
@@ -222,6 +244,9 @@ FlexChart supports saving charts into multiple formats like JPG, PNG and SVG.</v
   </data>
   <data name="IntroTitle" xml:space="preserve">
     <value>Intro</value>
+  </data>
+  <data name="LegendDescription" xml:space="preserve">
+    <value>The sample shows how you can use the main legend properties.</value>
   </data>
   <data name="LineMarkerDescription" xml:space="preserve">
     <value>The LineMarker class allows you to add a mouse-driven cursor to your charts. The cursor consists of a text element used to display information about the point under the mouse and optional lines to indicate the exact position of the mouse.</value>
@@ -307,11 +332,23 @@ To create multiple pie charts, just specify several comma-separated properties i
   <data name="TreeMapTitle" xml:space="preserve">
     <value>TreeMap</value>
   </data>
+  <data name="TrendLineDemoDescription" xml:space="preserve">
+    <value>The sample below shows using TrendLines in FlexChart. You can use different trend line types by setting the FitType property of TrendLine.</value>
+  </data>
+  <data name="TrendLineDemoTitle" xml:space="preserve">
+    <value>Trend Line</value>
+  </data>
   <data name="TwoYAxesDescription" xml:space="preserve">
     <value>The sample shows the FlexChart with two y-axes.</value>
   </data>
   <data name="TwoYAxesTitle" xml:space="preserve">
     <value>Two Y Axes</value>
+  </data>
+  <data name="WaterfallChartDescription" xml:space="preserve">
+    <value>The sample shows Waterfall Series in FlexChart. The Waterfall series is normally used to demonstrate how the starting position either increases or decreases through a series of changes.</value>
+  </data>
+  <data name="WaterfallChartTitle" xml:space="preserve">
+    <value>Waterfall</value>
   </data>
   <data name="ZoomDescription" xml:space="preserve">
     <value>The sample shows how to implement a custom zoom for the FlexChart control. Use the mouse to select a rectangular area on the plot area. The chart will zoom in on the selected area. When you are done, click the 'Reset' button below the chart to return to the original view.</value>

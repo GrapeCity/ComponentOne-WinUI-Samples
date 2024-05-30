@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -281,10 +281,6 @@
     <value>行の詳細</value>
     <comment>Row Details</comment>
   </data>
-  <data name="Save" xml:space="preserve">
-    <value>保存</value>
-    <comment>Save</comment>
-  </data>
   <data name="SearchPlaceholderText" xml:space="preserve">
     <value>YouTube で検索する動画のテキストを入力</value>
     <comment>Enter text to search videos on YouTube</comment>
@@ -423,27 +419,6 @@
     <value>ライブ更新</value>
     <comment>Live updates</comment>
   </data>
-  <data name="ColorUpdates" xml:space="preserve">
-    <value>色分けされた更新</value>
-  </data>
-  <data name="ExportDescription" xml:space="preserve">
-    <value>CSV、テキスト、および HTML 形式でエクスポートする方法を示します。</value>
-  </data>
-  <data name="ExportTitle" xml:space="preserve">
-    <value>エクスポート</value>
-  </data>
-  <data name="RowDetailsAddress" xml:space="preserve">
-    <value>住所</value>
-  </data>
-  <data name="RowDetailsCity" xml:space="preserve">
-    <value>都市</value>
-  </data>
-  <data name="RowDetailsCountry" xml:space="preserve">
-    <value>国</value>
-  </data>
-  <data name="RowDetailsPostalCode" xml:space="preserve">
-    <value>郵便コード</value>
-  </data>
   <data name="FilterRowDescription" xml:space="preserve">
     <value>テキストが入力されるとセルが対応する列をフィルタリングする行を示します。</value>
     <comment>Displays a row whose cells filter the corresponding column as text is typed.</comment>
@@ -507,7 +482,7 @@
   <data name="Theme" xml:space="preserve">
     <value>テーマ</value>
     <comment>Theme</comment>
-  </data>	
+  </data>
   <data name="ShowSort" xml:space="preserve">
     <value>並べ替えアイコンの表示</value>
     <comment>Show sort icons</comment>
@@ -537,7 +512,15 @@
     <comment>Please select customers on the grid at the left.</comment>
   </data>
   <data name="SelectedCustomersLabel" xml:space="preserve">
-	<value>選択された顧客</value>
+    <value>選択された顧客</value>
     <comment>Selected customers</comment>
+  </data>
+  <data name="TransposedGridDescription" xml:space="preserve">
+    <value>データ項目が列として表示されるように列と行を入れ替える方法を示します。</value>
+    <comment>Show how to transpose columns and rows so the data items are shown as columns.</comment>
+  </data>
+  <data name="TransposedGridTitle" xml:space="preserve">
+    <value>転置グリッド</value>
+    <comment>Transposed Grid</comment>
   </data>
 </root>

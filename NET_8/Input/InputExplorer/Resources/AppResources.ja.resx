@@ -234,4 +234,8 @@
     <value>検証フォーム</value>
     <comment>Validation Form</comment>
   </data>
+  <data name="Theme" xml:space="preserve">
+    <value>テーマ</value>
+    <comment>Theme</comment>
+  </data>
 </root>

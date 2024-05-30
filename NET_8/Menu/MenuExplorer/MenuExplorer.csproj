@@ -137,16 +137,15 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.4.20233.673</Version>
+      <Version>1.5.20241.803</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.4.20233.673</Version>
+      <Version>1.5.20241.803</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Menu">
-      <Version>1.4.20233.673</Version>
+      <Version>1.5.20241.803</Version>
     </PackageReference>
-    <PackageReference Include="PInvoke.User32" Version="0.7.104" />
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231008000" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240404000" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
   <ItemGroup>

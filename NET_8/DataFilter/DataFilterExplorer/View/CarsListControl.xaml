@@ -6,6 +6,7 @@
              xmlns:core="using:C1.WinUI.Core"
              xmlns:c1="using:C1.WinUI.DataFilter"
              xmlns:grid="using:C1.WinUI.Grid"
+             xmlns:res="using:DataFilterExplorer.Resources"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Name="LayoutRoot">
@@ -15,11 +16,11 @@
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal">
-            <core:C1CheckBox x:Name="cbAutoApply" Content="Auto Apply Filter" IsChecked="True" Margin="4"
+            <core:C1CheckBox x:Name="cbAutoApply" Content="{x:Bind res:AppResources.AutoApplyFilter}" IsChecked="True" Margin="4"
                               Checked="CbAutoApply_CheckChanged" Unchecked="CbAutoApply_CheckChanged" />
-            <core:C1Button Content="Apply Filter" Click="BtnApplyFilter_Click" ToolTipService.ToolTip="Apply filter" Margin="4" />
-            <core:C1Button Content="Save Filter" Click="BtnSaveFilter_Click" ToolTipService.ToolTip="Save filter" Margin="4" />
-            <core:C1Button Content="Reset Filter" Click="BtnResetFilter_Click" ToolTipService.ToolTip="Reset filter" Margin="4"/>
+            <core:C1Button Content="{x:Bind res:AppResources.ApplyFilter}" Click="BtnApplyFilter_Click" ToolTipService.ToolTip="Apply filter" Margin="4" />
+            <core:C1Button Content="{x:Bind res:AppResources.SaveFilter}" Click="BtnSaveFilter_Click" ToolTipService.ToolTip="Save filter" Margin="4" />
+            <core:C1Button Content="{x:Bind res:AppResources.ResetFilter}" Click="BtnResetFilter_Click" ToolTipService.ToolTip="Reset filter" Margin="4"/>
         </StackPanel>
 
         <Grid Grid.Row="1">

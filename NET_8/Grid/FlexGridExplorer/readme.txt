@@ -11,6 +11,7 @@ Shows the following samples:
 	- EditingForm
 	- ConditionalFormatting
 	- CustomCells
+	- Hierarchical Rows
 	- Grouping
 	- RowDetails
 	- FullTextFilter
@@ -28,7 +29,7 @@ Shows the following samples:
 	- Financial
 	- LiveUpdates
 	- CustomSortIcon
-    - MouseHover
+	- MouseHover
 	- VirtualMode
 	- SelectedItems
 	- TransposedGrid

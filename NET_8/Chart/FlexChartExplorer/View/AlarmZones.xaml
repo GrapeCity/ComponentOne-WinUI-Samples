@@ -24,7 +24,7 @@
         <c1:FlexChart x:Name="flexChart" Grid.Row="1" ChartType="Line" 
                       Header="Device Temperature Monitor" HeaderStyle="{StaticResource ChartHeaderStyle}"
                       ItemsSource="{Binding DataContext.Data}" BindingX="X" Binding="Y" 
-                      Rendering="Rendering">
+                      Rendering="Rendering" ToolTipContent="{}{y:n1}">
             <c1:FlexChart.AxisY>
                 <c1:Axis Min="0" Max="100" AxisLine="False" MajorTickMarks="None" MajorGrid="True" 
                          Title="Temperature (C)"/>

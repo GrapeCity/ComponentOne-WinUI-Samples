@@ -184,7 +184,7 @@ That allows to filter FlexGrid content based on multiple conditions selected in 
     <value>データのロード...</value>
   </data>
   <data name="VirtualSourceDescription" xml:space="preserve">
-    <value>このサンプルは、仮想化されたソースでC1DataFilterを使用する方法を示しています。</value>
+    <value>このサンプルは、仮想化されたソースで C1DataFilter を使用する方法を示しています。</value>
   </data>
   <data name="VirtualSourceTitle" xml:space="preserve">
     <value>仮想ソース</value>
@@ -215,5 +215,9 @@ That allows to filter FlexGrid content based on multiple conditions selected in 
   <data name="AutoApplyFilter" xml:space="preserve">
     <value>フィルターの自動適用</value>
     <comment>Auto apply filter</comment>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>テーマ</value>
+    <comment>Theme</comment>
   </data>
 </root>
