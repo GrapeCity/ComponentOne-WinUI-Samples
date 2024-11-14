@@ -27,7 +27,8 @@
                 <ColumnDefinition Width="2*" />
             </Grid.ColumnDefinitions>
 
-            <c1:C1DataFilter x:Name="c1DataFilter" VerticalAlignment="Top"/>
+            <c1:C1DataFilter x:Name="c1DataFilter" VerticalAlignment="Top" Foreground="{ThemeResource ApplicationForegroundThemeBrush}"
+                             BorderBrush="{ThemeResource AppBarBorderThemeBrush}"/>
 
             <grid:FlexGrid Grid.Column="1" AutoGenerateColumns="True" x:Name="flexGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
         </Grid>

@@ -700,11 +700,47 @@ namespace FlexGridExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Address:.
+        /// </summary>
+        public static string RowDetailsAddress {
+            get {
+                return ResourceManager.GetString("RowDetailsAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to City:.
+        /// </summary>
+        public static string RowDetailsCity {
+            get {
+                return ResourceManager.GetString("RowDetailsCity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Country:.
+        /// </summary>
+        public static string RowDetailsCountry {
+            get {
+                return ResourceManager.GetString("RowDetailsCountry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Expand and collapse row details..
         /// </summary>
         public static string RowDetailsDescription {
             get {
                 return ResourceManager.GetString("RowDetailsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Postal Code:.
+        /// </summary>
+        public static string RowDetailsPostalCode {
+            get {
+                return ResourceManager.GetString("RowDetailsPostalCode", resourceCulture);
             }
         }
         
@@ -916,6 +952,15 @@ namespace FlexGridExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FlexGridExplorer.
+        /// </summary>
+        public static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Show how to transpose columns and rows so the data items are shown as columns..
         /// </summary>
         public static string TransposedGridDescription {
@@ -939,6 +984,15 @@ namespace FlexGridExplorer.Resources {
         public static string TreeColumnIndex {
             get {
                 return ResourceManager.GetString("TreeColumnIndex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TreeExpandMode.
+        /// </summary>
+        public static string TreeExpandMode {
+            get {
+                return ResourceManager.GetString("TreeExpandMode", resourceCulture);
             }
         }
         

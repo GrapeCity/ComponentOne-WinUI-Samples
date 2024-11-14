@@ -215,6 +215,12 @@ To create bubble charts with the FlexChart control, you must set the binding pro
   <data name="FunnelTitle" xml:space="preserve">
     <value>Funnel Chart</value>
   </data>
+  <data name="HeatmapDescription" xml:space="preserve">
+    <value>Shows Heatmap plot with gradient color scale. The data from two-dimensional array is shown as a table. The color of table's cell depends on the corresponding data value.</value>
+  </data>
+  <data name="HeatmapTitle" xml:space="preserve">
+    <value>Heatmap Plot</value>
+  </data>
   <data name="HistogramChartDescription" xml:space="preserve">
     <value>A Histogram chart is used to study the distribution of non-categorical data by dividing it into bins of specified width. It plots the frequency of data items that fall in each of these bins.</value>
   </data>
@@ -352,5 +358,17 @@ To create multiple pie charts, just specify several comma-separated properties i
   </data>
   <data name="ZoomDescription" xml:space="preserve">
     <value>The sample shows how to implement a custom zoom for the FlexChart control. Use the mouse to select a rectangular area on the plot area. The chart will zoom in on the selected area. When you are done, click the 'Reset' button below the chart to return to the original view.</value>
+  </data>
+  <data name="AxisMarkersTitle" xml:space="preserve">
+    <value>Axis Markers</value>
+  </data>
+  <data name="AxisMarkersDescription" xml:space="preserve">
+    <value>This sample shows how to display line markers over the axes. Both axes have markers which follow the pointer and display its position in data coordinates.</value>
+  </data>
+  <data name="ColumnHeatmapTitle" xml:space="preserve">
+    <value>Column &amp; Heatmap</value>
+  </data>
+  <data name="ColumnHeatmapDescription" xml:space="preserve">
+    <value>The sample shows combination of ranged column chart and heatmap. The heatmap displayed simplified presentation of the same data on the time axis.</value>
   </data>
 </root>

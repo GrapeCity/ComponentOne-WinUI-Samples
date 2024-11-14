@@ -28,7 +28,8 @@
                 <ColumnDefinition Width="2*" />
             </Grid.ColumnDefinitions>
 
-            <c1:C1DataFilter x:Name="c1DataFilter" AutoGenerateFilters="False" VerticalAlignment="Top">
+            <c1:C1DataFilter x:Name="c1DataFilter" AutoGenerateFilters="False" VerticalAlignment="Top"
+                             Foreground="{ThemeResource AppBarItemForegroundThemeBrush}">
                 <c1:C1DataFilter.Filters>
                     <c1:TextFilter PropertyName="Model" />
                     <c1:DateTimeFilter PropertyName="DateProductionLine" HeaderText="Date Production Line" />

@@ -24,12 +24,16 @@
                       ItemsSource="{Binding DataContext.Orders}" IsEnabled="False"
                       SelectedItem="{Binding ElementName=trendLine, Path=Order, Mode=TwoWay}" >
             </ComboBox>
+            <CheckBox x:Name="cbShowEquation" Content="Show Equation" Checked="UpdateRtbVisiblity" Unchecked="UpdateRtbVisiblity"/>
+            <CheckBox x:Name="cbShowR2" Content="Show R2" Checked="UpdateRtbVisiblity" Unchecked="UpdateRtbVisiblity"/>
         </StackPanel>
-        <c1:FlexChart x:Name="flexChart"  
-                      ChartType="Scatter"
-                      ItemsSource="{Binding DataContext.Data}" BindingX="X" Binding="Y" Grid.Row="1">
+        <c1:FlexChart x:Name="flexChart" Loaded="flexChart_Loaded" 
+                      ChartType="Scatter" Rendered="flexChart_Rendered" ToolTipContent="{x:Null}"
+                      ItemsSource="{Binding DataContext.Data}" BindingX="X" Binding="Y" Grid.Row="1"
+                      Footer="Drag Data Point To Change Y-coordinate">
             <c1:Series SeriesName="Raw Data" />
             <c1:TrendLine x:Name="trendLine" SeriesName="Trend Line" FitType="Linear" Order="2" />
         </c1:FlexChart>
+        <RichTextBlock x:Name="rtb" Grid.Row="1" Margin="80,20" IsHitTestVisible="False" Visibility="Collapsed"/>
     </Grid>
 </UserControl>

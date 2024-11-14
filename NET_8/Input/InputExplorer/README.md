@@ -15,3 +15,4 @@ Shows basic samples of the following controls:
 * C1TimeEditor
 * C1DateTimePicker
 * C1NumericBox
+* C1RangeSlider

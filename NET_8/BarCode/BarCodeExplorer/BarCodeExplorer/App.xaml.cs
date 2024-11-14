@@ -8,6 +8,7 @@ using Microsoft.UI.Xaml.Navigation;
 using Microsoft.UI.Xaml.Shapes;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -15,6 +16,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Globalization;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -32,6 +34,7 @@ namespace BarCodeExplorer
         /// </summary>
         public App()
         {
+            ApplicationLanguages.PrimaryLanguageOverride = CultureInfo.CurrentCulture.IetfLanguageTag;
             this.InitializeComponent();
         }
 
@@ -44,7 +47,7 @@ namespace BarCodeExplorer
         {
             m_window = new MainWindow();
             m_window.AppWindow.SetIcon("C1-ball.ico");
-            m_window.Title = "BarCodeExplorer";
+            m_window.Title = BarCodeExplorer.Resources.AppResources.Title;
             m_window.Activate();
         }
 

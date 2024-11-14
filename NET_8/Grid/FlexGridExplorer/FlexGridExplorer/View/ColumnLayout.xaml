@@ -16,7 +16,7 @@
         </Grid.RowDefinitions>
 
         <c1:FlexGrid x:Name="grid"/>
-        <AppBar IsOpen="True" Grid.Row="1" ClosedDisplayMode="Compact">
+        <AppBar IsOpen="False" Grid.Row="1" ClosedDisplayMode="Compact">
             <StackPanel Orientation="Horizontal">
                 <AppBarButton Label="{x:Bind res:AppResources.EditColumnLayout}" Icon="Edit" Click="OnEditColumnLayout" />
                 <AppBarButton Label="{x:Bind res:AppResources.SaveColumnLayout}" Icon="Save" Click="OnSerializeColumnLayout"/>

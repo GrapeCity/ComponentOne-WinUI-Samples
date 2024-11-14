@@ -124,6 +124,15 @@ namespace CalendarExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CalendarExplorer.
+        /// </summary>
+        public static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shows how to use C1Calendar with vertical orientation..
         /// </summary>
         public static string VerticalOrientationDescription {

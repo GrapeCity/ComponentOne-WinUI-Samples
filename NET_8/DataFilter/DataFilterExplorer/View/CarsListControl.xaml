@@ -29,7 +29,8 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <c1:C1DataFilter x:Name="c1DataFilter" FilterAutoGenerating="C1DataFilter_FilterAutoGenerating" VerticalAlignment="Top" />
+            <c1:C1DataFilter x:Name="c1DataFilter" FilterAutoGenerating="C1DataFilter_FilterAutoGenerating" VerticalAlignment="Top" 
+                             Foreground="{ThemeResource ApplicationForegroundThemeBrush}"/>
             <grid:FlexGrid Grid.Column="1" AutoGenerateColumns="True" x:Name="flexGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
         </Grid>
     </Grid>

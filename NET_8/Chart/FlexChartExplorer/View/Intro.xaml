@@ -36,6 +36,7 @@
                       Palette="{Binding ElementName=cbPalette, Path=SelectedValue}"
                       Stacking="{Binding ElementName=cbStacking, Path=SelectedValue}"
                       Rotated="{Binding ElementName=cbRotate, Path=IsChecked}"
+                      RenderMode="Direct2D"
                       ItemsSource="{Binding DataContext.Data}" BindingX="Fruit" Grid.Row="1">
             <c1:Series SeriesName="March" Binding="March"/>
             <c1:Series SeriesName="April" Binding="April"/>

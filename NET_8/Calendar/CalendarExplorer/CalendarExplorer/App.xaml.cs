@@ -44,7 +44,7 @@ namespace CalendarExplorer
         {
             m_window = new MainWindow();
             m_window.AppWindow.SetIcon("C1-ball.ico");
-            m_window.Title = "CalendarExplorer";
+            m_window.Title = CalendarExplorer.Resources.AppResources.Title;
             m_window.Activate();
         }
 

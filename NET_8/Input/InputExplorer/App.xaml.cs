@@ -31,7 +31,7 @@ namespace InputExplorer
 
             m_window.AppWindow.Resize(new Windows.Graphics.SizeInt32 { Width = 800, Height = 600 });
             m_window.AppWindow.SetIcon("C1-ball.ico");
-            m_window.Title = "InputExplorer";
+            m_window.Title = InputExplorer.Resources.AppResources.Title;
             m_window.Activate();
         }
 

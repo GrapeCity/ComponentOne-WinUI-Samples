@@ -59,7 +59,16 @@ namespace BarCodeExplorer.Resources {
                 resourceCulture = value;
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data:.
+        /// </summary>
+        public static string DataLabel {
+            get {
+                return ResourceManager.GetString("DataLabel", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Shows how to use popular barcode types..
         /// </summary>
@@ -97,20 +106,38 @@ namespace BarCodeExplorer.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BarCodeExplorer.
+        ///   Looks up a localized string similar to Regenerate barcode image.
         /// </summary>
-        public static string Title {
+        public static string RegenerateBarcodeImageCaption {
             get {
-                return ResourceManager.GetString("Title", resourceCulture);
+                return ResourceManager.GetString("RegenerateBarcodeImageCaption", resourceCulture);
             }
         }
-
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select Barcode Type:.
+        /// </summary>
+        public static string SelectBarcodeTypeLabel {
+            get {
+                return ResourceManager.GetString("SelectBarcodeTypeLabel", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Theme.
         /// </summary>
         public static string Theme {
             get {
                 return ResourceManager.GetString("Theme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BarCodeExplorer.
+        /// </summary>
+        public static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }

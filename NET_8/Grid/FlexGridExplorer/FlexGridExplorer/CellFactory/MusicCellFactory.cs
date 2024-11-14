@@ -51,13 +51,6 @@ namespace FlexGridExplorer
             {
                 var cellText = Grid.GetCellText(range);
                 imageCell.TextBlock.Text = cellText;
-                if (cellContent is NodeCell nodeCell)
-                {
-                    var groupRow = Grid.Rows[range.Row] as GridGroupRow;
-                    nodeCell.Tag = groupRow;
-                    nodeCell.IsCollapsed = groupRow?.IsCollapsed ?? false;
-                    nodeCell.IsCollapsedChanged += OnIsCollapsedChanged;
-                }
             }
             else if (cellContent is RatingCell ratingCell)
             {
@@ -70,25 +63,5 @@ namespace FlexGridExplorer
                 base.BindCellContent(cellType, range, cellContent);
             }
         }
-
-        public override void UnbindCellContent(GridCellType cellType, GridCellRange range, FrameworkElement cellContent)
-        {
-            if (cellContent is NodeCell nodeCell)
-            {
-                nodeCell.IsCollapsedChanged -= OnIsCollapsedChanged;
-            }
-            else
-            {
-                base.UnbindCellContent(cellType, range, cellContent);
-            }
-        }
-        private void OnIsCollapsedChanged(object sender, EventArgs e)
-        {
-            var nodeCell = sender as NodeCell;
-            var groupRow = nodeCell.Tag as GridGroupRow;
-            groupRow.IsCollapsed = nodeCell.IsCollapsed;
-        }
-
     }
-
 }

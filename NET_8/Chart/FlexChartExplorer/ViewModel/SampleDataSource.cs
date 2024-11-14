@@ -42,6 +42,8 @@ namespace FlexChartExplorer
                     new SampleItem<BreakEven>(),
                     new SampleItem<ErrorBars>(),
                     new SampleItem<Funnel>(),
+                    new SampleItem<Heatmap>(),
+                    new SampleItem<ColumnHeatmap>(),
                     new SampleItem<HistogramChart>(),
                     new SampleItem<Radar>(),    
                     new SampleItem<SunburstChart>(),
@@ -74,6 +76,7 @@ namespace FlexChartExplorer
                         new SampleItem<Zoom>(),
                         new SampleItem<LineMarker>(),
                         new SampleItem<RangeSelector>(),
+                        new SampleItem<AxisMarkers>(),
                     }
             });
 

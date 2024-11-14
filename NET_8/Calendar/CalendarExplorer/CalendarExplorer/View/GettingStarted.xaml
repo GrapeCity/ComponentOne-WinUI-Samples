@@ -8,6 +8,6 @@
     mc:Ignorable="d">
 
     <Grid>
-        <calendar:C1Calendar x:Name="calendar" />
+        <calendar:C1Calendar x:Name="calendar" MouseOverMode="Slot" />
     </Grid>
 </UserControl>

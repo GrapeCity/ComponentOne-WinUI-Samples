@@ -28,7 +28,7 @@ namespace MenuExplorer
         {
             m_window = new MainWindow();
             m_window.AppWindow.SetIcon("C1-ball.ico");
-            m_window.Title = "MenuExplorer";
+            m_window.Title = MenuExplorer.Resources.AppResources.Title;
             m_window.Activate();
         }
 

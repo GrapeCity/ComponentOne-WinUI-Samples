@@ -27,21 +27,22 @@
     <EmbeddedResource Include="FlexChartExplorer.gclicx" />
     <EmbeddedResource Include="Resources\cars.json" />
     <EmbeddedResource Include="Resources\gdp.json" />
+    <EmbeddedResource Include="Resources\tempNY-SF.csv" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Chart">
-      <Version>1.5.20241.803</Version>
+      <Version>1.6.20242.976</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.5.20241.803</Version>
+      <Version>1.6.20242.976</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.5.20241.803</Version>
+      <Version>1.6.20242.976</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Rendering">
-      <Version>1.5.20241.803</Version>
+      <Version>1.6.20242.976</Version>
     </PackageReference>
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240404000" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.240923002" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
   <!-- 
@@ -78,8 +79,18 @@
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\ColumnHeatmap.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="View\Heatmap.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
     <Page Update="View\HistorgramChart.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="View\AxisMarkers.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
     </Page>
     <Page Update="View\WaterfallChart.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>

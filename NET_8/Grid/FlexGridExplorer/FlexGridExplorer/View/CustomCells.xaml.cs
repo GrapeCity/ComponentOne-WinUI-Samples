@@ -22,7 +22,6 @@ namespace FlexGridExplorer
             _ = view.GroupAsync("Artist", "Album");
             var fg = _flexiTunes;
             fg.CellFactory = new MusicCellFactory();
-            fg.MergeManager = null; // << review this, should not merge cells with content
             fg.Columns["Duration"].ValueConverter = new SongDurationConverter();
             fg.Columns["Size"].ValueConverter = new SongSizeConverter();
             fg.ItemsSource = view;

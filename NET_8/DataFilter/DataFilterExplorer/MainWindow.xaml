@@ -12,6 +12,7 @@
                 <Setter Property="FontSize" Value="{ThemeResource HubHeaderThemeFontSize}"/>
                 <Setter Property="FontWeight" Value="{ThemeResource HubHeaderThemeFontWeight}"/>
                 <Setter Property="Margin" Value="20 30 20 5" />
+                <Setter Property="Foreground" Value="{ThemeResource ApplicationForegroundThemeBrush}" />
             </Style>
             <Style TargetType="TextBlock" x:Key="descriptionStyle">
                 <Setter Property="FontFamily" Value="Calibri"/>
@@ -20,26 +21,28 @@
                 <Setter Property="HorizontalAlignment" Value="Left" />
                 <Setter Property="Margin" Value="20"/>
                 <Setter Property="MaxLines" Value="5"/>
+                <Setter Property="Foreground" Value="{ThemeResource ApplicationForegroundThemeBrush}" />
             </Style>
             <Style TargetType="TextBlock" x:Key="captionStyle">
                 <Setter Property="FontWeight" Value="Bold"/>
                 <Setter Property="FontSize" Value="15" />
                 <Setter Property="Margin" Value="10 5" />
-                <Setter Property="Foreground" Value="Gray" />
+                <Setter Property="Foreground" Value="{ThemeResource ApplicationForegroundThemeBrush}" />
             </Style>
         </Grid.Resources>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <ListView x:Name="lbSamples" Width="200" ItemsSource="{Binding AllItems}" SelectedIndex="0"  SelectionChanged="lbSamples_SelectionChanged">
+        <ListView x:Name="lbSamples" Width="200" ItemsSource="{Binding AllItems}" SelectedIndex="0"  SelectionChanged="lbSamples_SelectionChanged" 
+                  Foreground="{ThemeResource ApplicationForegroundThemeBrush}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding Name}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Grid Grid.Column="1" x:Name="grid">
+        <Grid Grid.Column="1" x:Name="grid">            
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
@@ -60,7 +63,8 @@
                 <TextBlock Text="{Binding Description}" Style="{StaticResource descriptionStyle}" />
             </Border>
             <Border Grid.Row="2">
-                <ContentControl Content="{Binding Sample.Value}" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
+                <ContentControl Content="{Binding Sample.Value}" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" 
+                                Foreground="{ThemeResource AppBarItemForegroundThemeBrush}" Background="Transparent" />
             </Border>
         </Grid>
     </Grid>

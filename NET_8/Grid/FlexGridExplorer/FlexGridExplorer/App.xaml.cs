@@ -45,7 +45,7 @@ namespace FlexGridExplorer
         {
             m_window = new MainWindow();
             m_window.AppWindow.SetIcon("C1-ball.ico");
-            m_window.Title = "FlexGridExplorer";
+            m_window.Title = FlexGridExplorer.Resources.AppResources.Title;
             m_window.Activate();
         }
 

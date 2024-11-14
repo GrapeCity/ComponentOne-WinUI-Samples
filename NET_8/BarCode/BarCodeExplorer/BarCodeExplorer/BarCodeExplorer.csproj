@@ -79,15 +79,15 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.BarCode">
-      <Version>1.5.20241.803</Version>
+      <Version>1.6.20242.976</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.5.20241.803</Version>
+      <Version>1.6.20242.976</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.5.20241.803</Version>
+      <Version>1.6.20242.976</Version>
     </PackageReference>
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240404000" GeneratePathProperty="true" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.240923002" GeneratePathProperty="true" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
   <ItemGroup>
