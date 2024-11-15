@@ -36,9 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.FlexReport" Version="8.0.20242.38-beta" />
-    <PackageReference Include="C1.WinUI.Viewer">
-      <Version>1.6.20242.976-beta</Version>
-    </PackageReference>
+    <PackageReference Include="C1.WinUI.Viewer" Version="1.6.20242.961-beta" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Resources\Resource.Designer.cs">
