@@ -1,0 +1,54 @@
+﻿<ContentDialog x:Class="FlexGridExplorer.ColumnLayoutForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:c1="using:C1.WinUI.Grid"
+        xmlns:core="using:C1.WinUI.Core"
+        xmlns:i="using:Microsoft.Xaml.Interactivity" xmlns:res="using:FlexGridExplorer.Resources">
+    <ContentDialog.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ms-appx:///C1.WinUI.Core/themes/C1IconTemplate.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentDialog.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <c1:FlexGrid x:Name="grid" ItemsSource="{Binding}" AutoGenerateColumns="False" HeadersVisibility="None" GridLinesVisibility="Horizontal" SelectionMode="Row" SelectionBackground="Transparent">
+            <c1:FlexGrid.Columns>
+                <c1:GridColumn Binding="Title" MinWidth="200" Width="*" IsReadOnly="True"/>
+                <c1:GridColumn IsReadOnly="True" Width="50">
+                    <c1:GridColumn.CellTemplate>
+                        <DataTemplate>
+                            <core:C1Button Command="{Binding DownCommand}" BorderThickness="0" Background="Transparent">
+                                <core:C1Button.Content>
+                                    <ContentControl ContentTemplate="{StaticResource ChevronDownIconTemplate}" Width="15" Height="15"/>
+                                </core:C1Button.Content>
+                            </core:C1Button>
+                        </DataTemplate>
+                    </c1:GridColumn.CellTemplate>
+                </c1:GridColumn>
+                <c1:GridColumn IsReadOnly="True" Width="50">
+                    <c1:GridColumn.CellTemplate>
+                        <DataTemplate>
+                            <core:C1Button Command="{Binding UpCommand}" BorderThickness="0" Background="Transparent">
+                                <core:C1Button.Content>
+                                    <ContentControl ContentTemplate="{StaticResource ChevronUpIconTemplate}" Width="15" Height="15"/>
+                                </core:C1Button.Content>
+                            </core:C1Button>
+                        </DataTemplate>
+                    </c1:GridColumn.CellTemplate>
+                </c1:GridColumn>
+            </c1:FlexGrid.Columns>
+            <i:Interaction.Behaviors>
+                <c1:CheckListBehavior SelectionBinding="IsVisible"/>
+            </i:Interaction.Behaviors>
+        </c1:FlexGrid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <core:C1Button x:Name="btnOK" Content="{x:Bind res:AppResources.OK}" Click="btnOK_Click" Margin="4" MinWidth="100"/>
+            <core:C1Button x:Name="btnCancel" Content="{x:Bind res:AppResources.Cancel}" Click="btnCancel_Click" Margin="4" MinWidth="100"/>
+        </StackPanel>
+    </Grid>
+</ContentDialog>

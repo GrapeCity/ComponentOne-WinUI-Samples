@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "FlexChartExplorer (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "FlexChartExplorer (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

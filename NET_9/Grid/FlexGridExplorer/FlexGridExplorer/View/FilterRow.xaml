@@ -1,0 +1,23 @@
+﻿<UserControl
+    x:Class="FlexGridExplorer.FilterRow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:c1="using:C1.WinUI.Grid"
+    xmlns:core="using:C1.WinUI.Core"
+    xmlns:res="using:FlexGridExplorer.Resources"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <DataTemplate x:Name="filterIcon">
+            <core:C1SVGIcon Source="ms-appx:///Images/filter.svg"/>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid>
+        <c1:FlexGrid x:Name="grid" IsReadOnly="True" HeadersVisibility="All" FrozenRows="1" Grid.Row="1" FilterIconTemplate="{StaticResource filterIcon}">
+            <c1:FlexGrid.Rows>
+                <c1:GridFilterRow Placeholder="{x:Bind res:AppResources.FilterPlaceholderText}" AutoComplete="True"/>
+            </c1:FlexGrid.Rows>
+        </c1:FlexGrid>
+    </Grid>
+</UserControl>
