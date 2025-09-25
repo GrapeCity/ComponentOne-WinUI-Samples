@@ -41,9 +41,10 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.FlexReport" Version="8.0.20251.85" />
+    <PackageReference Include="C1.FlexReport" Version="8.0.20251.105" />
+    <PackageReference Include="C1.Chart" Version="8.0.20251.20" />
     <PackageReference Include="C1.WinUI.Viewer">
-      <Version>1.6.20251.1077-beta</Version>
+      <Version>1.6.20251.1135</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

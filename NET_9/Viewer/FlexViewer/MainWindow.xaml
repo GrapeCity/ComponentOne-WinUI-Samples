@@ -8,6 +8,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:res="using:FlexViewer.Resources"
     mc:Ignorable="d">
 
 
@@ -26,7 +27,7 @@
         
         <StackPanel Height="50" Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal" Background="#D6564C">
             <Button x:Name="ClickableLabelButton"
-                Content="ComponentOne  |  WinUI Controls"
+                Content="{x:Bind res:Resource.HeaderContent}"
                 Style="{StaticResource NoHoverButtonStyle}"
                 Click="ClickableLabelButton_Click"/>
         </StackPanel>
@@ -41,17 +42,17 @@
         IsPaneToggleButtonVisible="False"
         ItemInvoked="LeftNavigationView_ItemInvoked">
             <NavigationView.MenuItems>
-                <NavigationViewItem Content="PDF" Tag="pdf">
+                <NavigationViewItem Content="{x:Bind res:Resource.PDFTitle}" Tag="pdf">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE7C3;" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem Content="Flex Report" Tag="flexreport">
+                <NavigationViewItem Content="{x:Bind res:Resource.FlexReportTitle}" Tag="flexreport">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE7C3;" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItem Content="Report Service" Tag="reportservice">
+                <NavigationViewItem Content="{x:Bind res:Resource.ReportServiceTitle}" Tag="reportservice">
                     <NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xE7C3;" />
                     </NavigationViewItem.Icon>
@@ -65,7 +66,7 @@
         SelectionChanged="ComboBox_SelectionChanged"
         Grid.Row="1" Grid.Column="1"
         Margin="10"
-        PlaceholderText="Flex Report Names"
+        PlaceholderText="{x:Bind res:Resource.FlexReportNamesPlaceholder}"
         Visibility="Collapsed"/>
 
         

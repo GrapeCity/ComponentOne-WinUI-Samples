@@ -118,25 +118,32 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Calendar" xml:space="preserve">
-    <value>Calendar</value>
+    <value>カレンダー</value>
+    <comment>Calendar</comment>
   </data>
   <data name="Contact1" xml:space="preserve">
-    <value>Contact 1</value>
+    <value>連絡先 1</value>
+    <comment>Contact 1</comment>
   </data>
   <data name="Contact2" xml:space="preserve">
-    <value>Contact 2</value>
+    <value>連絡先 2</value>
+    <comment>Contact 2</comment>
   </data>
   <data name="Contact3" xml:space="preserve">
-    <value>Contact 3</value>
+    <value>連絡先 3</value>
+    <comment>Contact 3</comment>
   </data>
   <data name="Contact4" xml:space="preserve">
-    <value>Contact 4</value>
+    <value>連絡先 4</value>
+    <comment>Contact 4</comment>
   </data>
   <data name="Contact5" xml:space="preserve">
-    <value>Contact 5</value>
+    <value>連絡先 5</value>
+    <comment>Contact 5</comment>
   </data>
   <data name="Contacts" xml:space="preserve">
     <value>Contacts</value>
+    <comment>Contacts</comment>
   </data>
   <data name="ExpandDirection" xml:space="preserve">
     <value>ExpandDirection</value>

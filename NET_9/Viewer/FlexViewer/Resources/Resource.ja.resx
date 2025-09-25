@@ -118,11 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="FlexReportNamesPlaceholder" xml:space="preserve">
-    <value>Flex Report Names</value>
+    <value>Flex Report の名前</value>
     <comment>Flex Report Names</comment>
   </data>
   <data name="FlexReportTitle" xml:space="preserve">
     <value>Flex Report</value>
+    <comment>Flex Report</comment>
   </data>
   <data name="HeaderContent" xml:space="preserve">
     <value>ComponentOne  |  WinUI Controls</value>
@@ -133,10 +134,11 @@
     <comment>PDF</comment>
   </data>
   <data name="ReportServiceTitle" xml:space="preserve">
-    <value>Report Service</value>
+    <value>レポートサービス</value>
     <comment>Report Service</comment>
   </data>
   <data name="Title" xml:space="preserve">
     <value>FlexViewer</value>
+    <comment>FlexViewer</comment>
   </data>
 </root>

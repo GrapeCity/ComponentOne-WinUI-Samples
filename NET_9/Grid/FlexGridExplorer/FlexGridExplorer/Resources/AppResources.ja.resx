@@ -230,7 +230,7 @@
     <comment>Selection Modes</comment>
   </data>
   <data name="Sort" xml:space="preserve">
-    <value>ソート</value>
+    <value>並べ替え</value>
     <comment>Sort</comment>
   </data>
   <data name="ConditionalFormattingDescription" xml:space="preserve">
@@ -466,10 +466,10 @@
     <comment>Filter Row</comment>
   </data>
   <data name="SortIconPosition" xml:space="preserve">
-    <value>ソートアイコンの位置</value>
+    <value>並べ替えアイコンの位置</value>
   </data>
   <data name="SortIconTemplate" xml:space="preserve">
-    <value>ソートアイコンのテンプレート</value>
+    <value>並べ替えアイコンのテンプレート</value>
   </data>
   <data name="MouseHoverDescription" xml:space="preserve">
     <value>MouseOverMode のさまざまな設定の効果を示します。</value>
@@ -562,24 +562,31 @@
     <value>郵便コード</value>
   </data>
   <data name="MouseOverMode" xml:space="preserve">
-    <value>MouseOverMode:</value>
+    <value>マウスホバーモード:</value>
+    <comment>MouseOverMode:</comment>
   </data>
   <data name="SelectionMode" xml:space="preserve">
-    <value>SelectionMode:</value>
+    <value>選択モード:</value>
+    <comment>SelectionMode:</comment>
   </data>
   <data name="MatchCase" xml:space="preserve">
-    <value>Match case</value>
+    <value>大文字と小文字を区別</value>
+    <comment>Match case</comment>
   </data>
   <data name="MatchWord" xml:space="preserve">
-    <value>Match whole word</value>
+    <value>単語単位</value>
+    <comment>Match whole word</comment>
   </data>
   <data name="TreatSpaces" xml:space="preserve">
-    <value>Treat Spaces As And Operator</value>
+    <value>空白を AND 演算子として扱う</value>
+    <comment>Treat Spaces As And Operator</comment>
   </data>
   <data name="MatchNumbers" xml:space="preserve">
-    <value>Match Numbers</value>
+    <value>数値を区別</value>
+    <comment>Match Numbers</comment>
   </data>
   <data name="TreatOperator" xml:space="preserve">
-    <value>Treat Spaces As And Operator</value>
+    <value>空白を AND 演算子として扱う</value>
+    <comment>Treat Spaces As And Operator</comment>
   </data>
 </root>

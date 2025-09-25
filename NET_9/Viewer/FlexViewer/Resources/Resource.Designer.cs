@@ -61,6 +61,51 @@ namespace FlexViewer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Flex Report Names.
+        /// </summary>
+        internal static string FlexReportNamesPlaceholder {
+            get {
+                return ResourceManager.GetString("FlexReportNamesPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Flex Report.
+        /// </summary>
+        internal static string FlexReportTitle {
+            get {
+                return ResourceManager.GetString("FlexReportTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ComponentOne  |  WinUI Controls.
+        /// </summary>
+        internal static string HeaderContent {
+            get {
+                return ResourceManager.GetString("HeaderContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PDF.
+        /// </summary>
+        internal static string PDFTitle {
+            get {
+                return ResourceManager.GetString("PDFTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report Service.
+        /// </summary>
+        internal static string ReportServiceTitle {
+            get {
+                return ResourceManager.GetString("ReportServiceTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to FlexViewer.
         /// </summary>
         internal static string Title {

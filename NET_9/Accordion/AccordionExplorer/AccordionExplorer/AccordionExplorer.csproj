@@ -45,16 +45,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>1.6.20251.1077</Version>
+      <Version>1.6.20251.1135</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Calendar">
-      <Version>1.6.20251.1077</Version>
+      <Version>1.6.20251.1135</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.6.20251.1077</Version>
+      <Version>1.6.20251.1135</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.6.20251.1077</Version>
+      <Version>1.6.20251.1135</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.240923002" />
     <Manifest Include="$(ApplicationManifest)" />
