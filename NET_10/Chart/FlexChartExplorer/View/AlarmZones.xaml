@@ -1,0 +1,39 @@
+<UserControl
+    x:Class="FlexChartExplorer.AlarmZones"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FlexChartExplorer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:c1="using:C1.WinUI.Chart"
+    DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="Critical" Opacity="0.2" Color="{ThemeResource SystemFillColorCritical}"/>
+        <SolidColorBrush x:Key="Caution" Opacity="0.2" Color="{ThemeResource SystemFillColorCaution}"/>
+        <SolidColorBrush x:Key="Success" Opacity="0.2" Color="{ThemeResource SystemFillColorSuccess}"/>
+    </UserControl.Resources>
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="10 0">
+        </StackPanel>
+        <c1:FlexChart x:Name="flexChart" Grid.Row="1" ChartType="Line" 
+                      Header="Device Temperature Monitor" HeaderStyle="{StaticResource ChartHeaderStyle}"
+                      ItemsSource="{Binding DataContext.Data}" BindingX="X" Binding="Y" 
+                      Rendering="Rendering" ToolTipContent="{}{y:n1}">
+            <c1:FlexChart.AxisY>
+                <c1:Axis Min="0" Max="100" AxisLine="False" MajorTickMarks="None" MajorGrid="True" 
+                         Title="Temperature (C)"/>
+            </c1:FlexChart.AxisY>
+            <c1:Series>
+                <c1:Series.Style>
+                    <c1:ChartStyle StrokeThickness="2" />
+                </c1:Series.Style>
+            </c1:Series>
+        </c1:FlexChart>
+    </Grid>
+</UserControl>

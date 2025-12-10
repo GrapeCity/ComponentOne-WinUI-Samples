@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "FlexViewer (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "FlexViewer (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

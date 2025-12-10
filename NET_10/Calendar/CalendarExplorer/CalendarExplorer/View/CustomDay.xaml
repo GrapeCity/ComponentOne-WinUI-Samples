@@ -1,0 +1,53 @@
+﻿<UserControl
+    x:Class="CalendarExplorer.CustomDay"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:calendar="using:C1.WinUI.Calendar"
+    xmlns:local="using:CalendarExplorer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <local:RandomWeatherFromDateConverter x:Key="RandomWeatherFromDateConverter" />
+    </UserControl.Resources>
+    
+    <Grid>
+        <calendar:C1Calendar x:Name="calendar" MouseOverMode="Slot">
+            <calendar:C1Calendar.DayStyle>
+                <Style TargetType="calendar:CalendarSlotPresenter">
+                    <Setter Property="CornerRadius" Value="8"/>
+                    <Setter Property="Background" Value="Olive"/>
+                    <Setter Property="BorderThickness" Value="1"/>
+                    <Setter Property="BorderBrush" Value="DarkOliveGreen"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Margin" Value="2"/>
+                </Style>
+            </calendar:C1Calendar.DayStyle>
+            <calendar:C1Calendar.DaySlotTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="{Binding Day}" FontSize="18"/>
+                        <TextBlock Text="{Binding Path=Date, Converter={StaticResource RandomWeatherFromDateConverter}}" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="11" Grid.Row="1"/>
+                    </Grid>
+                </DataTemplate>
+            </calendar:C1Calendar.DaySlotTemplate>
+            <calendar:C1Calendar.SelectionStyle>
+                <Style TargetType="calendar:CalendarSlotPresenter">
+                    <Setter Property="Background" Value="DarkOliveGreen"/>
+                </Style>
+            </calendar:C1Calendar.SelectionStyle>
+            <calendar:C1Calendar.AdjacentDayStyle>
+                <Style TargetType="calendar:CalendarSlotPresenter">
+                    <Setter Property="BorderBrush" Value="SlateGray"/>
+                    <Setter Property="Background" Value="DarkGray"/>
+                    <Setter Property="Foreground" Value="LightGray"/>
+                    <Setter Property="Margin" Value="3"/>
+                </Style>
+            </calendar:C1Calendar.AdjacentDayStyle>
+        </calendar:C1Calendar>
+    </Grid>
+</UserControl>

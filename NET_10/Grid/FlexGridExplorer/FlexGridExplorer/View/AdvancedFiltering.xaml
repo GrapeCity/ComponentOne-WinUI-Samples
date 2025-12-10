@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="FlexGridExplorer.AdvancedFiltering"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:core="using:C1.WinUI.Core"
+             xmlns:c1="using:C1.WinUI.Grid"
+             xmlns:df="using:C1.WinUI.DataFilter"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" MaxWidth="400" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <df:C1DataFilter x:Name="dataFilter" Grid.RowSpan="2" FilterAutoGenerating="OnFilterAutoGenerating"/>
+        <TabView SelectionChanged="OnTabChanged" Grid.Column="1" BorderThickness="0" IsAddTabButtonVisible="False">
+            <TabViewItem Header="All" IsClosable="False"/>
+            <TabViewItem Header="InProgress" IsClosable="False"/>
+            <TabViewItem Header="Completed" IsClosable="False"/>
+            <TabViewItem Header="Deferred" IsClosable="False"/>
+            <TabViewItem Header="Urgent" IsClosable="False"/>
+        </TabView>
+        <c1:FlexGrid x:Name="grid" Grid.Row="1" Grid.Column="1"/>
+    </Grid>
+</UserControl>
