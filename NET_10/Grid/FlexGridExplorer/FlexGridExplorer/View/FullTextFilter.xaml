@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:input="using:C1.WinUI.Input"
     xmlns:c1="using:C1.WinUI.Grid"
+    xmlns:core="using:C1.WinUI.Core"
     xmlns:res="using:FlexGridExplorer.Resources"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -19,13 +20,13 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <input:C1TextBox x:Name="filter" Margin="4" Placeholder="{x:Bind res:AppResources.FilterPlaceholderText}"/>
-        <StackPanel Orientation="Horizontal" Grid.Row="1">
+        <core:C1WrapPanel Orientation="Horizontal" Grid.Row="1">
             <CheckBox x:Name="matchCaseCheckbox" Content="{x:Bind res:AppResources.MatchCase}" Margin="4"/>
             <CheckBox x:Name="matchWholeWordCheckBox" Content="{x:Bind res:AppResources.MatchWord}" Margin="4" />
             <CheckBox x:Name="treatSpacesAsAndOperator" Content="{x:Bind res:AppResources.TreatOperator}" Margin="4" IsChecked="True" />
             <CheckBox x:Name="matchNumbers" Content="{x:Bind res:AppResources.MatchNumbers}" Margin="4" IsChecked="True"/>
             <CheckBox x:Name="matchBooleans" Content="{x:Bind res:AppResources.MatchBooleans}" Margin="4" IsChecked="False"/>
-        </StackPanel>
+        </core:C1WrapPanel>
         <c1:FlexGrid x:Name="grid" IsReadOnly="True" Grid.Row="2">
             <c1:FlexGrid.Columns>
                 <c1:GridColumn Binding="Active" Width="80" />

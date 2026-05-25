@@ -1,3 +1,4 @@
+using FlexChartExplorer.Resources;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System.Collections.Generic;
@@ -14,9 +15,9 @@ namespace FlexChartExplorer
             Title = "WinUI FlexChart Explorer";
 
             root.DataContext = new SampleDataSource();
-            themes.Items.Add("Default");
-            themes.Items.Add("Light");
-            themes.Items.Add("Dark");
+            themes.Items.Add(AppResources.Default);
+            themes.Items.Add(AppResources.Light);
+            themes.Items.Add(AppResources.Dark);
         }
 
         private void OnRootLoaded(object sender, RoutedEventArgs e)

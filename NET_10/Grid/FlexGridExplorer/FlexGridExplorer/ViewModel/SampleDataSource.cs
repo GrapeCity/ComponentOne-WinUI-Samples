@@ -94,6 +94,9 @@ namespace FlexGridExplorer
             _allItems.Add(new SampleItem(AppResources.ExportTitle,
                 AppResources.ExportTitle,
                 new System.Lazy<UserControl>(() => new Export())));
+            _allItems.Add(new SampleItem(AppResources.ExcelExportTitle,
+                AppResources.ExcelExportTitle,
+                new System.Lazy<UserControl>(() => new ExcelExport())));
             _allItems.Add(new SampleItem(AppResources.ColumnOptionsTitle,
                 AppResources.ColumnOptionsTitle,
                 new System.Lazy<UserControl>(() => new ColumnOptions())));

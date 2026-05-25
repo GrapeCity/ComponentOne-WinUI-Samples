@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
@@ -26,7 +26,7 @@
     <GenerateAppxPackageOnBuild>True</GenerateAppxPackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove=".gclicx" />
+    <None Remove=".sa3licx" />
     <None Remove="C1-ball.ico" />
     <None Remove="Images\Album.png" />
     <None Remove="Images\Artist.png" />
@@ -69,6 +69,7 @@
     <None Remove="View\EditConfirmation.xaml" />
     <None Remove="View\EditCustomerForm.xaml" />
     <None Remove="View\EditingForm.xaml" />
+    <None Remove="View\ExcelExport.xaml" />
     <None Remove="View\Export.xaml" />
     <None Remove="View\FilterRow.xaml" />
     <None Remove="View\Financial.xaml" />
@@ -96,30 +97,33 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Include=".sa3licx" />
     <EmbeddedResource Include="Resources\data.zip" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DataPager">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid.ConditionalFormatting">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
+    </PackageReference>
+    <PackageReference Include="C1.WinUI.Grid.Excel">
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.RulesManager">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.251014001" />
@@ -169,6 +173,11 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\ExcelExport.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="View\AdvancedFiltering.xaml">

@@ -142,70 +142,91 @@
     <comment>Contact 5</comment>
   </data>
   <data name="Contacts" xml:space="preserve">
-    <value>Contacts</value>
+    <value>連絡先</value>
     <comment>Contacts</comment>
   </data>
   <data name="ExpandDirection" xml:space="preserve">
-    <value>ExpandDirection</value>
+    <value>展開方向</value>
+    <comment>ExpandDirection</comment>
   </data>
   <data name="ExpandMode" xml:space="preserve">
-    <value>ExpandMode</value>
+    <value>展開モード</value>
+    <comment>ExpandMode</comment>
   </data>
   <data name="Fill" xml:space="preserve">
-    <value>Fill</value>
+    <value>領域を拡大</value>
+    <comment>Fill</comment>
   </data>
   <data name="Mail" xml:space="preserve">
-    <value>Mail</value>
+    <value>メール</value>
+    <comment>Mail</comment>
   </data>
   <data name="Mail1" xml:space="preserve">
-    <value>Mail 1</value>
+    <value>メール 1</value>
+    <comment>Mail 1</comment>
   </data>
   <data name="Mail2" xml:space="preserve">
-    <value>Mail 2</value>
+    <value>メール 2</value>
+    <comment>Mail 2</comment>
   </data>
   <data name="Mail3" xml:space="preserve">
-    <value>Mail 3</value>
+    <value>メール 3</value>
+    <comment>Mail 3</comment>
   </data>
   <data name="Mail4" xml:space="preserve">
-    <value>Mail 4</value>
+    <value>メール 4</value>
+    <comment>Mail 4</comment>
   </data>
   <data name="Mail5" xml:space="preserve">
-    <value>Mail 5</value>
+    <value>メール 5</value>
+    <comment>Mail 5</comment>
   </data>
   <data name="Note1" xml:space="preserve">
-    <value>Note 1</value>
+    <value>メモ 1</value>
+    <comment>Note 1</comment>
   </data>
   <data name="Note2" xml:space="preserve">
-    <value>Note 2</value>
+    <value>メモ 2</value>
+    <comment>Note 2</comment>
   </data>
   <data name="Note3" xml:space="preserve">
-    <value>Note 3</value>
+    <value>メモ 3</value>
+    <comment>Note 3</comment>
   </data>
   <data name="Note4" xml:space="preserve">
-    <value>Note 4</value>
+    <value>メモ 4</value>
+    <comment>Note 4</comment>
   </data>
   <data name="Note5" xml:space="preserve">
-    <value>Note 5</value>
+    <value>メモ 5</value>
+    <comment>Note 5</comment>
   </data>
   <data name="Notes" xml:space="preserve">
-    <value>Notes</value>
+    <value>メモ</value>
+    <comment>Notes</comment>
   </data>
   <data name="Task1" xml:space="preserve">
-    <value>Task 1</value>
+    <value>タスク 1</value>
+    <comment>Task 1</comment>
   </data>
   <data name="Task2" xml:space="preserve">
-    <value>Task 2</value>
+    <value>タスク 2</value>
+    <comment>Task 2</comment>
   </data>
   <data name="Task3" xml:space="preserve">
-    <value>Task 3</value>
+    <value>タスク 3</value>
+    <comment>Task 3</comment>
   </data>
   <data name="Task4" xml:space="preserve">
-    <value>Task 4</value>
+    <value>タスク 4</value>
+    <comment>Task 4</comment>
   </data>
   <data name="Task5" xml:space="preserve">
-    <value>Task 5</value>
+    <value>タスク 5</value>
+    <comment>Task 5</comment>
   </data>
   <data name="Tasks" xml:space="preserve">
-    <value>Tasks</value>
+    <value>タスク</value>
+    <comment>Tasks</comment>
   </data>
 </root>

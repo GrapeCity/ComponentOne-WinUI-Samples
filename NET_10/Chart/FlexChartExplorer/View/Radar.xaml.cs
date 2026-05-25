@@ -17,8 +17,7 @@ namespace FlexChartExplorer
             this.InitializeComponent();
         }
 
-        public RadarChartType[] ChartTypes =>  new RadarChartType[] { RadarChartType.Line,
-            RadarChartType.LineSymbols, RadarChartType.Area, RadarChartType.Scatter}; 
+        public RadarChartType[] ChartTypes => Enum.GetValues<RadarChartType>(); 
 
         public List<Palette> Palettes
         {
@@ -34,8 +33,7 @@ namespace FlexChartExplorer
             }
         }
 
-        public Stacking[] Stackings => 
-            new Stacking[] { Stacking.None, Stacking.Stacked, Stacking.Stacked100pc };
+        public Stacking[] Stackings => Enum.GetValues<Stacking>();
 
         #region Data
 

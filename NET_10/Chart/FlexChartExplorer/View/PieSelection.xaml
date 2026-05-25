@@ -1,6 +1,3 @@
-<!-- Copyright (c) Microsoft Corporation and Contributors. -->
-<!-- Licensed under the MIT License. -->
-
 <UserControl
     x:Class="FlexChartExplorer.PieSelection"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -9,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
@@ -31,11 +29,11 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Margin="10 0">
-            <ComboBox x:Name="cbOffset" Header="Selected Item Offset:" Width="180" Margin="10"
+            <ComboBox x:Name="cbOffset" Header="{x:Bind res:AppResources.SelectedItemOffset}" Width="180" Margin="10"
                       ItemsSource="{Binding DataContext.Offsets}"
                       SelectedIndex="0">
             </ComboBox>
-            <ComboBox x:Name="cbPosition" Header="Selected Item Position:" Width="180" Margin="10"
+            <ComboBox x:Name="cbPosition" Header="{x:Bind res:AppResources.SelectedItemPosition}" Width="180" Margin="10"
                       ItemsSource="{Binding DataContext.Positions}"
                       SelectedIndex="0">
             </ComboBox>
@@ -55,7 +53,7 @@
                 <c1:PieDataLabel Position="Outside" Content="{}{p:0}%" Offset="4" />
             </c1:FlexPie.DataLabel>
         </c1:FlexPie>
-        <InfoBar x:Name="infoBar" Grid.Row="2" IsOpen="True" IsClosable="False" Title="Selection" Severity="Informational"
-                 Message="Click on data to select."/>
+        <InfoBar x:Name="infoBar" Grid.Row="2" IsOpen="True" IsClosable="False" Title="{x:Bind res:AppResources.SelectionHeader}" Severity="Informational"
+                 Message="{x:Bind res:AppResources.ClickOnDataToSelect}"/>
     </Grid>
 </UserControl>

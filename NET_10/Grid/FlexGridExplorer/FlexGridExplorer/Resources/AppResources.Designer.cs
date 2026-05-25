@@ -19,7 +19,7 @@ namespace FlexGridExplorer.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class AppResources {
@@ -57,6 +57,15 @@ namespace FlexGridExplorer.Resources {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add another group.
+        /// </summary>
+        public static string AddGroupTooltip {
+            get {
+                return ResourceManager.GetString("AddGroupTooltip", resourceCulture);
             }
         }
         
@@ -169,6 +178,15 @@ namespace FlexGridExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clear Grouping(s).
+        /// </summary>
+        public static string ClearGroupingButtonText {
+            get {
+                return ResourceManager.GetString("ClearGroupingButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Collapse.
         /// </summary>
         public static string Collapse {
@@ -210,6 +228,15 @@ namespace FlexGridExplorer.Resources {
         public static string ColumnDefinitionTitle {
             get {
                 return ResourceManager.GetString("ColumnDefinitionTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Column(s) Export Options:.
+        /// </summary>
+        public static string ColumnExportOptionsLabel {
+            get {
+                return ResourceManager.GetString("ColumnExportOptionsLabel", resourceCulture);
             }
         }
         
@@ -457,6 +484,24 @@ namespace FlexGridExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Showcases the export feature of FlexGrid.
+        /// </summary>
+        public static string ExcelExportDescription {
+            get {
+                return ResourceManager.GetString("ExcelExportDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Excel Export.
+        /// </summary>
+        public static string ExcelExportTitle {
+            get {
+                return ResourceManager.GetString("ExcelExportTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Exports the grid information to Html, Text or CSV..
         /// </summary>
         public static string ExportDescription {
@@ -466,11 +511,38 @@ namespace FlexGridExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Exports the grid information to Html, Text or CSV..
+        /// </summary>
+        public static string ExportDescription1 {
+            get {
+                return ResourceManager.GetString("ExportDescription1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export Options.
+        /// </summary>
+        public static string ExportOptionsLabel {
+            get {
+                return ResourceManager.GetString("ExportOptionsLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Export.
         /// </summary>
         public static string ExportTitle {
             get {
                 return ResourceManager.GetString("ExportTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export.
+        /// </summary>
+        public static string ExportTitle1 {
+            get {
+                return ResourceManager.GetString("ExportTitle1", resourceCulture);
             }
         }
         
@@ -592,11 +664,38 @@ namespace FlexGridExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Grid Header Visibility Options:.
+        /// </summary>
+        public static string GridHeaderVisibilityOptionsLabel {
+            get {
+                return ResourceManager.GetString("GridHeaderVisibilityOptionsLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Group By.
+        /// </summary>
+        public static string GroupByLabel {
+            get {
+                return ResourceManager.GetString("GroupByLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Groups and aggregates a collection of data..
         /// </summary>
         public static string GroupingDescription {
             get {
                 return ResourceManager.GetString("GroupingDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grouping Options:.
+        /// </summary>
+        public static string GroupingOptionsLabel {
+            get {
+                return ResourceManager.GetString("GroupingOptionsLabel", resourceCulture);
             }
         }
         
@@ -808,6 +907,15 @@ namespace FlexGridExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Other Options:.
+        /// </summary>
+        public static string OtherOptionsLabel {
+            get {
+                return ResourceManager.GetString("OtherOptionsLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shows how to paginate data by using VirtualModeDataCollection with FlexGrid.
         /// </summary>
         public static string PagingDescription {
@@ -826,11 +934,47 @@ namespace FlexGridExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pick a different theme to showcase style export:.
+        /// </summary>
+        public static string PickDifferentThemeLabel {
+            get {
+                return ResourceManager.GetString("PickDifferentThemeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Remove.
         /// </summary>
         public static string Remove {
             get {
                 return ResourceManager.GetString("Remove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Render Formatted Values.
+        /// </summary>
+        public static string RenderFormattedValuesCheckBoxText {
+            get {
+                return ResourceManager.GetString("RenderFormattedValuesCheckBoxText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Render Images.
+        /// </summary>
+        public static string RenderImagesCheckBoxText {
+            get {
+                return ResourceManager.GetString("RenderImagesCheckBoxText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Render Merged Ranges.
+        /// </summary>
+        public static string RenderMergedRangesCheckBoxText {
+            get {
+                return ResourceManager.GetString("RenderMergedRangesCheckBoxText", resourceCulture);
             }
         }
         
@@ -885,6 +1029,15 @@ namespace FlexGridExplorer.Resources {
         public static string RowDetailsTitle {
             get {
                 return ResourceManager.GetString("RowDetailsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Row(s) Export Options:.
+        /// </summary>
+        public static string RowExportOptionsLabel {
+            get {
+                return ResourceManager.GetString("RowExportOptionsLabel", resourceCulture);
             }
         }
         
@@ -997,6 +1150,15 @@ namespace FlexGridExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Showcase Playground.
+        /// </summary>
+        public static string ShowcasePlaygroundHeader {
+            get {
+                return ResourceManager.GetString("ShowcasePlaygroundHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ShowErrors.
         /// </summary>
         public static string ShowErrors {
@@ -1047,6 +1209,15 @@ namespace FlexGridExplorer.Resources {
         public static string SortIconTemplate {
             get {
                 return ResourceManager.GetString("SortIconTemplate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Specific Ranges:.
+        /// </summary>
+        public static string SpecificRangesLabel {
+            get {
+                return ResourceManager.GetString("SpecificRangesLabel", resourceCulture);
             }
         }
         

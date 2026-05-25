@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GaugeExplorer (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "GaugeExplorer (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

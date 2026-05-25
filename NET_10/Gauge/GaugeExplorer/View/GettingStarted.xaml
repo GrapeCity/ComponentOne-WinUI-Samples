@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="GaugeExplorer.GettingStarted"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GaugeExplorer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:core="using:C1.WinUI.Core"
+    xmlns:gauge="using:C1.WinUI.Gauge"
+    xmlns:res="using:GaugeExplorer.Resources"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <Storyboard x:Key="AnimateGauges" AutoReverse="True" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetName="c1LinearGauge" Storyboard.TargetProperty="Value">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="100">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuadraticEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetName="c1BulletGraph" Storyboard.TargetProperty="Value">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="100">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuadraticEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames EnableDependentAnimation="True" Storyboard.TargetName="c1RadialGauge" Storyboard.TargetProperty="Value">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="100">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuadraticEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <core:C1Button x:Name="AnimationButton" Content="{x:Bind res:AppResources.PauseAnimationLabel}" Click="OnAnimationButtonClick" Margin="4" HorizontalAlignment="Right"/>
+        <TextBlock Text="LinearGauge" Margin="0 5 0 0" Grid.Row="1"/>
+        <gauge:C1LinearGauge x:Name="c1LinearGauge" Step="0" Value="{Binding Value,Mode=TwoWay}" IsAnimated="False" IsReadOnly="{Binding IsReadOnly}" IsEnabled="True" TextVisibility="{Binding ShowText}" Grid.Row="2"/>
+        <TextBlock Text="BulletGraph" Margin="0 5 0 0" Grid.Row="3"/>
+        <gauge:C1BulletGraph x:Name="c1BulletGraph" Step="0" Value="{Binding Value,Mode=TwoWay}" IsAnimated="False" IsReadOnly="{Binding IsReadOnly}" IsEnabled="True" TextVisibility="{Binding ShowText}" Grid.Row="4" 
+                          Good="80" Bad="45" Target="90"/>
+        <TextBlock Text="RadialGauge" Margin="0 5 0 0" Grid.Row="5"/>
+        <gauge:C1RadialGauge x:Name="c1RadialGauge" Step="0" Value="{Binding Value,Mode=TwoWay}" IsAnimated="False" IsReadOnly="{Binding IsReadOnly}" IsEnabled="True" TextVisibility="{Binding ShowText}" 
+                          Grid.Row="6"/>
+    </Grid>
+</UserControl>

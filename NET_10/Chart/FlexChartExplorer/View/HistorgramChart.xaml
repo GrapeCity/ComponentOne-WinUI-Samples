@@ -6,22 +6,22 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Margin="10 0">
-            <ComboBox Header="Appearance:" Width="300"
+            <ComboBox Header="{x:Bind res:AppResources.Appearance}" Width="300"
                       ItemsSource="{Binding DataContext.Appearances}"
                       SelectedItem="{Binding ElementName=histogram, Path=AppearanceType, Mode=TwoWay}"
                       SelectedIndex="0">
             </ComboBox>
-            <CheckBox Content="Normal Curve" Checked="NormalChecked" Unchecked="NormalUnchecked"/>
-            <CheckBox Content="Cumulative" Checked="CumulativeChecked" Unchecked="CumulativeUnchecked"/>
+            <CheckBox Content="{x:Bind res:AppResources.NormalCurve}" Checked="NormalChecked" Unchecked="NormalUnchecked"/>
+            <CheckBox Content="{x:Bind res:AppResources.Cumulative}" Checked="CumulativeChecked" Unchecked="CumulativeUnchecked"/>
         </StackPanel>
         <c1:FlexChart x:Name="flexChart" ChartType="Histogram" ItemsSource="{Binding DataContext.Data}" 
                       Grid.Row="1" Binding="Y" BindingX="X" >

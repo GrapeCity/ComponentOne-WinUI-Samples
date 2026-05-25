@@ -9,6 +9,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
@@ -31,11 +32,11 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Margin="10 0">
-            <ComboBox x:Name="cbChartType" Header="Chart Type:" Width="180" Margin="10"
+            <ComboBox x:Name="cbChartType" Header="{x:Bind res:AppResources.ChartType}" Width="180" Margin="10"
                       ItemsSource="{Binding DataContext.ChartTypes}"
                       SelectedIndex="0">
             </ComboBox>
-            <ComboBox x:Name="cbSelectionMode" Width="180" Header="Selection Mode:" Margin="10" 
+            <ComboBox x:Name="cbSelectionMode" Width="180" Header="{x:Bind res:AppResources.SelectionMode}" Margin="10" 
                       ItemsSource="{Binding DataContext.SelectionModes}" 
                       SelectedIndex="2" >
             </ComboBox>
@@ -51,7 +52,7 @@
             <c1:Series SeriesName="Sales" Binding="Sales" SymbolSize="16"/>
             <c1:Series SeriesName="Expenses" Binding="Expenses" SymbolSize="16"/>
         </c1:FlexChart>
-        <InfoBar x:Name="infoBar" Grid.Row="2" IsOpen="True" IsClosable="False" Title="Selection" Severity="Informational"
-                 Message="Click on data to select."/>
+        <InfoBar x:Name="infoBar" Grid.Row="2" IsOpen="True" IsClosable="False" Title="{x:Bind res:AppResources.SelectionTitle}" Severity="Informational"
+                 Message="{x:Bind res:AppResources.ClickOnDataToSelect}"/>
     </Grid>
 </UserControl>

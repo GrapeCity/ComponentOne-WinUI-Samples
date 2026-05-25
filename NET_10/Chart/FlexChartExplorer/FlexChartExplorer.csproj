@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
@@ -27,23 +27,23 @@
     <Content Include="C1-ball.ico" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FlexChartExplorer.gclicx" />
+    <EmbeddedResource Include="FlexChartExplorer.sa3licx" />
     <EmbeddedResource Include="Resources\cars.json" />
     <EmbeddedResource Include="Resources\gdp.json" />
     <EmbeddedResource Include="Resources\tempNY-SF.csv" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Chart">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Rendering">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.251014001" />
     <Manifest Include="$(ApplicationManifest)" />

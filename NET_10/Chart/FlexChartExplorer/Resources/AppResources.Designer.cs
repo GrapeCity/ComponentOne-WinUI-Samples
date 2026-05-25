@@ -61,6 +61,24 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Point.
+        /// </summary>
+        public static string AddPoint {
+            get {
+                return ResourceManager.GetString("AddPoint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add Series.
+        /// </summary>
+        public static string AddSeries {
+            get {
+                return ResourceManager.GetString("AddSeries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You can use the FlexChart&apos;s Rendering and Rendered events to add arbitrary elements behind or above the regular chart elements.
         ///
         ///For example,the chart below has three zones created in the chart&apos;s Rendering event handler.
@@ -81,11 +99,65 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Angle:.
+        /// </summary>
+        public static string Angle {
+            get {
+                return ResourceManager.GetString("Angle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample shows animation when loading or updating data in FlexChart control..
         /// </summary>
         public static string AnimationDescription {
             get {
                 return ResourceManager.GetString("AnimationDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Animation.
+        /// </summary>
+        public static string AnimationHeader {
+            get {
+                return ResourceManager.GetString("AnimationHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Animation.
+        /// </summary>
+        public static string AnimationTitle {
+            get {
+                return ResourceManager.GetString("AnimationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Appearance:.
+        /// </summary>
+        public static string Appearance {
+            get {
+                return ResourceManager.GetString("Appearance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Axes.
+        /// </summary>
+        public static string Axes {
+            get {
+                return ResourceManager.GetString("Axes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Axis Break.
+        /// </summary>
+        public static string AxisBreak {
+            get {
+                return ResourceManager.GetString("AxisBreak", resourceCulture);
             }
         }
         
@@ -198,6 +270,33 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Axis X:.
+        /// </summary>
+        public static string AxisX {
+            get {
+                return ResourceManager.GetString("AxisX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Axis Y:.
+        /// </summary>
+        public static string AxisY {
+            get {
+                return ResourceManager.GetString("AxisY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Basics.
+        /// </summary>
+        public static string Basics {
+            get {
+                return ResourceManager.GetString("Basics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample shows how you can use the FlexChart to show two sets of values from a single array of data. The sample does the following:
         ///    1.Set the chart&apos;s DataSource property to an array of data objects. Each data object has values for &apos;date&apos;, &apos;sales&apos;, and &apos;downloads&apos;.
         ///    2.Set the chart&apos;s bindingX property to &apos;date&apos;.
@@ -276,6 +375,33 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bubble.
+        /// </summary>
+        public static string BubbleTitle {
+            get {
+                return ResourceManager.GetString("BubbleTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chart Type:.
+        /// </summary>
+        public static string ChartType {
+            get {
+                return ResourceManager.GetString("ChartType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click on data to select..
+        /// </summary>
+        public static string ClickOnDataToSelect {
+            get {
+                return ResourceManager.GetString("ClickOnDataToSelect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample shows combination of ranged column chart and heatmap. The heatmap displayed simplified presentation of the same data on the time axis..
         /// </summary>
         public static string ColumnHeatmapDescription {
@@ -290,6 +416,15 @@ namespace FlexChartExplorer.Resources {
         public static string ColumnHeatmapTitle {
             get {
                 return ResourceManager.GetString("ColumnHeatmapTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Connecting Line.
+        /// </summary>
+        public static string ConnectingLine {
+            get {
+                return ResourceManager.GetString("ConnectingLine", resourceCulture);
             }
         }
         
@@ -312,6 +447,15 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cumulative.
+        /// </summary>
+        public static string Cumulative {
+            get {
+                return ResourceManager.GetString("Cumulative", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample demonstrates how you can use FlexChart&apos;s LabelRendering event to customize the DataLabel&apos;s rendering. The sample below demonstrates canceling the rendering of certain data labels based on their point index..
         /// </summary>
         public static string CustomDataLabelsDescription {
@@ -330,6 +474,33 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dark.
+        /// </summary>
+        public static string Dark {
+            get {
+                return ResourceManager.GetString("Dark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data.
+        /// </summary>
+        public static string Data {
+            get {
+                return ResourceManager.GetString("Data", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data Label:.
+        /// </summary>
+        public static string DataLabel {
+            get {
+                return ResourceManager.GetString("DataLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample demonstrates how you can use the FlexChart&apos;s DataLabel property to add labels to each data point..
         /// </summary>
         public static string DataLabelsDescription {
@@ -344,6 +515,42 @@ namespace FlexChartExplorer.Resources {
         public static string DataLabelsTitle {
             get {
                 return ResourceManager.GetString("DataLabelsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Default.
+        /// </summary>
+        public static string Default {
+            get {
+                return ResourceManager.GetString("Default", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error Amount:.
+        /// </summary>
+        public static string ErrorAmount {
+            get {
+                return ResourceManager.GetString("ErrorAmount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error Bar Direction:.
+        /// </summary>
+        public static string ErrorBarDirection {
+            get {
+                return ResourceManager.GetString("ErrorBarDirection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error Bar End Style:.
+        /// </summary>
+        public static string ErrorBarEndStyle {
+            get {
+                return ResourceManager.GetString("ErrorBarEndStyle", resourceCulture);
             }
         }
         
@@ -384,6 +591,15 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Features.
+        /// </summary>
+        public static string Features {
+            get {
+                return ResourceManager.GetString("Features", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to FlexChart supports two types of financial chart: Candlestick and HighLowOpenClose. To use them, set the ChartType property to the type you want, and set the series Binding property to a comma-delimited string that specifies the fields that contain the high, low, open, and close values in the data source..
         /// </summary>
         public static string FinancialChartDescription {
@@ -402,6 +618,15 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fit Type:.
+        /// </summary>
+        public static string FitType {
+            get {
+                return ResourceManager.GetString("FitType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Funnel charts are an excellent tool for summarizing data. It enables users to quickly visualize stages in a linear process. The  sample below demonstrates creating a Funnel chart in FlexChart..
         /// </summary>
         public static string FunnelDescription {
@@ -416,6 +641,15 @@ namespace FlexChartExplorer.Resources {
         public static string FunnelTitle {
             get {
                 return ResourceManager.GetString("FunnelTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Group Separator:.
+        /// </summary>
+        public static string GroupSeparator {
+            get {
+                return ResourceManager.GetString("GroupSeparator", resourceCulture);
             }
         }
         
@@ -452,6 +686,15 @@ namespace FlexChartExplorer.Resources {
         public static string HistogramChartTitle {
             get {
                 return ResourceManager.GetString("HistogramChartTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hit Test.
+        /// </summary>
+        public static string HitTest {
+            get {
+                return ResourceManager.GetString("HitTest", resourceCulture);
             }
         }
         
@@ -495,6 +738,33 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Inner Radius:.
+        /// </summary>
+        public static string InnerRadius {
+            get {
+                return ResourceManager.GetString("InnerRadius", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Interaction.
+        /// </summary>
+        public static string Interaction {
+            get {
+                return ResourceManager.GetString("Interaction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Interpolate Nulls.
+        /// </summary>
+        public static string InterpolateNulls {
+            get {
+                return ResourceManager.GetString("InterpolateNulls", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample shows the FlexChart&apos;s basic features. It binds the chart to a data source and allows you to select the chart type, series stacking, and rotation. If you move the mouse over a chart element, a tooltip will appear showing details about the data point..
         /// </summary>
         public static string IntroDescription {
@@ -522,11 +792,74 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Label Border.
+        /// </summary>
+        public static string LabelBorder {
+            get {
+                return ResourceManager.GetString("LabelBorder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Label Gap:.
+        /// </summary>
+        public static string LabelGap {
+            get {
+                return ResourceManager.GetString("LabelGap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Label Position:.
+        /// </summary>
+        public static string LabelPosition {
+            get {
+                return ResourceManager.GetString("LabelPosition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample shows how you can use the main legend properties..
         /// </summary>
         public static string LegendDescription {
             get {
                 return ResourceManager.GetString("LegendDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Legend.
+        /// </summary>
+        public static string LegendHeader {
+            get {
+                return ResourceManager.GetString("LegendHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Legend.
+        /// </summary>
+        public static string LegendTitle {
+            get {
+                return ResourceManager.GetString("LegendTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Legend Toggle.
+        /// </summary>
+        public static string LegendToggle {
+            get {
+                return ResourceManager.GetString("LegendToggle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Light.
+        /// </summary>
+        public static string Light {
+            get {
+                return ResourceManager.GetString("Light", resourceCulture);
             }
         }
         
@@ -576,6 +909,33 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Log Scale.
+        /// </summary>
+        public static string LogScale {
+            get {
+                return ResourceManager.GetString("LogScale", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Max Depth:.
+        /// </summary>
+        public static string MaxDepth {
+            get {
+                return ResourceManager.GetString("MaxDepth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Move pointer over chart to see hit test results..
+        /// </summary>
+        public static string MovePointerOverChartToSeeHitTestResults {
+            get {
+                return ResourceManager.GetString("MovePointerOverChartToSeeHitTestResults", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The view shows how to create multiple pie charts based on the same data source.
         ///
         ///To create multiple pie charts, just specify several comma-separated properties in FlexPie&apos;s Binding..
@@ -605,6 +965,69 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to New Data.
+        /// </summary>
+        public static string NewData {
+            get {
+                return ResourceManager.GetString("NewData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Normal Curve.
+        /// </summary>
+        public static string NormalCurve {
+            get {
+                return ResourceManager.GetString("NormalCurve", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Offset:.
+        /// </summary>
+        public static string Offset {
+            get {
+                return ResourceManager.GetString("Offset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order:.
+        /// </summary>
+        public static string Order {
+            get {
+                return ResourceManager.GetString("Order", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Orientation.
+        /// </summary>
+        public static string Orientation {
+            get {
+                return ResourceManager.GetString("Orientation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Overlapped Labels:.
+        /// </summary>
+        public static string OverlappedLabels {
+            get {
+                return ResourceManager.GetString("OverlappedLabels", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Palette:.
+        /// </summary>
+        public static string Palette {
+            get {
+                return ResourceManager.GetString("Palette", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to A Pareto is a special histogram chart with columns sorted in descending order and a rising line that represents the cumulative total percentage. Pareto charts makes it easier to analyze most significant issues and prioritise corrective actions..
         /// </summary>
         public static string ParetoDescription {
@@ -619,6 +1042,15 @@ namespace FlexChartExplorer.Resources {
         public static string ParetoHeader {
             get {
                 return ResourceManager.GetString("ParetoHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pareto.
+        /// </summary>
+        public static string ParetoTitle {
+            get {
+                return ResourceManager.GetString("ParetoTitle", resourceCulture);
             }
         }
         
@@ -668,11 +1100,47 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Position.
+        /// </summary>
+        public static string Position {
+            get {
+                return ResourceManager.GetString("Position", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quartile Calculation:.
+        /// </summary>
+        public static string QuartileCalculation {
+            get {
+                return ResourceManager.GetString("QuartileCalculation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample below shows how to create radar chart with FlexRadar control..
         /// </summary>
         public static string RadarDescription {
             get {
                 return ResourceManager.GetString("RadarDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Radar.
+        /// </summary>
+        public static string RadarHeader {
+            get {
+                return ResourceManager.GetString("RadarHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Radar Chart.
+        /// </summary>
+        public static string RadarTitle {
+            get {
+                return ResourceManager.GetString("RadarTitle", resourceCulture);
             }
         }
         
@@ -695,11 +1163,101 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Remove Point.
+        /// </summary>
+        public static string RemovePoint {
+            get {
+                return ResourceManager.GetString("RemovePoint", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove Series.
+        /// </summary>
+        public static string RemoveSeries {
+            get {
+                return ResourceManager.GetString("RemoveSeries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset.
+        /// </summary>
+        public static string Reset {
+            get {
+                return ResourceManager.GetString("Reset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rotated.
+        /// </summary>
+        public static string Rotated {
+            get {
+                return ResourceManager.GetString("Rotated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save Image.
+        /// </summary>
+        public static string SaveImage {
+            get {
+                return ResourceManager.GetString("SaveImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selected Item Offset:.
+        /// </summary>
+        public static string SelectedItemOffset {
+            get {
+                return ResourceManager.GetString("SelectedItemOffset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selected Item Position:.
+        /// </summary>
+        public static string SelectedItemPosition {
+            get {
+                return ResourceManager.GetString("SelectedItemPosition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample demonstrates the FlexChart&apos;s selection feature. The SelectionMode property determines whether the chart should select series or points when the user clicks on the chart..
         /// </summary>
         public static string SelectionDescription {
             get {
                 return ResourceManager.GetString("SelectionDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selection.
+        /// </summary>
+        public static string SelectionHeader {
+            get {
+                return ResourceManager.GetString("SelectionHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selection Mode:.
+        /// </summary>
+        public static string SelectionMode {
+            get {
+                return ResourceManager.GetString("SelectionMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selection.
+        /// </summary>
+        public static string SelectionTitle {
+            get {
+                return ResourceManager.GetString("SelectionTitle", resourceCulture);
             }
         }
         
@@ -722,6 +1280,141 @@ namespace FlexChartExplorer.Resources {
         public static string SeriesBindingTitle {
             get {
                 return ResourceManager.GetString("SeriesBindingTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show:.
+        /// </summary>
+        public static string Show {
+            get {
+                return ResourceManager.GetString("Show", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Connector Lines.
+        /// </summary>
+        public static string ShowConnectorLines {
+            get {
+                return ResourceManager.GetString("ShowConnectorLines", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Equation.
+        /// </summary>
+        public static string ShowEquation {
+            get {
+                return ResourceManager.GetString("ShowEquation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Inner Points.
+        /// </summary>
+        public static string ShowInnerPoints {
+            get {
+                return ResourceManager.GetString("ShowInnerPoints", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Intermediate Total.
+        /// </summary>
+        public static string ShowIntermediateTotal {
+            get {
+                return ResourceManager.GetString("ShowIntermediateTotal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Mean Line.
+        /// </summary>
+        public static string ShowMeanLine {
+            get {
+                return ResourceManager.GetString("ShowMeanLine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Mean Marks.
+        /// </summary>
+        public static string ShowMeanMarks {
+            get {
+                return ResourceManager.GetString("ShowMeanMarks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Outliers.
+        /// </summary>
+        public static string ShowOutliers {
+            get {
+                return ResourceManager.GetString("ShowOutliers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show R2.
+        /// </summary>
+        public static string ShowR2 {
+            get {
+                return ResourceManager.GetString("ShowR2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Total.
+        /// </summary>
+        public static string ShowTotal {
+            get {
+                return ResourceManager.GetString("ShowTotal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Size:.
+        /// </summary>
+        public static string Size {
+            get {
+                return ResourceManager.GetString("Size", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Special Charts.
+        /// </summary>
+        public static string SpecialCharts {
+            get {
+                return ResourceManager.GetString("SpecialCharts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stacking.
+        /// </summary>
+        public static string Stacking {
+            get {
+                return ResourceManager.GetString("Stacking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Staggered Lines:.
+        /// </summary>
+        public static string StaggeredLines {
+            get {
+                return ResourceManager.GetString("StaggeredLines", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Angle:.
+        /// </summary>
+        public static string StartAngle {
+            get {
+                return ResourceManager.GetString("StartAngle", resourceCulture);
             }
         }
         
@@ -771,6 +1464,15 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TreeMap Type:.
+        /// </summary>
+        public static string TreeMapType {
+            get {
+                return ResourceManager.GetString("TreeMapType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample below shows using TrendLines in FlexChart. You can use different trend line types by setting the FitType property of TrendLine..
         /// </summary>
         public static string TrendLineDemoDescription {
@@ -807,6 +1509,15 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Update Data.
+        /// </summary>
+        public static string UpdateData {
+            get {
+                return ResourceManager.GetString("UpdateData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample shows Waterfall Series in FlexChart. The Waterfall series is normally used to demonstrate how the starting position either increases or decreases through a series of changes..
         /// </summary>
         public static string WaterfallChartDescription {
@@ -825,11 +1536,38 @@ namespace FlexChartExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to X Label Angle:.
+        /// </summary>
+        public static string XLabelAngle {
+            get {
+                return ResourceManager.GetString("XLabelAngle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The sample shows how to implement a custom zoom for the FlexChart control. Use the mouse to select a rectangular area on the plot area. The chart will zoom in on the selected area. When you are done, click the &apos;Reset&apos; button below the chart to return to the original view..
         /// </summary>
         public static string ZoomDescription {
             get {
                 return ResourceManager.GetString("ZoomDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zoom.
+        /// </summary>
+        public static string ZoomHeader {
+            get {
+                return ResourceManager.GetString("ZoomHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zoom.
+        /// </summary>
+        public static string ZoomTitle {
+            get {
+                return ResourceManager.GetString("ZoomTitle", resourceCulture);
             }
         }
     }

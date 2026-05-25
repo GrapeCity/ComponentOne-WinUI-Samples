@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
     <Grid>
@@ -14,13 +15,13 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <VariableSizedWrapGrid>
-            <ComboBox x:Name="cbQuartileCalculation" Header="Quartile Calculation:" Width="180"
+            <ComboBox x:Name="cbQuartileCalculation" Header="{x:Bind res:AppResources.QuartileCalculation}" Width="180"
                       ItemsSource="{Binding DataContext.QuartileCalculations}" SelectionChanged="UpdateSeries"
                       SelectedIndex="0"/>
-            <CheckBox x:Name="cbShowMeanMarks" Content="Show Mean Marks" Checked="UpdateSeries" Unchecked="UpdateSeries"/>
-            <CheckBox x:Name="cbShowMeanLine" Content="Show Mean Line" Checked="UpdateSeries" Unchecked="UpdateSeries"/>
-            <CheckBox x:Name="cbShowInnerPoints" Content="Show Inner Points" Checked="UpdateSeries" Unchecked="UpdateSeries"/>
-            <CheckBox x:Name="cbShowOutliers" Content="Show Outliers" Checked="UpdateSeries" Unchecked="UpdateSeries" />
+            <CheckBox x:Name="cbShowMeanMarks" Content="{x:Bind res:AppResources.ShowMeanMarks}" Checked="UpdateSeries" Unchecked="UpdateSeries"/>
+            <CheckBox x:Name="cbShowMeanLine" Content="{x:Bind res:AppResources.ShowMeanLine}" Checked="UpdateSeries" Unchecked="UpdateSeries"/>
+            <CheckBox x:Name="cbShowInnerPoints" Content="{x:Bind res:AppResources.ShowInnerPoints}" Checked="UpdateSeries" Unchecked="UpdateSeries"/>
+            <CheckBox x:Name="cbShowOutliers" Content="{x:Bind res:AppResources.ShowOutliers}" Checked="UpdateSeries" Unchecked="UpdateSeries" />
         </VariableSizedWrapGrid>
         <c1:FlexChart x:Name="flexChart" LegendPosition="Bottom" 
                       Header="Weather Report : Monthly Temperatures (&#186;F)" HeaderStyle="{StaticResource ChartHeaderStyle}"

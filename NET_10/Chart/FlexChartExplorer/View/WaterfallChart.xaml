@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
@@ -15,9 +16,9 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Margin="10 0">
-            <CheckBox Content="Show Connector Lines" IsChecked="{Binding ElementName=wf, Path=ConnectorLines, Mode=TwoWay}"/>
-            <CheckBox Content="Show Total" IsChecked="{Binding ElementName=wf, Path=ShowTotal, Mode=TwoWay}"/>
-            <CheckBox Content="Show Intermediate Total" IsChecked="{Binding ElementName=wf, Path=ShowIntermediateTotal, Mode=TwoWay}"/>
+            <CheckBox Content="{x:Bind res:AppResources.ShowConnectorLines}" IsChecked="{Binding ElementName=wf, Path=ConnectorLines, Mode=TwoWay}"/>
+            <CheckBox Content="{x:Bind res:AppResources.ShowTotal}" IsChecked="{Binding ElementName=wf, Path=ShowTotal, Mode=TwoWay}"/>
+            <CheckBox Content="{x:Bind res:AppResources.ShowIntermediateTotal}" IsChecked="{Binding ElementName=wf, Path=ShowIntermediateTotal, Mode=TwoWay}"/>
         </StackPanel>
         <c1:FlexChart x:Name="flexChart" ToolTipContent="{}{x}&#x000A;Value: {y}"
                       ItemsSource="{Binding DataContext.Data}" BindingX="Name" Binding="Value" Grid.Row="1">

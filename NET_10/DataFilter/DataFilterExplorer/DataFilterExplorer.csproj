@@ -15,7 +15,7 @@
     <Compile Remove="View\FilterEditorControl.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove=".gclicx" />
+    <None Remove=".sa3licx" />
     <None Remove="C1-ball.ico" />
     <None Remove="GettingStarted.xaml" />
     <None Remove="Images\LockScreenLogo.scale-200.png" />
@@ -55,38 +55,38 @@
     <Content Include="Images\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Include=".sa3licx" />
     <EmbeddedResource Include="Resources\cars.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection" Version="10.0.20252.3" />
-    <PackageReference Include="C1.DataCollection.BindingList" Version="10.0.20252.3" />
-    <PackageReference Include="C1.DataCollection.EntityFrameworkCore" Version="10.0.20252.3" />
+    <PackageReference Include="C1.DataCollection" Version="10.0.20261.3" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="10.0.20261.3" />
+    <PackageReference Include="C1.DataCollection.EntityFrameworkCore" Version="10.0.20261.3" />
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DataFilter">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DateTimeEditors">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.GridControl">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Menu">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.7" />

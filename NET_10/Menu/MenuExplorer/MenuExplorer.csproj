@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
@@ -16,7 +16,7 @@
     <Compile Remove="View\DemoRadialMenu.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove=".gclicx" />
+    <None Remove=".sa3licx" />
     <None Remove="C1-ball.ico" />
     <None Remove="GettingStarted.xaml" />
     <None Remove="Images\LockScreenLogo.scale-200.png" />
@@ -147,19 +147,19 @@
     <Content Include="Resources\Menu\undo.svg" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Include=".sa3licx" />
     <EmbeddedResource Include="Resources\departments.xml" />
     <EmbeddedResource Include="Resources\employeesDepartment.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Menu">
-      <Version>1.7.20252.1229</Version>
+      <Version>1.7.20261.50</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.251014001" />
     <Manifest Include="$(ApplicationManifest)" />

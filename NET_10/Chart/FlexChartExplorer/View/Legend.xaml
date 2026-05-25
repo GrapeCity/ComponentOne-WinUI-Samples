@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
@@ -27,10 +28,10 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Margin="10 0">
-            <ComboBox x:Name="cbPosition" Header="Position:" Width="180" Margin="10"
+            <ComboBox x:Name="cbPosition" Header="{x:Bind res:AppResources.Position}" Width="180" Margin="10"
                       ItemsSource="{Binding DataContext.Positions}"
                       SelectedIndex="0" />
-            <ComboBox x:Name="cbOrientation" Header="Orientation:" Width="180" Margin="10"
+            <ComboBox x:Name="cbOrientation" Header="{x:Bind res:AppResources.Orientation}" Width="180" Margin="10"
                       ItemsSource="{Binding DataContext.Orientations}"
                       SelectedIndex="0" />
         </StackPanel>

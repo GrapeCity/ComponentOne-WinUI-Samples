@@ -9,6 +9,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
@@ -18,12 +19,12 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Margin="10 0">
-            <ComboBox x:Name="cbChartType" Header="Chart Type:" Width="210" Margin="10"
+            <ComboBox x:Name="cbChartType" Header="{x:Bind res:AppResources.ChartType}" Width="210" Margin="10"
                       ItemsSource="{Binding DataContext.ChartTypes}"
                       SelectedIndex="0">
             </ComboBox>
-            <CheckBox Margin="10" x:Name="cbInterpolateNulls" Content="Interpolate Nulls" VerticalAlignment="Center" />
-            <CheckBox Margin="10" x:Name="cbLegendToggle" Content="Legend Toggle" VerticalAlignment="Center" />
+            <CheckBox Margin="10" x:Name="cbInterpolateNulls" Content="{x:Bind res:AppResources.InterpolateNulls}" VerticalAlignment="Center" />
+            <CheckBox Margin="10" x:Name="cbLegendToggle" Content="{x:Bind res:AppResources.LegendToggle}" VerticalAlignment="Center" />
         </StackPanel>
         <c1:FlexChart x:Name="flexChart"  
                       ChartType="{Binding ElementName=cbChartType, Path=SelectedValue}"

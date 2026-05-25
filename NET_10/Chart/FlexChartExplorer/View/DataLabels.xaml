@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
@@ -27,17 +28,17 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Margin="10 0">
-            <ComboBox x:Name="cbChartType" Header="Chart Type:" Width="180" Margin="10"
+            <ComboBox x:Name="cbChartType" Header="{x:Bind res:AppResources.ChartType}" Width="180" Margin="10"
                       ItemsSource="{Binding DataContext.ChartTypes}"
                       SelectedIndex="2" />
-            <ComboBox x:Name="cbDataLabel" Header="Data Label:" Width="180" Margin="10"
+            <ComboBox x:Name="cbDataLabel" Header="{x:Bind res:AppResources.DataLabel}" Width="180" Margin="10"
                       ItemsSource="{Binding DataContext.Positions}" 
                       SelectedItem="{Binding ElementName=flexChart, Path=DataLabel.Position, Mode=TwoWay}" />
-            <ComboBox x:Name="cbAngle" Header="Angle:" Width="180" Margin="10"
+            <ComboBox x:Name="cbAngle" Header="{x:Bind res:AppResources.Angle}" Width="180" Margin="10"
                       ItemsSource="{Binding DataContext.Angles}" 
                       SelectedItem="{Binding ElementName=flexChart, Path=DataLabel.Angle, Mode=TwoWay}" />
-            <CheckBox Content="Label Border" IsChecked="{Binding ElementName=flexChart, Path=DataLabel.Border, Mode=TwoWay}" />
-            <CheckBox Content="Connecting Line" IsChecked="{Binding ElementName=flexChart, Path=DataLabel.ConnectingLine, Mode=TwoWay}" />
+            <CheckBox Content="{x:Bind res:AppResources.LabelBorder}" IsChecked="{Binding ElementName=flexChart, Path=DataLabel.Border, Mode=TwoWay}" />
+            <CheckBox Content="{x:Bind res:AppResources.ConnectingLine}" IsChecked="{Binding ElementName=flexChart, Path=DataLabel.ConnectingLine, Mode=TwoWay}" />
         </StackPanel>
         <c1:FlexChart x:Name="flexChart" Header="Monthly Mean Temperature" HeaderAlignment="Left"
                       ChartType="{Binding ElementName=cbChartType, Path=SelectedValue}"

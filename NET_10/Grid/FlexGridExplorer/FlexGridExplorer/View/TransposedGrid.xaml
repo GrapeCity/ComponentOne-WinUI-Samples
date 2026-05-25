@@ -5,13 +5,21 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Grid"
+    xmlns:input="using:C1.WinUI.Input"
+    xmlns:res="using:FlexGridExplorer.Resources"
     xmlns:i="using:Microsoft.Xaml.Interactivity"
     mc:Ignorable="d">
 
     <Grid>
-        <c1:FlexGrid x:Name="grid" ColumnHeaderFontWeight="Bold" ColumnHeaderGridLinesVisibility="Vertical" GridLinesVisibility="Vertical" SelectionMode="Column">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <input:C1TextBox x:Name="filter" Margin="4" Placeholder="{x:Bind res:AppResources.FilterPlaceholderText}" HorizontalAlignment="Left" MinWidth="250"/>
+        <c1:FlexGrid x:Name="grid" ColumnHeaderFontWeight="Bold" ColumnHeaderGridLinesVisibility="Vertical" GridLinesVisibility="Vertical" Grid.Row="1">
             <i:Interaction.Behaviors>
                 <c1:TransposedGridBehavior />
+                <c1:FullTextFilterBehavior FilterEntry="{Binding ElementName=filter}" />
             </i:Interaction.Behaviors>
         </c1:FlexGrid>
     </Grid>

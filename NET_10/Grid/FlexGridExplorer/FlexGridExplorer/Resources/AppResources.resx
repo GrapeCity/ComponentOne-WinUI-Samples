@@ -547,4 +547,76 @@
   <data name="ValidationExclamationTriangleIcon" xml:space="preserve">
     <value>Exclamation Triangle</value>
   </data>
+  <data name="ExcelExportDescription" xml:space="preserve">
+    <value>Showcases the export feature of FlexGrid</value>
+  </data>
+  <data name="ExcelExportTitle" xml:space="preserve">
+    <value>Excel Export</value>
+  </data>
+  <data name="ExportDescription1" xml:space="preserve">
+    <value>Exports the grid information to Html, Text or CSV.</value>
+  </data>
+  <data name="ExportOptionsLabel" xml:space="preserve">
+    <value>Export Options</value>
+    <comment>Export Options</comment>
+  </data>
+  <data name="ExportTitle1" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="RowExportOptionsLabel" xml:space="preserve">
+    <value>Row(s) Export Options:</value>
+    <comment>Row(s) Export Options:</comment>
+  </data>
+  <data name="SpecificRangesLabel" xml:space="preserve">
+    <value>Specific Ranges:</value>
+    <comment>Specific Ranges:</comment>
+  </data>
+  <data name="ColumnExportOptionsLabel" xml:space="preserve">
+    <value>Column(s) Export Options:</value>
+    <comment>Column(s) Export Options:</comment>
+  </data>
+  <data name="GridHeaderVisibilityOptionsLabel" xml:space="preserve">
+    <value>Grid Header Visibility Options:</value>
+    <comment>Grid Header Visibility Options:</comment>
+  </data>
+  <data name="OtherOptionsLabel" xml:space="preserve">
+    <value>Other Options:</value>
+    <comment>Other Options:</comment>
+  </data>
+  <data name="RenderFormattedValuesCheckBoxText" xml:space="preserve">
+    <value>Render Formatted Values</value>
+    <comment>Render Formatted Values</comment>
+  </data>
+  <data name="RenderImagesCheckBoxText" xml:space="preserve">
+    <value>Render Images</value>
+    <comment>Render Images</comment>
+  </data>
+  <data name="RenderMergedRangesCheckBoxText" xml:space="preserve">
+    <value>Render Merged Ranges</value>
+    <comment>Render Merged Ranges</comment>
+  </data>
+  <data name="ShowcasePlaygroundHeader" xml:space="preserve">
+    <value>Showcase Playground</value>
+    <comment>Showcase Playground</comment>
+  </data>
+  <data name="PickDifferentThemeLabel" xml:space="preserve">
+    <value>Pick a different theme to showcase style export:</value>
+    <comment>Pick a different theme to showcase style export:</comment>
+  </data>
+  <data name="GroupByLabel" xml:space="preserve">
+    <value>Group By</value>
+    <comment>Group By</comment>
+  </data>
+  <data name="GroupingOptionsLabel" xml:space="preserve">
+    <value>Grouping Options:</value>
+    <comment>Grouping Options:</comment>
+  </data>
+  <data name="ClearGroupingButtonText" xml:space="preserve">
+    <value>Clear Grouping(s)</value>
+    <comment>Clear Grouping(s)</comment>
+  </data>
+  <data name="AddGroupTooltip" xml:space="preserve">
+    <value>Add another group</value>
+    <comment>Add another group</comment>
+  </data>
 </root>

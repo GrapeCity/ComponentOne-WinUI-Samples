@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="ListViewExplorer.ItemContainerStyle"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ListViewExplorer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:core="using:C1.WinUI.Core"
+    xmlns:listView="using:C1.WinUI.ListView"
+    xmlns:resources="using:ListViewExplorer.Resources"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <Style TargetType="listView:C1ListView">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="{x:Null}" />
+            <Setter Property="Margin" Value="0,1,1,1" />
+        </Style>
+
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Border Padding="0 0 0 10">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                    <core:C1CheckBox x:Name="cbShowCheckBox" Content="{x:Bind resources:AppResources.ShowCheckBox}" Click="cbShowCheckBox_Click" Margin="5" FontFamily="Segoe UI" FontSize="14" IsChecked="True"/>
+                    <core:C1CheckBox x:Name="cbShowSelectAll" Content="{x:Bind resources:AppResources.ShowSelectAll}" Click="cbShowSelectAll_Click" Margin="20 5" FontFamily="Segoe UI" FontSize="14"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{x:Bind resources:AppResources.Orientation}" FontFamily="Segoe UI" FontSize="14" Margin="5"/>
+                    <ComboBox x:Name="cbOrientation" SelectionChanged="OnOrientationSelectionChanged" Width="140" >
+                        <ComboBoxItem Content="Horizontal"/>
+                        <ComboBoxItem Content="Vertical"/>
+                    </ComboBox>
+                    <TextBlock Text="{x:Bind resources:AppResources.SelectionMode}" FontFamily="Segoe UI" FontSize="14" Margin="30 5 5 5"/>
+                    <ComboBox x:Name="cbSelectionMode" SelectionChanged="OnSelectionModeSelectionChanged" Width="140" >
+                        <ComboBoxItem Content="Single"/>
+                        <ComboBoxItem Content="Extended"/>
+                        <ComboBoxItem Content="Multiple"/>
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
+
+        </Border>
+
+        <listView:C1ListView x:Name="listView" Grid.Row="1" SelectionMode="Extended"
+                   ZoomMode="Enabled" Orientation="Vertical" ShowCheckBoxes="True">
+            <listView:C1ListView.ItemContainerStyle>
+                <Style TargetType="listView:ListViewItemView">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    <Setter Property="ContentTemplate">
+                        <Setter.Value>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name}" TextWrapping="Wrap" FontFamily="Arial" FontSize="12" VerticalAlignment="Center" />
+                            </DataTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </listView:C1ListView.ItemContainerStyle>
+        </listView:C1ListView>
+
+    </Grid>
+</UserControl>

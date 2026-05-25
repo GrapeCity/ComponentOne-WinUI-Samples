@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
@@ -15,17 +16,17 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Margin="10 0">
-            <ComboBox x:Name="cbFitType" Header="Fit Type:"
+            <ComboBox x:Name="cbFitType" Header="{x:Bind res:AppResources.FitType}"
                       ItemsSource="{Binding DataContext.FitTypes}"
                       SelectedItem="{Binding ElementName=trendLine, Path=FitType, Mode=TwoWay}"
                       SelectionChanged="cbFitType_SelectionChanged">
             </ComboBox>
-            <ComboBox x:Name="cbOrder" Header="Order:"
+            <ComboBox x:Name="cbOrder" Header="{x:Bind res:AppResources.Order}"
                       ItemsSource="{Binding DataContext.Orders}" IsEnabled="False"
                       SelectedItem="{Binding ElementName=trendLine, Path=Order, Mode=TwoWay}" >
             </ComboBox>
-            <CheckBox x:Name="cbShowEquation" Content="Show Equation" Checked="UpdateRtbVisiblity" Unchecked="UpdateRtbVisiblity"/>
-            <CheckBox x:Name="cbShowR2" Content="Show R2" Checked="UpdateRtbVisiblity" Unchecked="UpdateRtbVisiblity"/>
+            <CheckBox x:Name="cbShowEquation" Content="{x:Bind res:AppResources.ShowEquation}" Checked="UpdateRtbVisiblity" Unchecked="UpdateRtbVisiblity"/>
+            <CheckBox x:Name="cbShowR2" Content="{x:Bind res:AppResources.ShowR2}" Checked="UpdateRtbVisiblity" Unchecked="UpdateRtbVisiblity"/>
         </StackPanel>
         <c1:FlexChart x:Name="flexChart" Loaded="flexChart_Loaded" 
                       ChartType="Scatter" Rendered="flexChart_Rendered" ToolTipContent="{x:Null}"

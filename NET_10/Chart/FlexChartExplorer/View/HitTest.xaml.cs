@@ -1,4 +1,5 @@
 using C1.Chart;
+using FlexChartExplorer.Resources;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Input;
@@ -42,7 +43,7 @@ namespace FlexChartExplorer
         }
 
         #region Data
-        const string DefaultMessage = "Move pointer over chart to see hit test results.";
+        static string DefaultMessage = AppResources.MovePointerOverChartToSeeHitTestResults;
 
         public string Message { get; set; } = DefaultMessage;
 

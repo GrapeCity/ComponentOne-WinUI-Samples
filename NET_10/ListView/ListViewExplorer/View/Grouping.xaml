@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="ListViewExplorer.Grouping"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ListViewExplorer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:core="using:C1.WinUI.Core"
+    xmlns:listView="using:C1.WinUI.ListView"
+    xmlns:resources="using:ListViewExplorer.Resources"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="10 0 0 0">
+            <core:C1Button Content="{x:Bind resources:AppResources.GroupByBorn}" Click="OnGroupByBorn" Padding="10 3 10 3"/>
+            <core:C1Button Content="{x:Bind resources:AppResources.GroupByResident}" Click="OnGroupByResidence" Margin="30 0 0 0" Padding="10 3 10 3"/>
+            <core:C1Button Content="{x:Bind resources:AppResources.RemoveGrouping}" Click="OnRemoveGrouping" Margin="30 0 0 0" Padding="10 3 10 3"/>
+        </StackPanel>
+
+        <listView:C1ListView Grid.Row="1" x:Name="listView" Margin="10 0 10 10"
+                       SelectedBackground="#99c9ef" DisplayMemberPath="Name">
+            <listView:C1ListView.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock FontWeight="Bold" FontSize="19" Text="{Binding Group}" Height="35"/>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                </GroupStyle>
+            </listView:C1ListView.GroupStyle>
+        </listView:C1ListView>
+    </Grid>
+</UserControl>

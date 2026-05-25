@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ListViewExplorer (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ListViewExplorer (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

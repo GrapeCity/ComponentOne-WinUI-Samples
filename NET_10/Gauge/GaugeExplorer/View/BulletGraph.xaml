@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="GaugeExplorer.BulletGraph"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GaugeExplorer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:core="using:C1.WinUI.Core"
+    xmlns:input="using:C1.WinUI.Input"
+    xmlns:gauge="using:C1.WinUI.Gauge"
+    mc:Ignorable="d">
+    <UserControl.DataContext>
+        <local:SampleViewModel Value="72" ShowText="All" />
+    </UserControl.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <core:C1WrapPanel>
+            <TextBlock x:Name="lblBad" Text="Bad" VerticalAlignment="Center" Margin="5"/>
+            <input:C1NumericBox x:Name="BadStepper" Value="{Binding Bad,Mode=TwoWay}" Increment="5" VerticalAlignment="Center"/>
+            <TextBlock  x:Name="lblGood" Text="Good" VerticalAlignment="Center" Margin="5"/>
+            <input:C1NumericBox x:Name="GoodStepper" Value="{Binding Good,Mode=TwoWay}" Increment="5" VerticalAlignment="Center"/>
+            <TextBlock  x:Name="lblTarget" Text="Target" VerticalAlignment="Center" Margin="5"/>
+            <input:C1NumericBox x:Name="TargetStepper" Value="{Binding Target,Mode=TwoWay}" Increment="5" VerticalAlignment="Center"/>
+        </core:C1WrapPanel>
+        <gauge:C1BulletGraph Value="{Binding Value}" Bad="{Binding Bad}" Good="{Binding Good}" VerticalAlignment="Top" Margin="10, 25, 10, 0"
+                          Target="{Binding Target}" IsReadOnly="{Binding IsReadOnly}"  Grid.Row="1"/>
+    </Grid>
+</UserControl>

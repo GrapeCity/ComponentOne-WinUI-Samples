@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
     <Grid>
@@ -14,8 +15,8 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal">
-            <Button x:Name="btnNew" Content="New Data" />
-            <Button x:Name="btnSave" Content="Save Image" />
+            <Button x:Name="btnNew" Content="{x:Bind res:AppResources.NewData}" />
+            <Button x:Name="btnSave" Content="{x:Bind res:AppResources.SaveImage}" />
         </StackPanel>
         <c1:FlexChart x:Name="flexChart" Grid.Row="1" ChartType="Scatter" RenderMode="Direct2D" BindingX="X" Binding="Y">
             <c1:Series SymbolSize="4" />

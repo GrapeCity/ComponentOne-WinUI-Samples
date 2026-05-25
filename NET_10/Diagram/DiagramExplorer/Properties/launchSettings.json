@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DiagramExplorer (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "DiagramExplorer (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

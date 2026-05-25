@@ -21,7 +21,7 @@ namespace FlexChartExplorer
 
             _allItems.Add(new SampleGroup()
             {
-                Name = "Basics",
+                Name = AppResources.Basics,
                 Children = new List<ISampleItem>()
                 {
                     new SampleItem<Binding>(),
@@ -35,7 +35,7 @@ namespace FlexChartExplorer
 
             _allItems.Add(new SampleGroup()
             {
-                Name = "Special Charts",
+                Name = AppResources.SpecialCharts,
                 Children = new List<ISampleItem>()
                 {
                     new SampleItem<BoxWhiskerChart>(),
@@ -54,7 +54,7 @@ namespace FlexChartExplorer
 
             _allItems.Add(new SampleGroup()
                 { 
-                    Name = "Axes",
+                    Name = AppResources.Axes,
                     Children = new List<ISampleItem>()
                     {
                         new SampleItem<AxisLabels>(),
@@ -69,7 +69,7 @@ namespace FlexChartExplorer
 
             _allItems.Add(new SampleGroup()
             {
-                Name = "Interaction",
+                Name = AppResources.Interaction,
                 Children = new List<ISampleItem>()
                     {
                         new SampleItem<Selection>(),
@@ -84,7 +84,7 @@ namespace FlexChartExplorer
 
             _allItems.Add(new SampleGroup()
             {
-                Name = "Features",
+                Name = AppResources.Features,
                 Children = new List<ISampleItem>()
                     {
                         new SampleItem<AlarmZones>(),

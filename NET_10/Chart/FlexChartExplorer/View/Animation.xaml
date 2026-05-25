@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
@@ -15,16 +16,16 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Margin="10 0">
-            <ComboBox x:Name="cbChartType" Header="Chart Type:" Width="180" Margin="10"
+            <ComboBox x:Name="cbChartType" Header="{x:Bind res:AppResources.ChartType}" Width="180" Margin="10"
                       ItemsSource="{Binding DataContext.ChartTypes}"
                       SelectedIndex="0">
             </ComboBox>
-            <AppBarButton Icon="Refresh" Click="NewData" Label="New Data" />
-            <AppBarButton Icon="Edit" Click="UpdateData" Label="Update Data" />
-            <AppBarButton Icon="Add" Click="AddSeries" Label="Add Series" />
-            <AppBarButton Icon="Remove" Click="RemoveSeries" Label="Remove Series" />
-            <AppBarButton Icon="Add" Click="AddPoint" Label="Add Point" />
-            <AppBarButton Icon="Remove" Click="RemovePoint" Label="Remove Point" />
+            <AppBarButton Icon="Refresh" Click="NewData" Label="{x:Bind res:AppResources.NewData}" />
+            <AppBarButton Icon="Edit" Click="UpdateData" Label="{x:Bind res:AppResources.UpdateData}" />
+            <AppBarButton Icon="Add" Click="AddSeries" Label="{x:Bind res:AppResources.AddSeries}" />
+            <AppBarButton Icon="Remove" Click="RemoveSeries" Label="{x:Bind res:AppResources.RemoveSeries}" />
+            <AppBarButton Icon="Add" Click="AddPoint" Label="{x:Bind res:AppResources.AddPoint}" />
+            <AppBarButton Icon="Remove" Click="RemovePoint" Label="{x:Bind res:AppResources.RemovePoint}" />
         </StackPanel>
         <c1:FlexChart x:Name="flexChart" Loaded="ChartLoaded" AnimationSettings="All" RenderMode="Direct2D"
                       ChartType="{Binding ElementName=cbChartType, Path=SelectedValue}"

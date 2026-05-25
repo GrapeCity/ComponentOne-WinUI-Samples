@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
@@ -15,15 +16,15 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Margin="10 0">
-            <ComboBox x:Name="cbX" Header="Axis X:" Width="180" Margin="10"
+            <ComboBox x:Name="cbX" Header="{x:Bind res:AppResources.AxisX}" Width="180" Margin="10"
                       ItemsSource="{Binding DataContext.Fields}" SelectionChanged="BindingChanged"
                       SelectedIndex="0">
             </ComboBox>
-            <ComboBox x:Name="cbY" Header="Axis Y:" Width="180" Margin="10"
+            <ComboBox x:Name="cbY" Header="{x:Bind res:AppResources.AxisY}" Width="180" Margin="10"
                       ItemsSource="{Binding DataContext.Fields}" SelectionChanged="BindingChanged"
                       SelectedIndex="1">
             </ComboBox>
-            <ComboBox x:Name="cbSize" Header="Size:" Width="180" Margin="10"
+            <ComboBox x:Name="cbSize" Header="{x:Bind res:AppResources.Size}" Width="180" Margin="10"
                       ItemsSource="{Binding DataContext.Fields}" SelectionChanged="BindingChanged"
                       SelectedIndex="2">
             </ComboBox>

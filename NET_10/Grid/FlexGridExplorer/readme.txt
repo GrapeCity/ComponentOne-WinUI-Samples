@@ -32,6 +32,7 @@ Shows the following samples:
 	- CustomSortIcon
 	- MouseHover
 	- Export
+	- ExcelExport
 	- Column Options
 	- VirtualMode
 	- Advanced Custom Cells

@@ -1,6 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
+# Visual Studio Version 18
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomRows", "CustomRows\CustomRows.csproj", "{48453A19-84B5-483F-B02E-9E4C4FE9FA93}"
 EndProject
 Global

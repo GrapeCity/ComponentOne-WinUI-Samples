@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
     <Grid>
@@ -14,7 +15,7 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Margin="10 0">
-            <Button x:Name="btnReset" Content="Reset" Click="ButtonReset_Click" />
+            <Button x:Name="btnReset" Content="{x:Bind res:AppResources.Reset}" Click="ButtonReset_Click" />
         </StackPanel>
         <Grid Grid.Row="1">
         <c1:FlexChart x:Name="flexChart" ChartType="LineSymbols"

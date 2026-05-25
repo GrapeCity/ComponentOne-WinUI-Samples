@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
     <UserControl.Resources>
@@ -18,20 +19,20 @@
         </Grid.RowDefinitions>
         
         <VariableSizedWrapGrid>
-            <ComboBox x:Name="cbChartType" Header="Chart Type:"
+            <ComboBox x:Name="cbChartType" Header="{x:Bind res:AppResources.ChartType}"
                       ItemsSource="{Binding DataContext.ChartTypes}"
                       SelectedIndex="0">
             </ComboBox>
-            <ComboBox x:Name="cbErrorAmount" Header="Error Amount:"
+            <ComboBox x:Name="cbErrorAmount" Header="{x:Bind res:AppResources.ErrorAmount}"
                       ItemsSource="{Binding DataContext.ErrorAmounts}"
                       SelectedItem="{Binding ElementName=errorBar, Path=ErrorAmount, Mode=TwoWay}"
                       SelectionChanged="cbErrorAmount_SelectionChanged">
             </ComboBox>
-            <ComboBox x:Name="cbErrorDirection" Header="Error Bar Direction:"
+            <ComboBox x:Name="cbErrorDirection" Header="{x:Bind res:AppResources.ErrorBarDirection}"
                       ItemsSource="{Binding DataContext.Directions}"
                       SelectedItem="{Binding ElementName=errorBar, Path=Direction, Mode=TwoWay}">
             </ComboBox>
-            <ComboBox x:Name="cbErrorEndCap" Header="Error Bar End Style:"
+            <ComboBox x:Name="cbErrorEndCap" Header="{x:Bind res:AppResources.ErrorBarEndStyle}"
                       ItemsSource="{Binding DataContext.EndStyles}"
                       SelectedItem="{Binding ElementName=errorBar, Path=EndStyle, Mode=TwoWay}">
             </ComboBox>

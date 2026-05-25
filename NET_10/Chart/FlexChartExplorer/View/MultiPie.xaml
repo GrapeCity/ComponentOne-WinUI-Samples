@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
@@ -15,7 +16,7 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Margin="10 0">
-            <ComboBox Header="Show:" Margin="10" x:Name="cbShowOptions" 
+            <ComboBox Header="{x:Bind res:AppResources.Show}" Margin="10" x:Name="cbShowOptions" 
                       ItemsSource="{Binding DataContext.ShowOptions}" 
                       SelectionChanged="SelectionChanged"
                       SelectedIndex="0"

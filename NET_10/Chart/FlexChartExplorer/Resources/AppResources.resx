@@ -386,4 +386,250 @@ To create multiple pie charts, just specify several comma-separated properties i
   <data name="ContourTitle" xml:space="preserve">
     <value>Contour chart</value>
   </data>
+  <data name="Palette" xml:space="preserve">
+    <value>Palette:</value>
+  </data>
+  <data name="ChartType" xml:space="preserve">
+    <value>Chart Type:</value>
+  </data>
+  <data name="Stacking" xml:space="preserve">
+    <value>Stacking</value>
+  </data>
+  <data name="Rotated" xml:space="preserve">
+    <value>Rotated</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="Light" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="Dark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="Basics" xml:space="preserve">
+    <value>Basics</value>
+  </data>
+  <data name="SpecialCharts" xml:space="preserve">
+    <value>Special Charts</value>
+  </data>
+  <data name="Axes" xml:space="preserve">
+    <value>Axes</value>
+  </data>
+  <data name="Interaction" xml:space="preserve">
+    <value>Interaction</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Features</value>
+  </data>
+  <data name="InterpolateNulls" xml:space="preserve">
+    <value>Interpolate Nulls</value>
+  </data>
+  <data name="LegendToggle" xml:space="preserve">
+    <value>Legend Toggle</value>
+  </data>
+  <data name="InnerRadius" xml:space="preserve">
+    <value>Inner Radius:</value>
+  </data>
+  <data name="Offset" xml:space="preserve">
+    <value>Offset:</value>
+  </data>
+  <data name="StartAngle" xml:space="preserve">
+    <value>Start Angle:</value>
+  </data>
+  <data name="LabelPosition" xml:space="preserve">
+    <value>Label Position:</value>
+  </data>
+  <data name="TreeMapType" xml:space="preserve">
+    <value>TreeMap Type:</value>
+  </data>
+  <data name="MaxDepth" xml:space="preserve">
+    <value>Max Depth:</value>
+  </data>
+  <data name="BubbleTitle" xml:space="preserve">
+    <value>Bubble</value>
+  </data>
+  <data name="AxisX" xml:space="preserve">
+    <value>Axis X:</value>
+  </data>
+  <data name="AxisY" xml:space="preserve">
+    <value>Axis Y:</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size:</value>
+  </data>
+  <data name="QuartileCalculation" xml:space="preserve">
+    <value>Quartile Calculation:</value>
+  </data>
+  <data name="ShowMeanMarks" xml:space="preserve">
+    <value>Show Mean Marks</value>
+  </data>
+  <data name="ShowMeanLine" xml:space="preserve">
+    <value>Show Mean Line</value>
+  </data>
+  <data name="ShowInnerPoints" xml:space="preserve">
+    <value>Show Inner Points</value>
+  </data>
+  <data name="ShowOutliers" xml:space="preserve">
+    <value>Show Outliers</value>
+  </data>
+  <data name="ErrorAmount" xml:space="preserve">
+    <value>Error Amount:</value>
+  </data>
+  <data name="ErrorBarDirection" xml:space="preserve">
+    <value>Error Bar Direction:</value>
+  </data>
+  <data name="ErrorBarEndStyle" xml:space="preserve">
+    <value>Error Bar End Style:</value>
+  </data>
+  <data name="Appearance" xml:space="preserve">
+    <value>Appearance:</value>
+  </data>
+  <data name="NormalCurve" xml:space="preserve">
+    <value>Normal Curve</value>
+  </data>
+  <data name="Cumulative" xml:space="preserve">
+    <value>Cumulative</value>
+  </data>
+  <data name="RadarTitle" xml:space="preserve">
+    <value>Radar Chart</value>
+  </data>
+  <data name="RadarHeader" xml:space="preserve">
+    <value>Radar</value>
+  </data>
+  <data name="ShowConnectorLines" xml:space="preserve">
+    <value>Show Connector Lines</value>
+  </data>
+  <data name="ShowTotal" xml:space="preserve">
+    <value>Show Total</value>
+  </data>
+  <data name="ShowIntermediateTotal" xml:space="preserve">
+    <value>Show Intermediate Total</value>
+  </data>
+  <data name="StaggeredLines" xml:space="preserve">
+    <value>Staggered Lines:</value>
+  </data>
+  <data name="OverlappedLabels" xml:space="preserve">
+    <value>Overlapped Labels:</value>
+  </data>
+  <data name="GroupSeparator" xml:space="preserve">
+    <value>Group Separator:</value>
+  </data>
+  <data name="LogScale" xml:space="preserve">
+    <value>Log Scale</value>
+  </data>
+  <data name="XLabelAngle" xml:space="preserve">
+    <value>X Label Angle:</value>
+  </data>
+  <data name="AxisBreak" xml:space="preserve">
+    <value>Axis Break</value>
+  </data>
+  <data name="SelectionTitle" xml:space="preserve">
+    <value>Selection</value>
+  </data>
+  <data name="SelectionHeader" xml:space="preserve">
+    <value>Selection</value>
+  </data>
+  <data name="SelectionMode" xml:space="preserve">
+    <value>Selection Mode:</value>
+  </data>
+  <data name="ClickOnDataToSelect" xml:space="preserve">
+    <value>Click on data to select.</value>
+  </data>
+  <data name="SelectedItemOffset" xml:space="preserve">
+    <value>Selected Item Offset:</value>
+  </data>
+  <data name="SelectedItemPosition" xml:space="preserve">
+    <value>Selected Item Position:</value>
+  </data>
+  <data name="ZoomTitle" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="ZoomHeader" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="HitTest" xml:space="preserve">
+    <value>Hit Test</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="MovePointerOverChartToSeeHitTestResults" xml:space="preserve">
+    <value>Move pointer over chart to see hit test results.</value>
+  </data>
+  <data name="AnimationTitle" xml:space="preserve">
+    <value>Animation</value>
+  </data>
+  <data name="AnimationHeader" xml:space="preserve">
+    <value>Animation</value>
+  </data>
+  <data name="NewData" xml:space="preserve">
+    <value>New Data</value>
+  </data>
+  <data name="UpdateData" xml:space="preserve">
+    <value>Update Data</value>
+  </data>
+  <data name="AddSeries" xml:space="preserve">
+    <value>Add Series</value>
+  </data>
+  <data name="RemoveSeries" xml:space="preserve">
+    <value>Remove Series</value>
+  </data>
+  <data name="AddPoint" xml:space="preserve">
+    <value>Add Point</value>
+  </data>
+  <data name="RemovePoint" xml:space="preserve">
+    <value>Remove Point</value>
+  </data>
+  <data name="SaveImage" xml:space="preserve">
+    <value>Save Image</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Show:</value>
+  </data>
+  <data name="DataLabel" xml:space="preserve">
+    <value>Data Label:</value>
+  </data>
+  <data name="Angle" xml:space="preserve">
+    <value>Angle:</value>
+  </data>
+  <data name="LabelBorder" xml:space="preserve">
+    <value>Label Border</value>
+  </data>
+  <data name="ConnectingLine" xml:space="preserve">
+    <value>Connecting Line</value>
+  </data>
+  <data name="LegendHeader" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="LegendTitle" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="Position" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="Orientation" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="ParetoTitle" xml:space="preserve">
+    <value>Pareto</value>
+  </data>
+  <data name="LabelGap" xml:space="preserve">
+    <value>Label Gap:</value>
+  </data>
+  <data name="FitType" xml:space="preserve">
+    <value>Fit Type:</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Order:</value>
+  </data>
+  <data name="ShowEquation" xml:space="preserve">
+    <value>Show Equation</value>
+  </data>
+  <data name="ShowR2" xml:space="preserve">
+    <value>Show R2</value>
+  </data>
 </root>

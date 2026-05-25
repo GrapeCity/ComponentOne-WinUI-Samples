@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:c1="using:C1.WinUI.Chart"
+    xmlns:res="using:FlexChartExplorer.Resources"
     DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
     mc:Ignorable="d">
 
@@ -32,9 +33,9 @@
                 <c1:Axis Format="p0" AxisLine="False" MajorGrid="True" MajorTickMarks="None" Min="0" />
             </c1:FlexChart.AxisY>
         </c1:FlexChart>
-        <InfoBar x:Name="infoBar" Grid.Row="1" IsOpen="True" IsClosable="False" Title="Hit Test" Severity="Informational"
+        <InfoBar x:Name="infoBar" Grid.Row="1" IsOpen="True" IsClosable="False" Title="{x:Bind res:AppResources.HitTest}" Severity="Informational"
                  Message="{Binding DataContext.Message}"/>
-        <InfoBar x:Name="infoBar2" Grid.Row="2" IsOpen="True" Height="80" IsClosable="False" Title="Data" Severity="Informational"
+        <InfoBar x:Name="infoBar2" Grid.Row="2" IsOpen="True" Height="80" IsClosable="False" Title="{x:Bind res:AppResources.Data}" Severity="Informational"
                  />
     </Grid>
 </UserControl>
