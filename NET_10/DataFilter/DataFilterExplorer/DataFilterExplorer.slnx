@@ -1,0 +1,25 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="GRAPECITY" />
+    <BuildType Name="Release" />
+    <Platform Name="Any CPU" />
+    <Platform Name="arm64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+
+  <Project Path="DataFilterExplorer.csproj">
+    <BuildType Solution="GRAPECITY|*" Project="Release" />
+    <Platform Solution="*|arm64" Project="arm64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+    <Platform Solution="Debug|Any CPU" Project="x86" />
+    <Platform Solution="GRAPECITY|Any CPU" Project="x64" />
+    <Platform Solution="Release|Any CPU" Project="x86" />
+    <Deploy Solution="*|Any CPU" />
+    <Deploy Solution="GRAPECITY|arm64" />
+    <Deploy Solution="GRAPECITY|x64" />
+    <Deploy Solution="GRAPECITY|x86" />
+  </Project>
+</Solution>

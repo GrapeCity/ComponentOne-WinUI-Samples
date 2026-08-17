@@ -22,8 +22,7 @@
             <core:C1Button Content="{x:Bind resources:AppResources.RemoveGrouping}" Click="OnRemoveGrouping" Margin="30 0 0 0" Padding="10 3 10 3"/>
         </StackPanel>
 
-        <listView:C1ListView Grid.Row="1" x:Name="listView" Margin="10 0 10 10"
-                       SelectedBackground="#99c9ef" DisplayMemberPath="Name">
+        <listView:C1ListView Grid.Row="1" x:Name="listView" Margin="10 0 10 10" DisplayMemberPath="Name">
             <listView:C1ListView.GroupStyle>
                 <GroupStyle>
                     <GroupStyle.HeaderTemplate>

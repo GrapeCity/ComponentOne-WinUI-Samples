@@ -58,13 +58,13 @@ namespace ListViewExplorer
         private void OnSelectionModeSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (listView != null)
-                listView.SelectionMode = Enum.Parse<C1SelectionMode>((e.AddedItems[0] as ComboBoxItem).Content.ToString());
+                listView.SelectionMode = Enum.Parse<C1SelectionMode>((e.AddedItems[0] as ComboBoxItem).Content.ToString()!);
         }
 
         private void OnOrientationSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (listView != null)
-                listView.Orientation = Enum.Parse<Orientation>((e.AddedItems[0] as ComboBoxItem).Content.ToString());
+                listView.Orientation = Enum.Parse<Orientation>((e.AddedItems[0] as ComboBoxItem).Content.ToString()!);
         }
 
     }

@@ -151,6 +151,15 @@ namespace GaugeExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Shows simple gauge controls with interaction..
+        /// </summary>
+        public static string GettingStartedDescription {
+            get {
+                return ResourceManager.GetString("GettingStartedDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Getting Started.
         /// </summary>
         public static string GettingStartedTitle {
@@ -169,6 +178,24 @@ namespace GaugeExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The image has been saved to your device&apos;s picture album..
+        /// </summary>
+        public static string ImageSavedDescription {
+            get {
+                return ResourceManager.GetString("ImageSavedDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image Saved.
+        /// </summary>
+        public static string ImageSavedTitle {
+            get {
+                return ResourceManager.GetString("ImageSavedTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Show how to use Marks and Labels in gauges.
         /// </summary>
         public static string MarksAndLabelsDescription {
@@ -183,6 +210,15 @@ namespace GaugeExplorer.Resources {
         public static string MarksAndLabelsTitle {
             get {
                 return ResourceManager.GetString("MarksAndLabelsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        public static string OKTitle {
+            get {
+                return ResourceManager.GetString("OKTitle", resourceCulture);
             }
         }
         
@@ -232,6 +268,15 @@ namespace GaugeExplorer.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        public static string Save {
+            get {
+                return ResourceManager.GetString("Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Show Ranges.
         /// </summary>
         public static string ShowRanges {
@@ -264,6 +309,15 @@ namespace GaugeExplorer.Resources {
         public static string SweepAngle {
             get {
                 return ResourceManager.GetString("SweepAngle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take.
+        /// </summary>
+        public static string Take {
+            get {
+                return ResourceManager.GetString("Take", resourceCulture);
             }
         }
         

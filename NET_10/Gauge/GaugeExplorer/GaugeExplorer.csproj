@@ -56,13 +56,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Gauge">
-      <Version>1.7.20261.50-beta</Version>
+      <Version>1.7.20261.127-beta</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.251014001" />
   </ItemGroup>

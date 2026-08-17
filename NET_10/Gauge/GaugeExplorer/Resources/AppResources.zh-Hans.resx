@@ -118,55 +118,55 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AutomaticScalingDescription" xml:space="preserve">
-    <value>Shows a radial gauge with different sweep angles.</value>
+    <value>以不同的扫描角度显示径向仪表盘。</value>
   </data>
   <data name="AutomaticScalingTitle" xml:space="preserve">
-    <value>Automatic Scaling</value>
+    <value>自动缩放</value>
   </data>
   <data name="Bad" xml:space="preserve">
     <value>Bad</value>
   </data>
   <data name="BulletGraphDescription" xml:space="preserve">
-    <value>Shows a bullet graph with good, bad and target ranges.</value>
+    <value>显示了一个具有好坏和目标范围的子弹图。</value>
   </data>
   <data name="BulletGraphTitle" xml:space="preserve">
-    <value>Bullet Graph</value>
+    <value>子弹图</value>
   </data>
   <data name="Direction" xml:space="preserve">
     <value>Direction</value>
   </data>
   <data name="DirectionDescription" xml:space="preserve">
-    <value>Shows linear gauges at different directions.</value>
+    <value>显示不同方向的线性仪表盘。</value>
   </data>
   <data name="DirectionTitle" xml:space="preserve">
-    <value>Direction</value>
+    <value>方向</value>
   </data>
   <data name="DisplayingValuesDescription" xml:space="preserve">
-    <value>Shows value labels on the gauges.</value>
+    <value>显示仪表盘值标签。</value>
   </data>
   <data name="DisplayingValuesTitle" xml:space="preserve">
-    <value>Displaying Values</value>
+    <value>显示值</value>
   </data>
   <data name="GettingStartedDescription" xml:space="preserve">
-    <value>Shows simple gauge controls with interaction.</value>
+    <value>展示简单交互的仪表盘控件。</value>
   </data>
   <data name="GettingStartedTitle" xml:space="preserve">
-    <value>Getting Started</value>
+    <value>开始使用</value>
   </data>
   <data name="Good" xml:space="preserve">
     <value>Good</value>
   </data>
   <data name="ImageSavedDescription" xml:space="preserve">
-    <value>The image has been saved to your device's picture album.</value>
+    <value>图片已经保存到设备中。</value>
   </data>
   <data name="ImageSavedTitle" xml:space="preserve">
-    <value>Image Saved</value>
+    <value>保存图片</value>
   </data>
   <data name="OKTitle" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Save</value>
+    <value>保存</value>
   </data>
   <data name="ShowRanges" xml:space="preserve">
     <value>Show Ranges</value>
@@ -181,19 +181,16 @@
     <value>Sweep Angle</value>
   </data>
   <data name="Take" xml:space="preserve">
-    <value>Take</value>
+    <value>获取</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>Target</value>
   </data>
-  <data name="Theme" xml:space="preserve">
-    <value>Theme</value>
-  </data>
   <data name="UsingRangesDescription" xml:space="preserve">
-    <value>Shows customized ranges behind the pointer.</value>
+    <value>显示指针后自定义的范围。</value>
   </data>
   <data name="UsingRangesTitle" xml:space="preserve">
-    <value>Using Ranges</value>
+    <value>使用范围</value>
   </data>
   <data name="Value" xml:space="preserve">
     <value>Value</value>

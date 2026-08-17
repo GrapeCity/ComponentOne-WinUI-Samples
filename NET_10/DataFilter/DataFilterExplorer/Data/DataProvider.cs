@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -36,13 +36,14 @@ namespace DataFilterExplorer
             }
         }
 
+        [UnconditionalSuppressMessage("Security", "CA2350", Justification = "The data source is trusted.")]
         public static DataTable GetCarTable()
         {
             DataTable dt = new DataTable("Cars");
             var asm = Assembly.GetExecutingAssembly();
             using (var s = asm.GetManifestResourceStream("DataFilterExplorer.Resources.cars.xml"))
             {
-                _= dt.ReadXml(s);
+                dt.ReadXml(s);
             }
             return dt;
         }
@@ -66,7 +67,7 @@ namespace DataFilterExplorer
                     foreach (var storeIndex in whoHasThisCar)
                     {
                         //yield return new CountInStore() { Car = car, Count = s_rnd.Next(1, 100), Store = stores[storeIndex], Color = (Color)ColorConverter.ConvertFromString(Colors[colorIndex]) };
-                        yield return new CountInStore() { Car = car, Count = s_rnd.Next(1, 100), Store = stores[storeIndex]};
+                        yield return new CountInStore() { Car = car, Count = s_rnd.Next(1, 100), Store = stores[storeIndex] };
                     }
                 }
             }

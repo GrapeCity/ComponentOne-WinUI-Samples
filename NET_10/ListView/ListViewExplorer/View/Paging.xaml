@@ -14,7 +14,7 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <listView:C1ListView x:Name="listView" Grid.Row="0" SelectionMode="Single" ItemHeight="30" DisplayMemberPath="Name" Margin="10 0 10 10"/>
+        <listView:C1ListView x:Name="listView" Grid.Row="0" SelectionMode="Single" DisplayMemberPath="Name" Margin="10 0 10 10"/>
         <dp:C1DataPager x:Name="pager" Grid.Row="1" />
     </Grid>
 </UserControl>

@@ -79,13 +79,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.BarCode">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.251014001" GeneratePathProperty="true" />
     <Manifest Include="$(ApplicationManifest)" />

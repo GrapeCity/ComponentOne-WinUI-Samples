@@ -13,6 +13,8 @@ namespace GaugeExplorer
         public GettingStarted()
         {
             InitializeComponent();
+
+            Tag = AppResources.GettingStartedDescription;
             DataContext = new SampleViewModel() { Value = 25, ShowText = GaugeTextVisibility.None, IsReadOnly = false };
             _storyboard = Resources["AnimateGauges"] as Storyboard;
             _storyboard?.Begin();

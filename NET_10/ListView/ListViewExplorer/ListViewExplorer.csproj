@@ -61,19 +61,19 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DataPager">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.ListView">
-      <Version>1.7.20261.50-beta</Version>
+      <Version>1.7.20261.127-beta</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Menu">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.WinUI.Controls.Primitives" Version="8.2.251219" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.7463" />

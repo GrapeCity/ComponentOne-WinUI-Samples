@@ -61,35 +61,36 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection" Version="10.0.20261.3" />
-    <PackageReference Include="C1.DataCollection.BindingList" Version="10.0.20261.3" />
-    <PackageReference Include="C1.DataCollection.EntityFrameworkCore" Version="10.0.20261.3" />
+    <PackageReference Include="C1.DataCollection" Version="10.0.20261.8" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="10.0.20261.8" />
+    <PackageReference Include="C1.DataCollection.EntityFrameworkCore" Version="10.0.20261.8" />
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DataFilter">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DateTimeEditors">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.GridControl">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Menu">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.8" />
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.3" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.251014001" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>

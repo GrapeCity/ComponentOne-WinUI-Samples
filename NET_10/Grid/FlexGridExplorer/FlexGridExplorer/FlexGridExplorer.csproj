@@ -102,28 +102,28 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.WinUI.Accordion">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Core">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.DataPager">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid.ConditionalFormatting">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Grid.Excel">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.Input">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="C1.WinUI.RulesManager">
-      <Version>1.7.20261.50</Version>
+      <Version>1.7.20261.127</Version>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.251014001" />

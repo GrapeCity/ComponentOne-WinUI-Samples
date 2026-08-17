@@ -118,106 +118,135 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AutomaticScalingDescription" xml:space="preserve">
-    <value>Shows a radial gauge with different sweep angles.</value>
+    <value>大きさを変えた円形ゲージを調整して表示</value>
+    <comment>Shows a radial gauge with different sweep angles.</comment>
   </data>
   <data name="AutomaticScalingTitle" xml:space="preserve">
-    <value>Automatic Scaling</value>
+    <value>自動スケーリング</value>
+    <comment>Automatic Scaling</comment>
   </data>
   <data name="Bad" xml:space="preserve">
-    <value>Bad</value>
+    <value>不良値：</value>
+    <comment>Bad</comment>
   </data>
   <data name="BulletGraphDescription" xml:space="preserve">
-    <value>Shows a bullet graph with good, bad and target ranges.</value>
+    <value>「良値/不良値/目標値」の範囲を設定</value>
+    <comment>Shows a bulletgraph with good, bad and target ranges.</comment>
   </data>
   <data name="BulletGraphTitle" xml:space="preserve">
-    <value>Bullet Graph</value>
+    <value>ブレットグラフ</value>
+    <comment>BulletGraph</comment>
   </data>
   <data name="Direction" xml:space="preserve">
-    <value>Direction</value>
+    <value>ポインタの方向</value>
+    <comment>Direction</comment>
   </data>
   <data name="DirectionDescription" xml:space="preserve">
-    <value>Shows linear gauges at different directions.</value>
+    <value>方向が異なる線形ゲージを表示</value>
+    <comment>Shows linear gauges at different directions.</comment>
   </data>
   <data name="DirectionTitle" xml:space="preserve">
-    <value>Direction</value>
+    <value>方向</value>
+    <comment>Direction</comment>
   </data>
   <data name="DisplayingValuesDescription" xml:space="preserve">
-    <value>Shows value labels on the gauges.</value>
+    <value>値ラベルをゲージに表示</value>
+    <comment>Shows value labels on the gauges.</comment>
   </data>
   <data name="DisplayingValuesTitle" xml:space="preserve">
-    <value>Displaying Values</value>
+    <value>値の表示</value>
+    <comment>Displaying Values</comment>
   </data>
   <data name="GettingStartedDescription" xml:space="preserve">
-    <value>Shows simple gauge controls with interaction.</value>
+    <value>インタラクション機能を持つゲージ</value>
+    <comment>Shows simple gauge controls with interaction.</comment>
   </data>
   <data name="GettingStartedTitle" xml:space="preserve">
-    <value>Getting Started</value>
+    <value>Gaugeの基本機能</value>
+    <comment>Getting Started</comment>
   </data>
   <data name="Good" xml:space="preserve">
-    <value>Good</value>
+    <value>良値：</value>
+    <comment>Good</comment>
   </data>
   <data name="ImageSavedDescription" xml:space="preserve">
-    <value>The image has been saved to your device's picture album.</value>
+    <value>画像をデバイスに保存しました</value>
+    <comment>The image has been saved to your device's picture album.</comment>
   </data>
   <data name="ImageSavedTitle" xml:space="preserve">
-    <value>Image Saved</value>
+    <value>画像の保存</value>
+    <comment>Image Saved</comment>
   </data>
   <data name="OKTitle" xml:space="preserve">
     <value>OK</value>
+    <comment>OK</comment>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Save</value>
+    <value>保存</value>
+    <comment>Save</comment>
   </data>
   <data name="ShowRanges" xml:space="preserve">
-    <value>Show Ranges</value>
+    <value>範囲を表示</value>
+    <comment>Show Ranges</comment>
   </data>
   <data name="ShowText" xml:space="preserve">
-    <value>Show Text</value>
+    <value>表示するテキスト</value>
+    <comment>Show Text</comment>
   </data>
   <data name="StartAngle" xml:space="preserve">
-    <value>Start Angle</value>
+    <value>開始角度：</value>
+    <comment>Start Angle</comment>
   </data>
   <data name="SweepAngle" xml:space="preserve">
-    <value>Sweep Angle</value>
+    <value>移動角度：</value>
+    <comment>Sweep Angle</comment>
   </data>
   <data name="Take" xml:space="preserve">
-    <value>Take</value>
+    <value>取得</value>
+    <comment>Take</comment>
   </data>
   <data name="Target" xml:space="preserve">
-    <value>Target</value>
-  </data>
-  <data name="Theme" xml:space="preserve">
-    <value>Theme</value>
+    <value>目標値：</value>
+    <comment>Target</comment>
   </data>
   <data name="UsingRangesDescription" xml:space="preserve">
-    <value>Shows customized ranges behind the pointer.</value>
+    <value>カスタマイズされた範囲を背後に表示</value>
+    <comment>Shows customized ranges behind the pointer.</comment>
   </data>
   <data name="UsingRangesTitle" xml:space="preserve">
-    <value>Using Ranges</value>
+    <value>範囲の使用</value>
+    <comment>Using Ranges</comment>
   </data>
   <data name="Value" xml:space="preserve">
-    <value>Value</value>
+    <value>現在の値：</value>
+    <comment>Value</comment>
   </data>
   <data name="Reversed" xml:space="preserve">
-    <value>Reversed</value>
+    <value>反転</value>
     <comment>Reversed</comment>
   </data>
   <data name="ResumeAnimationLabel" xml:space="preserve">
-    <value>Resume Animation</value>
+    <value>アニメーションを再開</value>
+    <comment>Resume Animation</comment>
   </data>
   <data name="PauseAnimationLabel" xml:space="preserve">
-    <value>Pause Animation</value>
+    <value>アニメーションを一時停止</value>
+    <comment>Pause Animation</comment>
   </data>
   <data name="MarksAndLabelsTitle" xml:space="preserve">
-    <value>Marks and Labels</value>
+    <value>マークとラベル</value>
+    <comment>Marks and Labels</comment>
   </data>
   <data name="MarksAndLabelsDescription" xml:space="preserve">
-    <value>Show how to use Marks and Labels in gauges</value>
+    <value>ゲージにおけるマークとラベルの使用方法を示します。</value>
+    <comment>Show how to use Marks and Labels in gauges</comment>
   </data>
   <data name="PointerTitle" xml:space="preserve">
-    <value>Pointer</value>
+    <value>ポインター</value>
+    <comment>Pointer</comment>
   </data>
   <data name="PointerDescription" xml:space="preserve">
-    <value>Shows how to display a gauge pointer</value>
+    <value>ゲージポインターの表示方法を示します</value>
+    <comment>Shows how to display a gauge pointer</comment>
   </data>
 </root>

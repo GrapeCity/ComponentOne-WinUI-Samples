@@ -118,47 +118,52 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AnimalsDescription" xml:space="preserve">
-    <value>Animal classification bound to flat data collection.</value>
+    <value>動物の分類は、フラットなデータ収集に制約されます。</value>
+    <comment>Animal classification bound to flat data collection.</comment>
   </data>
   <data name="AnimalsTitle" xml:space="preserve">
-    <value>🦁 Animals</value>
+    <value>🦁 動物</value>
+    <comment>🦁 Animals</comment>
   </data>
   <data name="DecisionTreeTitle" xml:space="preserve">
-    <value>🌳 Decision Tree</value>
+    <value>🌳 決定木</value>
+    <comment>🌳 Decision Tree</comment>
   </data>
   <data name="DecisionTreeDescription" xml:space="preserve">
-    <value>Shows sample decision tree diagram. The diagram is loaded from Mermaid.js graph.</value>
+    <value>サンプルとなるツリーダイアグラムを表示します。この図は Mermaid.js グラフから読み込まれています。</value>
+    <comment>Shows sample decision tree diagram. The diagram is loaded from Mermaid.js graph.</comment>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="IntroDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="IntroDescription" xml:space="preserve">
+    <value>XAMLによって完全に定義されたフローチャート</value>
   </data>
-  <data name="ClockDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="ClockDescription" xml:space="preserve">
+    <value>現在時刻を示す動的グラフ</value>
   </data>
-  <data name="DynamicDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="DynamicDescription" xml:space="preserve">
+    <value>動的なダイアグラム生成とアダプティブレイアウト。ダイアグラムをクリックすると、生成を一時停止／開始します。</value>
   </data>
   <data name="HitTestingTitle" xml:space="preserve">
-    <value>🎯 HitTesting</value>
+    <value>🎯 ヒットテスト</value>
+    <comment>🎯 HitTesting</comment>
   </data>
   <data name="HitTestingDescription" xml:space="preserve">
-    <value>Move mouse over nodes and edges to highlight. Click to recreate graph.</value>
+    <value>ノードとエッジの上にマウスカーソルを移動すると、それらがハイライト表示されます。クリックするとグラフが再作成されます。</value>
+    <comment>Move mouse over nodes and edges to highlight. Click to recreate graph.</comment>
   </data>
-  <data name="IntroTitle" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="IntroTitle" xml:space="preserve">
+    <value>➡️ はじめに</value>
   </data>
-  <data name="ClockTitle" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="ClockTitle" xml:space="preserve">
+    <value>🕐 ダイアグラムクロック</value>
   </data>
-  <data name="DynamicTitle" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="DynamicTitle" xml:space="preserve">
+    <value>⏩ 動的グラフ</value>
   </data>
-  <data name="SelectionDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="SelectionDescription" xml:space="preserve">
+    <value>FlexDiagramは、カスタマイズ可能な選択スタイルによるノード選択をサポートしています。ノードをクリックして選択します。</value>
   </data>
-  <data name="FlexChartFamilyDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="FlexChartFamilyDescription" xml:space="preserve">
+    <value>FlexChart可視化コンポーネントのダイアグラムを表示します。ノードには、対応するコンポーネントによって生成された画像が含まれています。</value>
   </data>
   <data name="Theme" xml:space="preserve">
     <value>テーマ</value>
@@ -172,67 +177,93 @@
   <data name="Dark" xml:space="preserve">
     <value>ダーク</value>
   </data>
-  <data name="SelectionTitle" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="SelectionTitle" xml:space="preserve">
+    <value>✔️ 選択</value>
   </data>
-  <data name="FlexChartFamilyTitle" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="FlexChartFamilyTitle" xml:space="preserve">
+    <value>📈 FlexChartファミリー</value>
   </data>
-  <data name="Default" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="Default" xml:space="preserve">
+    <value>デフォルト</value>
   </data>
   <data name="LiteratureTitle" xml:space="preserve">
-    <value>📚 Literature</value>
+    <value>📚 文学</value>
+    <comment>📚 Literature</comment>
   </data>
   <data name="LiteratureDescription" xml:space="preserve">
-    <value>Shows literature genre tree. The diagram is loaded from Mermaid.js graph.</value>
+    <value>文学ジャンルのツリー構造を示します。この図は Mermaid.js グラフから読み込まれています。</value>
+    <comment>Shows literature genre tree. The diagram is loaded from Mermaid.js graph.</comment>
   </data>
   <data name="OrgChartTitle" xml:space="preserve">
-    <value>👥 OrgChart</value>
+    <value>👥 組織図</value>
+    <comment>👥 OrgChart</comment>
   </data>
   <data name="OrgChartDescription" xml:space="preserve">
-    <value>Organizational chart created with hierarchical data.</value>
+    <value>階層構造のデータを用いて作成された組織図です。</value>
+    <comment>Organizational chart created with hierarchical data.</comment>
   </data>
   <data name="ProgrammingLanguagesTitle" xml:space="preserve">
-    <value>💻 Programming Languages</value>
+    <value>💻 プログラミング言語</value>
+    <comment>💻 Programming Languages</comment>
   </data>
   <data name="ProgrammingLanguagesDescription" xml:space="preserve">
-    <value>Shows relationship and history of programming languages. The diagram is loaded from Mermaid.js graph.</value>
+    <value>プログラミング言語の関係性と歴史を示します。この図は Mermaid.js グラフから読み込まれています。</value>
+    <comment>Shows relationship and history of programming languages. The diagram is loaded from Mermaid.js graph.</comment>
   </data>
   <data name="TooltipsTitle" xml:space="preserve">
-    <value>💬 Tooltips</value>
+    <value>💬 ツールチップ</value>
+    <comment>💬 Tooltips</comment>
   </data>
   <data name="TooltipsDescription" xml:space="preserve">
-    <value>You can specify node and edge tooltips when creating FlexDiagram.</value>
+    <value>FlexDiagram を作成する際に、ノードとエッジのツールチップを指定できます。</value>
+    <comment>You can specify node and edge tooltips when creating FlexDiagram.</comment>
   </data>
   <data name="NodeTemplateTitle" xml:space="preserve">
-    <value>📑 Node Template</value>
+    <value>📑 ノードテンプレート</value>
+    <comment>📑 Node Template</comment>
   </data>
   <data name="NodeTemplateDescription" xml:space="preserve">
-    <value>Shows diagram with custom XAML template.</value>
+    <value>カスタム XAML テンプレートを使用した図を表示します。</value>
+    <comment>Shows diagram with custom XAML template.</comment>
   </data>
   <data name="NestedTitle" xml:space="preserve">
-    <value>🗃 Nested Diagrams</value>
+    <value>🗃 ネストされたダイアグラム</value>
+    <comment>🗃 Nested Diagrams</comment>
   </data>
   <data name="NestedDescription" xml:space="preserve">
-    <value>Shows diagram with child nodes which include another diagrams.</value>
+    <value>子ノードを持つ図を表示し、その子ノードには別の図が含まれています。</value>
+    <comment>Shows diagram with child nodes which include another diagrams.</comment>
   </data>
   <data name="FamilyTreeTitle" xml:space="preserve">
-    <value>👪 Family Tree</value>
+    <value>👪 相関図</value>
+    <comment>👪 Family Tree</comment>
   </data>
   <data name="FamilyTreeDescription" xml:space="preserve">
-    <value>Shows relations between main characters of Games of Thrones. The diagram is loaded from Mermaid.js graph.</value>
+    <value>Games of Thrones の主要登場人物間の関係性を示す図です。この図は Mermaid.js グラフから読み込まれています。</value>
+    <comment>Shows relations between main characters of Games of Thrones. The diagram is loaded from Mermaid.js graph.</comment>
   </data>
-  <data name="Unbound" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="Unbound" xml:space="preserve">
+    <value>📁 非連結</value>
   </data>
-  <data name="DataBinding" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="DataBinding" xml:space="preserve">
+    <value>📁 データバインディング</value>
   </data>
-  <data name="Interaction" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="Interaction" xml:space="preserve">
+    <value>🖱️ インタラクション</value>
   </data>
-  <data name="UsageScenarios" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="UsageScenarios" xml:space="preserve">
+    <value>📁 使用シナリオ</value>
+  </data>
+  <data name="CollapsibleDescription" xml:space="preserve">
+    <value>ノードの折りたたみ／展開が可能なFlexDiagram。ノードをクリックしてください。</value>
+  </data>
+  <data name="CollapsibleTitle" xml:space="preserve">
+    <value>➕ 折りたたみ式</value>
+  </data>
+  <data name="CustomShapeDescription" xml:space="preserve">
+    <value>カスタム形状のノードを持つFlexDiagram</value>
+  </data>
+  <data name="CustomShapeTitle" xml:space="preserve">
+    <value>💧 カスタムシェイプ</value>
   </data>
 </root>

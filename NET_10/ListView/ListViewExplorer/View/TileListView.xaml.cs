@@ -29,7 +29,7 @@ namespace ListViewExplorer
         private void cb_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (_list1 != null)
-                _list1.Orientation = Enum.Parse<Orientation>((e.AddedItems[0] as ComboBoxItem).Content.ToString());
+                _list1.Orientation = Enum.Parse<Orientation>((e.AddedItems[0] as ComboBoxItem).Content.ToString()!);
         }
 
         private void cbShowCheckBox_Click(object sender, RoutedEventArgs e)
@@ -45,7 +45,7 @@ namespace ListViewExplorer
         private void cbSelectionMode_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (_list1 != null)
-                _list1.SelectionMode = Enum.Parse<C1SelectionMode>((e.AddedItems[0] as ComboBoxItem).Content.ToString());
+                _list1.SelectionMode = Enum.Parse<C1SelectionMode>((e.AddedItems[0] as ComboBoxItem).Content.ToString()!);
         }
     }
 }
